@@ -18,5 +18,6 @@ public class AplusB_4_10951 {
             sb.append(a+b).append("\n");
         }
         System.out.print(sb);
+        br.close();
     }
 }
