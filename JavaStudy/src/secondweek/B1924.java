@@ -13,6 +13,7 @@ public class B1924 {
             y += months[i];
         }
         System.out.println(dayoftheweek[y%7]);
+        scanner.close();
     }
 }
 
