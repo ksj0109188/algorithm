@@ -37,7 +37,7 @@ public class B2445 {
         br.close();
         bw.flush();
         bw.close();
-        System.out.println(sb);
+        bw.write(String.valueOf(sb));
     }
 }
 

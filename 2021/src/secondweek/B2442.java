@@ -17,7 +17,7 @@ public class B2442 {
             }
             sb.append("\n");
         }
-        System.out.println(sb);
+        bw.write(String.valueOf(sb));
         br.close();
         bw.flush();
         bw.close();

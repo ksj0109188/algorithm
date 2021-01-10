@@ -17,7 +17,7 @@ public class B2441 {
             }
             st.append("\n");
         }
-        System.out.print(st);
+        bw.write(st.toString());
         br.close();
         bw.flush();
         bw.close();
