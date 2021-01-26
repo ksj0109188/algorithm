@@ -3,6 +3,8 @@ package ThirdWeekOfJanuary;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class B10844 {
     static long[][] dp = null;
@@ -20,7 +22,6 @@ public class B10844 {
         }
         System.out.println(result%1000000000);
     }
-
     private static long Top_Down(int digit, int val) {
         if (digit == 1) {
             return dp[digit][val];
