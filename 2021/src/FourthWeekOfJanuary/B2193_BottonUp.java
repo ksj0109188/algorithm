@@ -19,6 +19,7 @@ public class B2193_BottonUp {
             }
         }
         System.out.println(dp[N - 1]);
+        bufferedReader.close();
     }
 }
 

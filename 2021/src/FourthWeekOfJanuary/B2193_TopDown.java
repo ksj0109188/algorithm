@@ -11,6 +11,7 @@ public class B2193_TopDown {
         int N = Integer.parseInt(bufferedReader.readLine());
         dp = new long[N+1];
         System.out.println(TopDown(N));
+        bufferedReader.close();
     }
 
     public static long TopDown(int dp_index){

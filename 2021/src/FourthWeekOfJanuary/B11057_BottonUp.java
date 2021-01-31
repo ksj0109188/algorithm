@@ -32,5 +32,6 @@ public class B11057_BottonUp {
         }
 
         System.out.println(result % mod);
+        br.close();
     }
 }

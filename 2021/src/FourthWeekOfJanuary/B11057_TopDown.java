@@ -22,6 +22,7 @@ public class B11057_TopDown {
             result += recursive(N, i);
         }
         System.out.println(result%mod);
+        br.close();
     }
 
     private static long recursive(int digit, int val) {
