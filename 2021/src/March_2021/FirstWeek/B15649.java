@@ -11,11 +11,9 @@ public class B15649 {
         int M = scanner.nextInt();
         int index = 0;
         go(index, N, M);
-
     }
 
     private static void go(int index, int n, int m) {
-
         if (index == m) {
             for(int i=0; i<index ;i++){
                 System.out.print(a[i]+" ");
