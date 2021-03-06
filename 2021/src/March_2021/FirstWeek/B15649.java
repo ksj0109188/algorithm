@@ -11,6 +11,7 @@ public class B15649 {
         int M = scanner.nextInt();
         int index = 0;
         go(index, N, M);
+        scanner.close();
     }
 
     private static void go(int index, int n, int m) {

@@ -14,6 +14,7 @@ public class B15652_1not {
         int m = sc.nextInt();
         go(1, 0, n, m);
         System.out.println(stringBuilder);
+        sc.close();
     }
 
     private static void go(int index, int selected, int n, int m) {

@@ -13,6 +13,7 @@ public class B15650_1 {
         int M = scanner.nextInt();
 
         go(1,0,N,M);
+        scanner.close();
     }
 
     private static void go(int index, int selected, int n, int m) {

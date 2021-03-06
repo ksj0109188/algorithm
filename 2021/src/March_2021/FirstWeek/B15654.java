@@ -21,6 +21,7 @@ public class B15654 {
         Arrays.sort(data);
         go(1, N, M);
         System.out.println(stringBuilder);
+        scanner.close();
     }
 
     private static void go(int index, int n, int m) {

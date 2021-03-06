@@ -12,6 +12,7 @@ public class B15651 {
         int N = scanner.nextInt();
         int M = scanner.nextInt();
         System.out.println(go(0, N, M));
+        scanner.close();
     }
 
     private static StringBuilder go(int index, int n, int m) {
