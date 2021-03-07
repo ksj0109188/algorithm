@@ -1,7 +1,7 @@
 package March_2021.FirstWeek;
 
 import java.util.Scanner;
-// https://www.acmicpc.net/status?user_id=ksj0109188&problem_id=15652&from_mine=1
+// https://www.acmicpc.net/problem/15652
 // M과 N 4번째 순서 관점에서 푼 문제.
 public class B15652 {
     static StringBuilder stringBuilder = new StringBuilder();
