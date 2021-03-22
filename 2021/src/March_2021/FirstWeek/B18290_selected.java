@@ -2,7 +2,7 @@ package March_2021.FirstWeek;
 
 import java.io.IOException;
 import java.util.Scanner;
-
+//https://www.acmicpc.net/problem/18290
 //row major order 방식으로 풀이
 public class B18290_selected {
     static int[] dx = {0, 0, 1, -1};
@@ -47,7 +47,7 @@ public class B18290_selected {
             }
             if (ok) {
                 checked[x][y] = true;
-                go(x * M + y, cnt + 1, sum + matrix[x][y]);
+                go(i, cnt + 1, sum + matrix[x][y]);
                 checked[x][y] = false;
             }
         }
