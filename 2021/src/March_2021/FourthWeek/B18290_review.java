@@ -2,7 +2,7 @@ package March_2021.FourthWeek;
 
 import java.util.Scanner;
 
-public class B18290_again {
+public class B18290_review {
     static int[][] adjacentMatrix = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
     static boolean[][] check = new boolean[10][10];
     static int[][] matrix;
