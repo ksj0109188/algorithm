@@ -19,7 +19,7 @@ public class B14501 {
         }
         go(0,0);
         System.out.println(result);
-
+        scanner.close();
     }
 
     private static void go(int day, int sum) {

@@ -13,6 +13,7 @@ public class B9095 {
             int N = scanner.nextInt();
             System.out.println(go(0, 0, N));
         }
+        scanner.close();
     }
 
     private static int go(int count, int sum, int goal) {

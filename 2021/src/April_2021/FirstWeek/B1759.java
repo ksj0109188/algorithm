@@ -15,6 +15,8 @@ public class B1759 {
 
         String password = "";
         go(l, alpha, password, 0);
+
+        scanner.close();
     }
 
     private static void go(int l, String[] alpha, String password, int index) {
