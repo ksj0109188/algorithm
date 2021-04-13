@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 //https://www.acmicpc.net/problem/10971
 //외판원 순회2
+//  N*N!에서
+//  if order[0]!=1 breeak문 추가로 N*(N!/N) -> N*(N-1)!
 public class B10971 {
     static int[][] W;
     static int[] order;
@@ -23,6 +25,7 @@ public class B10971 {
         }
         int result = Integer.MAX_VALUE;
         do {
+            if(order[0]!=1) continue;
             boolean OK = true;
             int sum = 0;
             for (int i = 0; i < N - 1; i++) {
