@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 //https://www.acmicpc.net/problem/14889
-// 스타트와 링크
+// 스타트와 링크 (재귀함수로)
 public class B14889 {
     static int s[][];
     static int N;
