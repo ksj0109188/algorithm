@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class B1182 {
     public static void main(String[] args) {
+        System.out.println(1<<5);
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
         int S = scanner.nextInt();
