@@ -2,7 +2,7 @@ package May_2021.Week1;
 
 import java.util.Scanner;
 
-public class B2225 {
+public class B2225_R {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
