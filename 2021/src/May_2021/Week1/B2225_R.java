@@ -1,7 +1,8 @@
 package May_2021.Week1;
 
 import java.util.Scanner;
-
+//https://www.acmicpc.net/problem/2225
+//합분해
 public class B2225_R {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
