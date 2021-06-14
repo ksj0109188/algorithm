@@ -3,17 +3,17 @@ package June_2021.Week2;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//class Pair {
-//    int min;
-//    int max;
-//
-//    Pair(int min, int max) {
-//        this.min = min;
-//        this.max = max;
-//    }
-//}
+class Pair {
+    int min;
+    int max;
 
-public class B677 {
+    Pair(int min, int max) {
+        this.min = min;
+        this.max = max;
+    }
+}
+
+public class B15658 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
