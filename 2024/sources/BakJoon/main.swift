@@ -507,5 +507,8 @@ let arr2 = [
 //print(InterLeavingString().isInterleave("a", "b", "ab"))
 
 // 9/3
-print(LongestIncreasingPath().longestIncreasingPath([[9,9,4],[6,6,8],[2,1,1]]))
-print(LongestIncreasingPath().longestIncreasingPath([[3,4,5],[3,2,6],[2,2,1]]))
+//print(LongestIncreasingPath().longestIncreasingPath([[9,9,4],[6,6,8],[2,1,1]]))
+//print(LongestIncreasingPath().longestIncreasingPath([[3,4,5],[3,2,6],[2,2,1]]))
+
+// 9/4
+Baekjoon_11659_구간합구하기4().main()

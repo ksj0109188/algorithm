@@ -17,7 +17,6 @@ class LongestIncreasingPath {
     func longestIncreasingPath(_ matrix: [[Int]]) -> Int {
         var dp: [Path: Int] = [:]
        
-        
         func dfs(_ i: Int, _ j: Int, _ prev: Path) -> Int {
             if i < 0 || i >= matrix.count || j < 0 || j >= matrix[0].count
                 || matrix[i][j] <= prev.element {
