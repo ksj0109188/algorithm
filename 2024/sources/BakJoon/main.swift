@@ -511,4 +511,7 @@ let arr2 = [
 //print(LongestIncreasingPath().longestIncreasingPath([[3,4,5],[3,2,6],[2,2,1]]))
 
 // 9/4
-Baekjoon_11659_구간합구하기4().main()
+//Baekjoon_11659_구간합구하기4().main()
+
+// 9/5
+baekjoon_11726_2n타일링().solution()
