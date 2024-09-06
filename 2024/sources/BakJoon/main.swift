@@ -514,4 +514,35 @@ let arr2 = [
 //Baekjoon_11659_구간합구하기4().main()
 
 // 9/5
-baekjoon_11726_2n타일링().solution()
+//baekjoon_11726_2n타일링().solution()
+
+// 9/6
+//baekjoon_1012_유기농배추().solution()
+
+class Programmers_LV2_쿼드압축{
+    func solution(_ arr:[[Int]]) -> [Int] {
+        // 만약 첫 번쨰 수와 맞지 않다면 사이즈를 반씩 줄여서 반복
+        /// 1. 그럼 언제까지 dfs함수를 호출할까
+        /// 2. 반환 타입은?
+        // 만약 첫 번째 수와 같다면???
+        /// 첫번째 숫자를 리턴하면 되지 않을까?
+        func dfs(_ startX: Int, _ startY: Int, _ size: Int) -> (zeroCount: Int, oneCount: Int) {
+            guard size != 0 else { return (0, 0) }
+            let baseVal = arr[startX][startY]
+            
+            for i in startX..<size {
+                for j in startY..<size {
+                    
+                }
+            }
+            
+        }
+        
+        
+        
+        return []
+    }
+}
+
+
+Programmers_LV2_쿼드압축().solution([[1,1,0,0],[1,0,0,0],[1,0,0,1],[1,1,1,1]])
