@@ -126,6 +126,7 @@
 		3BE6E0FF2BB4674A001DDD4A /* LV2_N개 최소공배수.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6E0FE2BB4674A001DDD4A /* LV2_N개 최소공배수.swift */; };
 		3BE71A6C2C5F0EAE00697340 /* 친구비.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE71A6B2C5F0EAE00697340 /* 친구비.swift */; };
 		3BEBDD5B2BA08EDC0049A0D7 /* 119_Pascal'sTriangle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEBDD5A2BA08EDC0049A0D7 /* 119_Pascal'sTriangle2.swift */; };
+		3BFC12052C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC12042C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -262,6 +263,7 @@
 		3BE6E0FE2BB4674A001DDD4A /* LV2_N개 최소공배수.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_N개 최소공배수.swift"; sourceTree = "<group>"; };
 		3BE71A6B2C5F0EAE00697340 /* 친구비.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "친구비.swift"; sourceTree = "<group>"; };
 		3BEBDD5A2BA08EDC0049A0D7 /* 119_Pascal'sTriangle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "119_Pascal'sTriangle2.swift"; sourceTree = "<group>"; };
+		3BFC12042C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "baekjoon_1260_DFS와BFS.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -437,6 +439,7 @@
 			isa = PBXGroup;
 			children = (
 				3B9C839A2C8A9C8D00FC8CA7 /* baekjoon_1012_유기농배추.swift */,
+				3BFC12042C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift */,
 			);
 			path = BFS;
 			sourceTree = "<group>";
@@ -777,6 +780,7 @@
 				3BBFE88D2C3CFFC300193B70 /* LV2_뉴스클러스터링.swift in Sources */,
 				3BB2F0772BA2F6EC00BDBA6B /* bakjun1015.swift in Sources */,
 				3B904CEC2C082F1A000BB8F9 /* Medium_GenerateParenthesis.swift in Sources */,
+				3BFC12052C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift in Sources */,
 				3BD188C32B614E24003AECAF /* 117_Populating Next Right Pointers in Each Node 2.swift in Sources */,
 				3B37E93F2BBEFDDC008ED66D /* LV2_HIndex.swift in Sources */,
 				3BC5F4EC2B59445D00D50BFA /* TreeNode.swift in Sources */,
