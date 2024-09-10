@@ -127,6 +127,7 @@
 		3BE71A6C2C5F0EAE00697340 /* 친구비.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE71A6B2C5F0EAE00697340 /* 친구비.swift */; };
 		3BEBDD5B2BA08EDC0049A0D7 /* 119_Pascal'sTriangle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEBDD5A2BA08EDC0049A0D7 /* 119_Pascal'sTriangle2.swift */; };
 		3BFC12052C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC12042C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift */; };
+		3BFC12072C8EABC300539814 /* Baekjoon_1927_Minheap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC12062C8EABC300539814 /* Baekjoon_1927_Minheap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -264,6 +265,7 @@
 		3BE71A6B2C5F0EAE00697340 /* 친구비.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "친구비.swift"; sourceTree = "<group>"; };
 		3BEBDD5A2BA08EDC0049A0D7 /* 119_Pascal'sTriangle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "119_Pascal'sTriangle2.swift"; sourceTree = "<group>"; };
 		3BFC12042C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "baekjoon_1260_DFS와BFS.swift"; sourceTree = "<group>"; };
+		3BFC12062C8EABC300539814 /* Baekjoon_1927_Minheap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baekjoon_1927_Minheap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,6 +452,7 @@
 				3B419AAD2B8F665F009F27F5 /* Helper */,
 				3BACD5962B727D5400881563 /* 506_Relative Ranks.swift */,
 				3BACD5992B73BF1A00881563 /* 2099_Find Subsequence of Lenght K.swift */,
+				3BFC12062C8EABC300539814 /* Baekjoon_1927_Minheap.swift */,
 				3BACD59B2B751B5200881563 /* 215_Largest Element_in_an_Array.swift */,
 				3B10B6442B7F9FB90040B941 /* 373_Find_K_Pairs_With.swift */,
 				3B08EBFE2B879DF300516EDF /* 502_IPO.swift */,
@@ -708,6 +711,7 @@
 				3B2D6EE42BCF597E00D510D6 /* LV2_전력망둘로나누기.swift in Sources */,
 				3B833C4D2C26847E004490C8 /* ParallelCoursesII.swift in Sources */,
 				3B6A75372BA3DB8900CD1D81 /* baekjun1063.swift in Sources */,
+				3BFC12072C8EABC300539814 /* Baekjoon_1927_Minheap.swift in Sources */,
 				3BD5332C2BCCB18800F1CE3C /* BellmanFord.swift in Sources */,
 				3B5ED6042C568F1300187397 /* LV2_과제진행하기.swift in Sources */,
 				3BA43B022BF07967007965B9 /* Medium_Combination.swift in Sources */,
