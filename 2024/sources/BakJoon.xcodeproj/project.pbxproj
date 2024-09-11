@@ -64,6 +64,8 @@
 		3B8E77802C72D12D00C61457 /* LV3_이중우선순위큐.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E777F2C72D12D00C61457 /* LV3_이중우선순위큐.swift */; };
 		3B904CEC2C082F1A000BB8F9 /* Medium_GenerateParenthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B904CEB2C082F1A000BB8F9 /* Medium_GenerateParenthesis.swift */; };
 		3B92973D2C50AF9700C96CCD /* Medium_TargetSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B92973C2C50AF9700C96CCD /* Medium_TargetSum.swift */; };
+		3B93CE542C913AA70051425E /* Hard_DistinctSubsequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93CE532C913AA70051425E /* Hard_DistinctSubsequences.swift */; };
+		3B93CE562C914F320051425E /* LV2_주차요금계산.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B93CE552C914F320051425E /* LV2_주차요금계산.swift */; };
 		3B9424FB2BE073350045E958 /* LV2_삼각달팽이.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9424FA2BE073350045E958 /* LV2_삼각달팽이.swift */; };
 		3B9C839B2C8A9C8E00FC8CA7 /* baekjoon_1012_유기농배추.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C839A2C8A9C8D00FC8CA7 /* baekjoon_1012_유기농배추.swift */; };
 		3B9CAF4E2C32E931007B0FFF /* wordBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9CAF4D2C32E931007B0FFF /* wordBreak.swift */; };
@@ -200,6 +202,8 @@
 		3B8E777F2C72D12D00C61457 /* LV3_이중우선순위큐.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV3_이중우선순위큐.swift"; sourceTree = "<group>"; };
 		3B904CEB2C082F1A000BB8F9 /* Medium_GenerateParenthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medium_GenerateParenthesis.swift; sourceTree = "<group>"; };
 		3B92973C2C50AF9700C96CCD /* Medium_TargetSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medium_TargetSum.swift; sourceTree = "<group>"; };
+		3B93CE532C913AA70051425E /* Hard_DistinctSubsequences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hard_DistinctSubsequences.swift; sourceTree = "<group>"; };
+		3B93CE552C914F320051425E /* LV2_주차요금계산.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_주차요금계산.swift"; sourceTree = "<group>"; };
 		3B9424FA2BE073350045E958 /* LV2_삼각달팽이.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_삼각달팽이.swift"; sourceTree = "<group>"; };
 		3B9C839A2C8A9C8D00FC8CA7 /* baekjoon_1012_유기농배추.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "baekjoon_1012_유기농배추.swift"; sourceTree = "<group>"; };
 		3B9CAF4D2C32E931007B0FFF /* wordBreak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordBreak.swift; sourceTree = "<group>"; };
@@ -325,6 +329,7 @@
 				3B3A246D2BB1B9770078F782 /* Lv2_Carpet.swift */,
 				3BE6E0FE2BB4674A001DDD4A /* LV2_N개 최소공배수.swift */,
 				3B9EA31E2BB5BE2A00668D2A /* LV3_깊이:너비 우선 탐색.swift */,
+				3B93CE552C914F320051425E /* LV2_주차요금계산.swift */,
 				3B186E592C44B9F400A03D5E /* LV2_skillTree.swift */,
 				3B4A72772C3E4B04003B17F5 /* LV2_N진수 게임.swift */,
 				3BAAC6B42C63046900CD88C7 /* LV4_자동완성.swift */,
@@ -534,6 +539,7 @@
 				3BBFE88A2C3CF96C00193B70 /* Medium_Best Time to Buy and Sell Stock with Cooldown.swift */,
 				3B8BD89C2C82B9900051D78B /* InterLeavingString.swift */,
 				3B46C32B2C869BF3000CE62F /* LongestIncreasingPath.swift */,
+				3B93CE532C913AA70051425E /* Hard_DistinctSubsequences.swift */,
 				3B92973C2C50AF9700C96CCD /* Medium_TargetSum.swift */,
 				3B29F7C12C3F7FB60023D5AC /* Medium_CoinChange2.swift */,
 			);
@@ -673,6 +679,7 @@
 				3B4DA5D12BD0AE01006E9784 /* LV2_모음사전.swift in Sources */,
 				3BD1889A2B600444003AECAF /* 116TreeNode.swift in Sources */,
 				3B1000172C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift in Sources */,
+				3B93CE542C913AA70051425E /* Hard_DistinctSubsequences.swift in Sources */,
 				3B5934EF2C7D778A005EF6A9 /* LV2_3차압축.swift in Sources */,
 				3B1CD0992BC8A95400855012 /* LV2_행렬의곱셈.swift in Sources */,
 				3BC1C1552B935DCE004A3D76 /* 977_Squares of a sorted array.swift in Sources */,
@@ -757,6 +764,7 @@
 				3BA43B042BF0E2FE007965B9 /* Medium_CombinationSum.swift in Sources */,
 				3B73FA1D2BC833430042AEE5 /* LV2_요격시스템.swift in Sources */,
 				3B762F0B2BD7298C0023741B /* LV2_숫자변환하기swift.swift in Sources */,
+				3B93CE562C914F320051425E /* LV2_주차요금계산.swift in Sources */,
 				3B8BD89D2C82B9900051D78B /* InterLeavingString.swift in Sources */,
 				3BB25B8D2B6BD445000C8A88 /* 1_Two Sum.swift in Sources */,
 				3BC5F4EA2B59443900D50BFA /* 965_Unvalued Binary Tree.swift in Sources */,
