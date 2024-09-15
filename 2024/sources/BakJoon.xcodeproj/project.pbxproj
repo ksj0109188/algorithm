@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B040CDF2C96771F00867A32 /* 색종이만들기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B040CDE2C96771F00867A32 /* 색종이만들기.swift */; };
 		3B08EBFF2B879DF300516EDF /* 502_IPO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08EBFE2B879DF300516EDF /* 502_IPO.swift */; };
 		3B1000172C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1000162C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift */; };
 		3B10B6452B7F9FB90040B941 /* 373_Find_K_Pairs_With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10B6442B7F9FB90040B941 /* 373_Find_K_Pairs_With.swift */; };
@@ -145,6 +146,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B040CDE2C96771F00867A32 /* 색종이만들기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "색종이만들기.swift"; sourceTree = "<group>"; };
 		3B08EBFE2B879DF300516EDF /* 502_IPO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 502_IPO.swift; sourceTree = "<group>"; };
 		3B1000162C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_마법의엘리베이터.swift"; sourceTree = "<group>"; };
 		3B10B6442B7F9FB90040B941 /* 373_Find_K_Pairs_With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 373_Find_K_Pairs_With.swift; sourceTree = "<group>"; };
@@ -508,6 +510,7 @@
 		3BBA87A12BEA830F0070F9F0 /* BackTracking */ = {
 			isa = PBXGroup;
 			children = (
+				3B040CDE2C96771F00867A32 /* 색종이만들기.swift */,
 			);
 			path = BackTracking;
 			sourceTree = "<group>";
@@ -706,6 +709,7 @@
 				3B46C3302C8812A3000CE62F /* baekjoon_11726_2n타일링.swift in Sources */,
 				3BD5332E2BCCBDDA00F1CE3C /* LV2_의상.swift in Sources */,
 				3BC7A9592BB707370015DFD6 /* LV2_예상 대진표.swift in Sources */,
+				3B040CDF2C96771F00867A32 /* 색종이만들기.swift in Sources */,
 				3B9CAF4E2C32E931007B0FFF /* wordBreak.swift in Sources */,
 				3BCBEEED2C12A9600002AA3D /* baekjoon1158.swift in Sources */,
 				3B5893312C85483E00BB738D /* 최소스패닝트리.swift in Sources */,
