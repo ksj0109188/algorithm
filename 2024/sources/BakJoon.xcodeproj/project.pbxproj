@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B040CDF2C96771F00867A32 /* 색종이만들기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B040CDE2C96771F00867A32 /* 색종이만들기.swift */; };
 		3B08EBFF2B879DF300516EDF /* 502_IPO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08EBFE2B879DF300516EDF /* 502_IPO.swift */; };
+		3B0A605F2C986C0A00E35AAC /* ConnectedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A605E2C986C0A00E35AAC /* ConnectedComponent.swift */; };
 		3B1000172C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1000162C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift */; };
 		3B10B6452B7F9FB90040B941 /* 373_Find_K_Pairs_With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10B6442B7F9FB90040B941 /* 373_Find_K_Pairs_With.swift */; };
 		3B1372B92B9A0C9400AA929E /* FiboNacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1372B82B9A0C9400AA929E /* FiboNacci.swift */; };
@@ -148,6 +149,7 @@
 /* Begin PBXFileReference section */
 		3B040CDE2C96771F00867A32 /* 색종이만들기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "색종이만들기.swift"; sourceTree = "<group>"; };
 		3B08EBFE2B879DF300516EDF /* 502_IPO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 502_IPO.swift; sourceTree = "<group>"; };
+		3B0A605E2C986C0A00E35AAC /* ConnectedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedComponent.swift; sourceTree = "<group>"; };
 		3B1000162C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_마법의엘리베이터.swift"; sourceTree = "<group>"; };
 		3B10B6442B7F9FB90040B941 /* 373_Find_K_Pairs_With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 373_Find_K_Pairs_With.swift; sourceTree = "<group>"; };
 		3B1372B82B9A0C9400AA929E /* FiboNacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiboNacci.swift; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 			isa = PBXGroup;
 			children = (
 				3B9C839A2C8A9C8D00FC8CA7 /* baekjoon_1012_유기농배추.swift */,
+				3B0A605E2C986C0A00E35AAC /* ConnectedComponent.swift */,
 				3BFC12042C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift */,
 			);
 			path = BFS;
@@ -738,6 +741,7 @@
 				3BA43B002BEFBE83007965B9 /* Medium_Permutations.swift in Sources */,
 				3B46C32C2C869BF3000CE62F /* LongestIncreasingPath.swift in Sources */,
 				3B1A10B32C167ABD00A3C0D3 /* NumberOfIslands.swift in Sources */,
+				3B0A605F2C986C0A00E35AAC /* ConnectedComponent.swift in Sources */,
 				3BAAC6B52C63046900CD88C7 /* LV4_자동완성.swift in Sources */,
 				3B8A785B2C2123C300FBAF5F /* CourseSchedule2.swift in Sources */,
 				3B3A246E2BB1B9770078F782 /* Lv2_Carpet.swift in Sources */,

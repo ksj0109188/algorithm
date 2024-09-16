@@ -534,4 +534,7 @@ let arr2 = [
 //print(주차요금계산().solution([120, 0, 60, 591], ["16:00 3961 IN","16:00 0202 IN","18:00 3961 OUT","18:00 0202 OUT","23:58 3961 IN"]))
 //print(주차요금계산().solution([1, 461, 1, 10], ["00:00 1234 IN"]))
 
-색종이만들기().solution()
+//색종이만들기().solution()
+
+// 9/16
+ConnectedComponent().solution()
