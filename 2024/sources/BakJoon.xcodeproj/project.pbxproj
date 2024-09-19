@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -275,6 +275,10 @@
 		3BFC12042C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "baekjoon_1260_DFS와BFS.swift"; sourceTree = "<group>"; };
 		3BFC12062C8EABC300539814 /* Baekjoon_1927_Minheap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baekjoon_1927_Minheap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3BACD8BC2C9BD75F00844E9B /* BinarySearch */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BinarySearch; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3BE3EBFC2AA6A2C500AE17CF /* Frameworks */ = {
@@ -599,6 +603,7 @@
 			isa = PBXGroup;
 			children = (
 				3BC1C15A2B93734A004A3D76 /* Media.xcassets */,
+				3BACD8BC2C9BD75F00844E9B /* BinarySearch */,
 				3BE3EC022AA6A2C500AE17CF /* main.swift */,
 				3B9C839C2C8A9C9400FC8CA7 /* BFS */,
 				3B5893322C85484100BB738D /* MinimumSpanningTree */,
@@ -635,6 +640,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3BACD8BC2C9BD75F00844E9B /* BinarySearch */,
 			);
 			name = BakJoon;
 			productName = BakJoon;

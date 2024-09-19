@@ -537,4 +537,6 @@ let arr2 = [
 //색종이만들기().solution()
 
 // 9/16
-ConnectedComponent().solution()
+//ConnectedComponent().solution()
+// 9/19
+TreesCutting().solution()
