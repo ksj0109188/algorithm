@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B040CDF2C96771F00867A32 /* 색종이만들기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B040CDE2C96771F00867A32 /* 색종이만들기.swift */; };
+		3B0500952CA25DE80021FB15 /* Hard_BurstBalloons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0500942CA25DE80021FB15 /* Hard_BurstBalloons.swift */; };
 		3B08EBFF2B879DF300516EDF /* 502_IPO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08EBFE2B879DF300516EDF /* 502_IPO.swift */; };
 		3B0A605F2C986C0A00E35AAC /* ConnectedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A605E2C986C0A00E35AAC /* ConnectedComponent.swift */; };
 		3B1000172C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1000162C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift */; };
@@ -149,6 +150,7 @@
 
 /* Begin PBXFileReference section */
 		3B040CDE2C96771F00867A32 /* 색종이만들기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "색종이만들기.swift"; sourceTree = "<group>"; };
+		3B0500942CA25DE80021FB15 /* Hard_BurstBalloons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hard_BurstBalloons.swift; sourceTree = "<group>"; };
 		3B08EBFE2B879DF300516EDF /* 502_IPO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 502_IPO.swift; sourceTree = "<group>"; };
 		3B0A605E2C986C0A00E35AAC /* ConnectedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedComponent.swift; sourceTree = "<group>"; };
 		3B1000162C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_마법의엘리베이터.swift"; sourceTree = "<group>"; };
@@ -555,6 +557,7 @@
 				3B8BD89C2C82B9900051D78B /* InterLeavingString.swift */,
 				3B46C32B2C869BF3000CE62F /* LongestIncreasingPath.swift */,
 				3B93CE532C913AA70051425E /* Hard_DistinctSubsequences.swift */,
+				3B0500942CA25DE80021FB15 /* Hard_BurstBalloons.swift */,
 				3B92973C2C50AF9700C96CCD /* Medium_TargetSum.swift */,
 				3B29F7C12C3F7FB60023D5AC /* Medium_CoinChange2.swift */,
 			);
@@ -751,6 +754,7 @@
 				3BE3EC032AA6A2C500AE17CF /* main.swift in Sources */,
 				3BD188902B5EC164003AECAF /* trying_653_TwoSum4_input is a BST.swift in Sources */,
 				3B186E5A2C44B9F400A03D5E /* LV2_skillTree.swift in Sources */,
+				3B0500952CA25DE80021FB15 /* Hard_BurstBalloons.swift in Sources */,
 				3BBA87A02BEA83090070F9F0 /* Medium_Letter Combinations.swift in Sources */,
 				3BA43B002BEFBE83007965B9 /* Medium_Permutations.swift in Sources */,
 				3B46C32C2C869BF3000CE62F /* LongestIncreasingPath.swift in Sources */,

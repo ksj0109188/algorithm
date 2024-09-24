@@ -544,4 +544,8 @@ let arr2 = [
 //SearchInsertPosition().searchInsert([1,3,5,6], 2)
 //SearchInsertPosition().searchInsert([1,3,5,6], 7)
 
-CompressPoint().solution()
+// 9/20
+//CompressPoint().solution()
+
+// 9/24
+print(BurstBallons().maxCoins([3,1,5,8]))
