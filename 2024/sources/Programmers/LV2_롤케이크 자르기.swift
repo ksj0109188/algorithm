@@ -60,5 +60,4 @@ class Solution_롤케이크자르기 {
 
         return result
     }
-
 }

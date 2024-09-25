@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B040CDF2C96771F00867A32 /* 색종이만들기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B040CDE2C96771F00867A32 /* 색종이만들기.swift */; };
 		3B0500952CA25DE80021FB15 /* Hard_BurstBalloons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0500942CA25DE80021FB15 /* Hard_BurstBalloons.swift */; };
+		3B05009B2CA3E0780021FB15 /* LV2_오픈채팅방.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B05009A2CA3E0780021FB15 /* LV2_오픈채팅방.swift */; };
 		3B08EBFF2B879DF300516EDF /* 502_IPO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08EBFE2B879DF300516EDF /* 502_IPO.swift */; };
 		3B0A605F2C986C0A00E35AAC /* ConnectedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A605E2C986C0A00E35AAC /* ConnectedComponent.swift */; };
 		3B1000172C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1000162C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift */; };
@@ -151,6 +152,7 @@
 /* Begin PBXFileReference section */
 		3B040CDE2C96771F00867A32 /* 색종이만들기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "색종이만들기.swift"; sourceTree = "<group>"; };
 		3B0500942CA25DE80021FB15 /* Hard_BurstBalloons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hard_BurstBalloons.swift; sourceTree = "<group>"; };
+		3B05009A2CA3E0780021FB15 /* LV2_오픈채팅방.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_오픈채팅방.swift"; sourceTree = "<group>"; };
 		3B08EBFE2B879DF300516EDF /* 502_IPO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 502_IPO.swift; sourceTree = "<group>"; };
 		3B0A605E2C986C0A00E35AAC /* ConnectedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedComponent.swift; sourceTree = "<group>"; };
 		3B1000162C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_마법의엘리베이터.swift"; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 				3B9EA31E2BB5BE2A00668D2A /* LV3_깊이:너비 우선 탐색.swift */,
 				3B93CE552C914F320051425E /* LV2_주차요금계산.swift */,
 				3B186E592C44B9F400A03D5E /* LV2_skillTree.swift */,
+				3B05009A2CA3E0780021FB15 /* LV2_오픈채팅방.swift */,
 				3B4A72772C3E4B04003B17F5 /* LV2_N진수 게임.swift */,
 				3BAAC6B42C63046900CD88C7 /* LV4_자동완성.swift */,
 				3BC4B9E52C3BB06500C53586 /* LV2_카카오개발자겨울인턴.swift */,
@@ -740,6 +743,7 @@
 				3B9424FB2BE073350045E958 /* LV2_삼각달팽이.swift in Sources */,
 				3B6A753B2BA5C8CC00CD1D81 /* baekjoon_1550_16진수.swift in Sources */,
 				3B2D6EE42BCF597E00D510D6 /* LV2_전력망둘로나누기.swift in Sources */,
+				3B05009B2CA3E0780021FB15 /* LV2_오픈채팅방.swift in Sources */,
 				3B833C4D2C26847E004490C8 /* ParallelCoursesII.swift in Sources */,
 				3B6A75372BA3DB8900CD1D81 /* baekjun1063.swift in Sources */,
 				3BFC12072C8EABC300539814 /* Baekjoon_1927_Minheap.swift in Sources */,
