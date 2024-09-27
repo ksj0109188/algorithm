@@ -548,4 +548,8 @@ let arr2 = [
 //CompressPoint().solution()
 
 // 9/24
-print(BurstBallons().maxCoins([3,1,5,8]))
+//print(BurstBallons().maxCoins([3,1,5,8]))
+
+// 9/27
+print(LV2_파일명정렬().solution(["img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"]))
+//LV2_파일명정렬().solution(<#T##files: [String]##[String]#>)
