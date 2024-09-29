@@ -63,51 +63,52 @@ struct LV2_파일명정렬 {
     //}
     
     func solution(_ files:[String]) -> [String] {
-         
-         // 파일명을 HEAD, NUMBER, TAIL로 나누는 함수
-         func splitFile(_ file: String) -> (String, Int, String) {
-             var head = ""
-             var number = ""
-             var tail = ""
-             var isNumberPart = false
-
-             for char in file {
-                 if char.isNumber && !isNumberPart {
-                     // 숫자가 시작되는 순간
-                     isNumberPart = true
-                 }
-
-                 if !isNumberPart {
-                     head.append(char)
-                 } else if char.isNumber && number.count < 5 {
-                     // 최대 5자리 숫자를 처리
-                     number.append(char)
-                 } else {
-                     // 숫자 이후는 tail
-                     tail.append(char)
-                 }
-             }
-
-             // 숫자는 Int로 변환 (앞의 0을 무시)
-             return (head, Int(number) ?? 0, tail)
-         }
-         
-         // 실제 정렬
-         return files.sorted {
-             let (head0, num0, _) = splitFile($0)
-             let (head1, num1, _) = splitFile($1)
-             
-             // HEAD 비교 (대소문자 구분 없이)
-             if head0.lowercased() != head1.lowercased() {
-                 return head0.lowercased() < head1.lowercased()
-             }
-             
-             // NUMBER 비교
-             if num0 != num1 {
-                 return num0 < num1
-             }
-             
-             // 원래 순서 유지
-             return false
-         }
+        
+        // 파일명을 HEAD, NUMBER, TAIL로 나누는 함수
+        func splitFile(_ file: String) -> (String, Int, String) {
+            var head = ""
+            var number = ""
+            var tail = ""
+            var isNumberPart = false
+            
+            for char in file {
+                if char.isNumber && !isNumberPart {
+                    // 숫자가 시작되는 순간
+                    isNumberPart = true
+                }
+                
+                if !isNumberPart {
+                    head.append(char)
+                } else if char.isNumber && number.count < 5 {
+                    // 최대 5자리 숫자를 처리
+                    number.append(char)
+                } else {
+                    // 숫자 이후는 tail
+                    tail.append(char)
+                }
+            }
+            
+            // 숫자는 Int로 변환 (앞의 0을 무시)
+            return (head, Int(number) ?? 0, tail)
+        }
+        
+        // 실제 정렬
+        return files.sorted {
+            let (head0, num0, _) = splitFile($0)
+            let (head1, num1, _) = splitFile($1)
+            
+            // HEAD 비교 (대소문자 구분 없이)
+            if head0.lowercased() != head1.lowercased() {
+                return head0.lowercased() < head1.lowercased()
+            }
+            
+            // NUMBER 비교
+            if num0 != num1 {
+                return num0 < num1
+            }
+            
+            // 원래 순서 유지
+            return false
+        }
+    }
 }

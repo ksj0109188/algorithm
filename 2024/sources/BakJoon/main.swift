@@ -551,5 +551,10 @@ let arr2 = [
 //print(BurstBallons().maxCoins([3,1,5,8]))
 
 // 9/27
-print(LV2_파일명정렬().solution(["img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"]))
+//print(LV2_파일명정렬().solution(["img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"]))
 //LV2_파일명정렬().solution(<#T##files: [String]##[String]#>)
+
+// 9/28
+//print(숨바꼭질().solution())
+//print(쉬운최단거리().solution())
+print(회의실배정().solution())
