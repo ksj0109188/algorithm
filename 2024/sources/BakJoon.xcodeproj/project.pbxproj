@@ -31,7 +31,8 @@
 		3B2D979D2C226C4300E20DBA /* LV3_가장먼노드.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2D979C2C226C4300E20DBA /* LV3_가장먼노드.swift */; };
 		3B2E59FF2BD1F529000443FD /* LV2_피로도.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E59FE2BD1F529000443FD /* LV2_피로도.swift */; };
 		3B2E80252CAD0728005C6C73 /* LV2_프렌즈4블록.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E80242CAD0728005C6C73 /* LV2_프렌즈4블록.swift */; };
-		3B2E80332CAE3735005C6C73 /* tomato2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E80322CAE3735005C6C73 /* tomato2.swift */; };
+		3B2E80332CAE3735005C6C73 /* baekjoon_7569_tomato2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E80322CAE3735005C6C73 /* baekjoon_7569_tomato2.swift */; };
+		3B2E80352CAEA2D4005C6C73 /* tomato1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E80342CAEA2D4005C6C73 /* tomato1.swift */; };
 		3B3098F62B8B7FA10028F704 /* 295_Median from data stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3098F52B8B7FA10028F704 /* 295_Median from data stream.swift */; };
 		3B335F962C2ACF8F001EFD4B /* LV2_2개이하로다른비트.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B335F952C2ACF8F001EFD4B /* LV2_2개이하로다른비트.swift */; };
 		3B3475792C23FBCC00D51462 /* SnakesAndLadders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3475782C23FBCC00D51462 /* SnakesAndLadders.swift */; };
@@ -179,7 +180,8 @@
 		3B2D979C2C226C4300E20DBA /* LV3_가장먼노드.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV3_가장먼노드.swift"; sourceTree = "<group>"; };
 		3B2E59FE2BD1F529000443FD /* LV2_피로도.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_피로도.swift"; sourceTree = "<group>"; };
 		3B2E80242CAD0728005C6C73 /* LV2_프렌즈4블록.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_프렌즈4블록.swift"; sourceTree = "<group>"; };
-		3B2E80322CAE3735005C6C73 /* tomato2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tomato2.swift; sourceTree = "<group>"; };
+		3B2E80322CAE3735005C6C73 /* baekjoon_7569_tomato2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baekjoon_7569_tomato2.swift; sourceTree = "<group>"; };
+		3B2E80342CAEA2D4005C6C73 /* tomato1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tomato1.swift; sourceTree = "<group>"; };
 		3B3098F52B8B7FA10028F704 /* 295_Median from data stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "295_Median from data stream.swift"; sourceTree = "<group>"; };
 		3B335F952C2ACF8F001EFD4B /* LV2_2개이하로다른비트.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_2개이하로다른비트.swift"; sourceTree = "<group>"; };
 		3B3475782C23FBCC00D51462 /* SnakesAndLadders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakesAndLadders.swift; sourceTree = "<group>"; };
@@ -480,7 +482,8 @@
 				3B0A605E2C986C0A00E35AAC /* ConnectedComponent.swift */,
 				3BFC12042C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift */,
 				3B0500A62CA836690021FB15 /* 숨바꼭질.swift */,
-				3B2E80322CAE3735005C6C73 /* tomato2.swift */,
+				3B2E80322CAE3735005C6C73 /* baekjoon_7569_tomato2.swift */,
+				3B2E80342CAEA2D4005C6C73 /* tomato1.swift */,
 				3B61DC932CA9032600924CD2 /* 쉬운 최단거리.swift */,
 			);
 			path = BFS;
@@ -731,11 +734,12 @@
 				3BD533702BCDFE2300F1CE3C /* LV2_소수찾기.swift in Sources */,
 				3BCAC4B42B6291090042FED1 /* 130_Surrounded_Regions.swift in Sources */,
 				3BC7B8522C39671F004DF62A /* LV2_캐시.swift in Sources */,
-				3B2E80332CAE3735005C6C73 /* tomato2.swift in Sources */,
+				3B2E80332CAE3735005C6C73 /* baekjoon_7569_tomato2.swift in Sources */,
 				3BACD5972B727D5400881563 /* 506_Relative Ranks.swift in Sources */,
 				3BA9A36F2C783111003DBC0B /* LV2_도넛과막대그래프.swift in Sources */,
 				3B7F22C02BA73CD9002964E5 /* leetCode_198_Robber.swift in Sources */,
 				3B37E93D2BBDA844008ED66D /* LV2_배열자르기.swift in Sources */,
+				3B2E80352CAEA2D4005C6C73 /* tomato1.swift in Sources */,
 				3B25700C2C094DFB002D4CC4 /* Hard_NQueens2.swift in Sources */,
 				3BD2CD862BAB32080072AC13 /* baekjoon_10451.swift in Sources */,
 				3BE6E0FF2BB4674A001DDD4A /* LV2_N개 최소공배수.swift in Sources */,

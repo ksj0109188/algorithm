@@ -1,22 +1,11 @@
 //
-//  tomato2.swift
+//  tomato1.swift
 //  BakJoon
 //
 //  Created by 김성준 on 10/3/24.
 //
 
 import Foundation
-
-struct tomato2 {
-    func solution() {
-        let input = readLine()!.split(separator: " ").map{ Int($0)!}
-        let m = input[0]
-        let n = input[1]
-        let h = input[2]
-           
-        
-    }
-}
 
 struct tomato1 {
     func solution() {
