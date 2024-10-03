@@ -600,4 +600,6 @@ let arr2 = [
 //}
 
 
-LV2_프렌즈4블록().solution(6, 6, ["TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMF", "TMMTTJ"])
+//print(LV2_프렌즈4블록().solution(6, 6, ["TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMF", "TMMTTJ"]))
+tomato1().solution()
+
