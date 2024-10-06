@@ -145,7 +145,7 @@ import Combine
 //print(Solution55().canJump(nums))
 //print(Solution198().rob([1,2,3,1]))
 //print(Solution198.ImprovedSolution().rob([1,2,3,1]))
-    
+
 
 
 // 예제 실행
@@ -204,25 +204,25 @@ import Combine
 
 // 4/15
 /** 벨만포드 알고리즘 테스트
-// 0:S / 1:E / 2:A / 3:D / 4:B / 5:C
-let graph = [(u: 0, v: 1, weight: 8), (u: 0, v: 2, weight: 10),
-             (u: 1, v: 3, weight: 1),
-             (u: 2, v: 5, weight: 2),
-             (u: 3, v: 2, weight: -4), (u: 3, v: 5, weight: -1),
-             (u: 4, v: 2, weight: 1),
-             (u: 5, v: 4, weight: -2)
-            ]
-let vertices = 6
-let source = 0x
-
-let distances = BellmanFord().bellmanFord(graph: graph, vertices: vertices, source: source)
-
-if !distances.isEmpty {
-    for (index, distance) in distances.enumerated() {
-        print("Distance from node \(source) to node \(index) is \(distance)")
-    }
-}
-*/
+ // 0:S / 1:E / 2:A / 3:D / 4:B / 5:C
+ let graph = [(u: 0, v: 1, weight: 8), (u: 0, v: 2, weight: 10),
+ (u: 1, v: 3, weight: 1),
+ (u: 2, v: 5, weight: 2),
+ (u: 3, v: 2, weight: -4), (u: 3, v: 5, weight: -1),
+ (u: 4, v: 2, weight: 1),
+ (u: 5, v: 4, weight: -2)
+ ]
+ let vertices = 6
+ let source = 0x
+ 
+ let distances = BellmanFord().bellmanFord(graph: graph, vertices: vertices, source: source)
+ 
+ if !distances.isEmpty {
+ for (index, distance) in distances.enumerated() {
+ print("Distance from node \(source) to node \(index) is \(distance)")
+ }
+ }
+ */
 
 //print(LV2_의상().solution([["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]]))
 //print(LV2_의상().solution([["crow_mask", "face"], ["blue_sunglasses", "face"], ["smoky_makeup", "face"]]))
@@ -291,7 +291,7 @@ if !distances.isEmpty {
 //print(danawha_03().solution(6, [30000,70000, 10000]))
 //danawha_04().solution(4, 5, 5, 10, [])
 //print(danawha_05().solution(30, 10, ["1 enter", "5 enter", "8 cancel 0", "22 enter", "24 cancel 2", "27 enter" ])) //[1,3 출력되야하고]
-//print(danawha_05().solution(23, 5, ["2 enter", "4 enter", "12 enter", "14 cancel 2", "21 enter" ])) //[0,1] 출력 
+//print(danawha_05().solution(23, 5, ["2 enter", "4 enter", "12 enter", "14 cancel 2", "21 enter" ])) //[0,1] 출력
 
 
 // 5/30
@@ -372,39 +372,39 @@ if !distances.isEmpty {
 //    let n = 5
 //    let k = 2
 //    let m = 5
-//    
+//
 //    let items = [[4,5], [3,4], [2, 1], [5, 7], [1,1]] // 13
 //    var usedSupplys: [Bool] = [Bool](repeating: false, count: items.count)
-//    
+//
 //    func dfs(_ list: [[Int]], _ currentWeight: Int, _ currentValue: Int, _ value: Int) -> Int {
 //        if currentWeight > m {
 //            return currentValue
 //        }
-//        
+//
 //        let currentValue = currentValue + value
 //        var result = 0
-//        
+//
 //        for item in list {
 //            let w = item[0]
 //            let v = item[1]
-//            
+//
 //            // 최대 값의 경로 인덱스를 저장해야 할거 같은데?
 //            // 매 dfs마다 최대 값의 인덱스를 변경해줘야 한다면, 그 전에 있던 것들은 어떻게 해야할까?
 //            // 2차원 배열을 활용하면 어떨까
 //            result = max(result, dfs(currentWeight + w, currentValue, v))
 //        }
-//        
+//
 //        return result
 //    }
-//    
+//
 //    var returnValue = 0
 //    var remainItems = items
-//    
+//
 //    for _ in 0..<k {
 //        let removedItem = remainItems.removeFirst()
 //        returnValue += dfs(remainItems, removedItem[0], removedItem[1], 0)
 //    }
-//    
+//
 //}
 
 //let n = 10
@@ -571,12 +571,12 @@ let arr2 = [
 //        var count = 0
 //        var isCompleted = false
 //        dfs(0, 0, r, c, size, &count, isCompleted: &isCompleted)
-//        
+//
 //    }
-//    
+//
 //    func dfs(_ startX: Int, _ startY: Int, _ targetX: Int, _ targetY: Int, _ size: Int, _ count: inout Int, isCompleted: inout Bool) {
 //        guard size > 1 else { return }
-//        
+//
 //        if size == 2 {
 //            for i in startX..<startX + size {
 //                for j in startY..<startY + size {
@@ -588,7 +588,7 @@ let arr2 = [
 //                }
 //            }
 //        }
-//        
+//
 //        if !isCompleted {
 //            let nextSize = size / 2
 //            dfs(startX, startY, targetX, targetY, nextSize, &count, isCompleted: &isCompleted)
@@ -603,4 +603,7 @@ let arr2 = [
 //print(LV2_프렌즈4블록().solution(6, 6, ["TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMF", "TMMTTJ"]))
 //tomato1().solution()
 
-baekjoon_7569_tomato2().solution()
+//baekjoon_7569_tomato2().solution()
+
+// 10 / 6
+baekjoon_AC().solution()
