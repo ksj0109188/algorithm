@@ -295,6 +295,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		3B041E722CB255BC00A86E75 /* 분할정복 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "분할정복"; sourceTree = "<group>"; };
 		3B61DC972CA91FEF00924CD2 /* Sort */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Sort; sourceTree = "<group>"; };
 		3BACD8BC2C9BD75F00844E9B /* BinarySearch */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BinarySearch; sourceTree = "<group>"; };
 		3BACD8BF2C9C016400844E9B /* BinarySearch */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BinarySearch; sourceTree = "<group>"; };
@@ -641,6 +642,7 @@
 				3B5893322C85484100BB738D /* MinimumSpanningTree */,
 				3BE71A6D2C5F0EB400697340 /* UnionFind */,
 				3BBA87A12BEA830F0070F9F0 /* BackTracking */,
+				3B041E722CB255BC00A86E75 /* 분할정복 */,
 				3B3A246B2BAF2EB80078F782 /* Sting */,
 				3BFEEAEA2CB2539C003311F9 /* TwoPointer */,
 				3BB2F0782BA2F6F500BDBA6B /* Implements */,
@@ -675,6 +677,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				3B041E722CB255BC00A86E75 /* 분할정복 */,
 				3B61DC972CA91FEF00924CD2 /* Sort */,
 				3BACD8BC2C9BD75F00844E9B /* BinarySearch */,
 				3BACD8BF2C9C016400844E9B /* BinarySearch */,
