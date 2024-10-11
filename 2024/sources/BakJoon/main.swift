@@ -573,18 +573,7 @@ let arr2 = [
 
 // 10/9
 
-var a = [2, 4, 1, 3, 4, 6, 2, 4, 1, 6]
-var b = [5, 1, 2, 6, 6, 1, 3, 1, 4, 3, 4, 3, 4, 6, 1, 2, 4, 1, 6, 2]
-var c = [1, 5, 3, 3, 1, 3]
-var d = [3, 4]
-var e = [1,2,2,3,3,4,4,5]
-//
-print(KaKaoMobility().solution(&a))
-print(KaKaoMobility().solution(&b))
-print(KaKaoMobility().solution(&c))
-print(KaKaoMobility().solution(&d))
-print(KaKaoMobility().solution(&e))
-
 //LIS_Solution().lengthOfLIS_BinarySearch([10,9,2,5,3,7,101,18])
 //LIS_Solution().lengthOfLIS_DP([10,9,2,5,3,7,101,18])
 
+N과M_2().solution()

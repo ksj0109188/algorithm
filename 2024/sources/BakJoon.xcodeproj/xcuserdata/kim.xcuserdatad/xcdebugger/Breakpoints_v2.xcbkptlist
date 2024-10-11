@@ -23,17 +23,63 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DA4512FF-00FB-47DF-84A7-DF29333F7541"
+            uuid = "12D2DAB9-5E12-4F17-A08D-18CFB25CBA2C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KaKaoMobility.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "solution(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D662201F-38F1-479D-8D26-08DE4E29095C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BakJoon/BackTracking/Permutation/N&#x1100;&#x116a;M_2.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "backtrack(_:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "D662201F-38F1-479D-8D26-08DE4E29095C - e4a759fd3584611d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "backtrack(Swift.Int) -&gt; ()"
+                  moduleName = "BakJoon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kim/Documents/IOS/algorithm/2024/sources/BakJoon/BackTracking/Permutation/N%E1%84%80%E1%85%AAM_2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27">
+               </Location>
+               <Location
+                  uuid = "D662201F-38F1-479D-8D26-08DE4E29095C - e4a759fd3584611d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "backtrack(Swift.Int) -&gt; ()"
+                  moduleName = "BakJoon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kim/Documents/IOS/algorithm/2024/sources/BakJoon/BackTracking/Permutation/N%E1%84%80%E1%85%AAM_2.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
