@@ -19,7 +19,7 @@ class 최소스패닝트리 {
         }
         
         mutating func find(_ x: Int) -> Int {
-            if parent[x] != x {
+            if parent[x] != x { // 루트노드가 아니라면
                 parent[x] = find(parent[x])  // Path compression
             }
             return parent[x]

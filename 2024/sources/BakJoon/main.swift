@@ -576,4 +576,9 @@ let arr2 = [
 //LIS_Solution().lengthOfLIS_BinarySearch([10,9,2,5,3,7,101,18])
 //LIS_Solution().lengthOfLIS_DP([10,9,2,5,3,7,101,18])
 
-N과M_2().solution()
+// 10/11
+//N과M_2().solution()
+
+// 10/12
+//N과M_4().solution()
+N과M_5().solution()
