@@ -581,4 +581,7 @@ let arr2 = [
 
 // 10/12
 //N과M_4().solution()
-N과M_5().solution()
+//N과M_5().solution()
+
+// 10/13
+친구비().solution()

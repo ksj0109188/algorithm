@@ -137,7 +137,6 @@
 		3BE3EC032AA6A2C500AE17CF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE3EC022AA6A2C500AE17CF /* main.swift */; };
 		3BE6E0FD2BB45B3E001DDD4A /* Lv2_영어 끝말잇기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6E0FC2BB45B3E001DDD4A /* Lv2_영어 끝말잇기.swift */; };
 		3BE6E0FF2BB4674A001DDD4A /* LV2_N개 최소공배수.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE6E0FE2BB4674A001DDD4A /* LV2_N개 최소공배수.swift */; };
-		3BE71A6C2C5F0EAE00697340 /* 친구비.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE71A6B2C5F0EAE00697340 /* 친구비.swift */; };
 		3BEBDD5B2BA08EDC0049A0D7 /* 119_Pascal'sTriangle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEBDD5A2BA08EDC0049A0D7 /* 119_Pascal'sTriangle2.swift */; };
 		3BFC12052C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC12042C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift */; };
 		3BFC12072C8EABC300539814 /* Baekjoon_1927_Minheap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC12062C8EABC300539814 /* Baekjoon_1927_Minheap.swift */; };
@@ -288,7 +287,6 @@
 		3BE3EC022AA6A2C500AE17CF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3BE6E0FC2BB45B3E001DDD4A /* Lv2_영어 끝말잇기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lv2_영어 끝말잇기.swift"; sourceTree = "<group>"; };
 		3BE6E0FE2BB4674A001DDD4A /* LV2_N개 최소공배수.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_N개 최소공배수.swift"; sourceTree = "<group>"; };
-		3BE71A6B2C5F0EAE00697340 /* 친구비.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "친구비.swift"; sourceTree = "<group>"; };
 		3BEBDD5A2BA08EDC0049A0D7 /* 119_Pascal'sTriangle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "119_Pascal'sTriangle2.swift"; sourceTree = "<group>"; };
 		3BFC12042C8E91F500539814 /* baekjoon_1260_DFS와BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "baekjoon_1260_DFS와BFS.swift"; sourceTree = "<group>"; };
 		3BFC12062C8EABC300539814 /* Baekjoon_1927_Minheap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baekjoon_1927_Minheap.swift; sourceTree = "<group>"; };
@@ -297,6 +295,7 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3B041E722CB255BC00A86E75 /* 분할정복 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "분할정복"; sourceTree = "<group>"; };
 		3B2C81B42CB8DEA200E79FA1 /* Permutation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Permutation; sourceTree = "<group>"; };
+		3B2C81E22CBBAC5700E79FA1 /* UnionFind */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = UnionFind; sourceTree = "<group>"; };
 		3B61DC972CA91FEF00924CD2 /* Sort */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Sort; sourceTree = "<group>"; };
 		3BACD8BC2C9BD75F00844E9B /* BinarySearch */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BinarySearch; sourceTree = "<group>"; };
 		3BACD8BF2C9C016400844E9B /* BinarySearch */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BinarySearch; sourceTree = "<group>"; };
@@ -636,13 +635,13 @@
 		3BE3EC012AA6A2C500AE17CF /* BakJoon */ = {
 			isa = PBXGroup;
 			children = (
+				3B2C81E22CBBAC5700E79FA1 /* UnionFind */,
 				3BC1C15A2B93734A004A3D76 /* Media.xcassets */,
 				3BACD8BC2C9BD75F00844E9B /* BinarySearch */,
 				3BE3EC022AA6A2C500AE17CF /* main.swift */,
 				3B61DC972CA91FEF00924CD2 /* Sort */,
 				3B9C839C2C8A9C9400FC8CA7 /* BFS */,
 				3B5893322C85484100BB738D /* MinimumSpanningTree */,
-				3BE71A6D2C5F0EB400697340 /* UnionFind */,
 				3BBA87A12BEA830F0070F9F0 /* BackTracking */,
 				3B041E722CB255BC00A86E75 /* 분할정복 */,
 				3B3A246B2BAF2EB80078F782 /* Sting */,
@@ -653,14 +652,6 @@
 				3B1372BA2B9A0C9A00AA929E /* DP1 */,
 			);
 			path = BakJoon;
-			sourceTree = "<group>";
-		};
-		3BE71A6D2C5F0EB400697340 /* UnionFind */ = {
-			isa = PBXGroup;
-			children = (
-				3BE71A6B2C5F0EAE00697340 /* 친구비.swift */,
-			);
-			path = UnionFind;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -681,6 +672,7 @@
 			fileSystemSynchronizedGroups = (
 				3B041E722CB255BC00A86E75 /* 분할정복 */,
 				3B2C81B42CB8DEA200E79FA1 /* Permutation */,
+				3B2C81E22CBBAC5700E79FA1 /* UnionFind */,
 				3B61DC972CA91FEF00924CD2 /* Sort */,
 				3BACD8BC2C9BD75F00844E9B /* BinarySearch */,
 				3BACD8BF2C9C016400844E9B /* BinarySearch */,
@@ -739,7 +731,6 @@
 				3B5934EF2C7D778A005EF6A9 /* LV2_3차압축.swift in Sources */,
 				3B1CD0992BC8A95400855012 /* LV2_행렬의곱셈.swift in Sources */,
 				3BC1C1552B935DCE004A3D76 /* 977_Squares of a sorted array.swift in Sources */,
-				3BE71A6C2C5F0EAE00697340 /* 친구비.swift in Sources */,
 				3BD533702BCDFE2300F1CE3C /* LV2_소수찾기.swift in Sources */,
 				3BCAC4B42B6291090042FED1 /* 130_Surrounded_Regions.swift in Sources */,
 				3BC7B8522C39671F004DF62A /* LV2_캐시.swift in Sources */,
