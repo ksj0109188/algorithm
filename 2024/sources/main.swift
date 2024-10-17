@@ -584,4 +584,35 @@ let arr2 = [
 //N과M_5().solution()
 
 // 10/13
-친구비().solution()
+//친구비().solution()
+
+// 10/16
+//_11053().solution2()
+//C1001().solution(5, 8) // 2
+//C1001().solution(4, 10) // 4
+//C1001().solution(1, 2) // -1
+//C1001().solution(10, 5) // 1
+//C1001().solution(666666, 1_000_000_000) // 1
+
+//print(C1001().imporveSolution(5, 8) )// 2
+//print(C1001().imporveSolution(5, 9) )// 2
+//print(C1001().imporveSolution(5, 10) )// 2
+//print(C1001().imporveSolution(5, 11) )// 2
+//print(C1001().imporveSolution(5, 12) )// 2
+//print(C1001().imporveSolution(5, 13) )// 2
+//print(C1001().imporveSolution(5, 14) )// 2
+//print(C1001().imporveSolution(5, 15) )// 2
+//print(C1001().imporveSolution(5, 16) )// 2
+//var s1 = "011100"
+//var s2 = "111"
+//var s3 = "1111010101111"
+//
+//print(C1002().solution(&s1))
+//print(C1002().solution(&s2))
+//print(C1002().solution(&s3))
+//print(C1002().solution2(&s1))
+//print(C1002().solution2(&s2))
+//print(C1002().solution2(&s3))
+
+// 10/17
+트리의부모찾기_11725().solution()

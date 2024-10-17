@@ -67,6 +67,7 @@
 		3B762F152BD899580023741B /* LV2_프로세스.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B762F142BD899580023741B /* LV2_프로세스.swift */; };
 		3B7F22BE2BA720A8002964E5 /* leetCode_55_Jump Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F22BD2BA720A8002964E5 /* leetCode_55_Jump Game.swift */; };
 		3B7F22C02BA73CD9002964E5 /* leetCode_198_Robber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F22BF2BA73CD9002964E5 /* leetCode_198_Robber.swift */; };
+		3B8097522CBF3F04000A053D /* 11053.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8097512CBF3F04000A053D /* 11053.swift */; };
 		3B833C4D2C26847E004490C8 /* ParallelCoursesII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B833C4C2C26847E004490C8 /* ParallelCoursesII.swift */; };
 		3B86552F2C191E56009D0008 /* EvaluateDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B86552E2C191E56009D0008 /* EvaluateDivision.swift */; };
 		3B887F512C2A583F002AE1F0 /* CountSubArrSumOfX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B887F502C2A583F002AE1F0 /* CountSubArrSumOfX.swift */; };
@@ -215,6 +216,7 @@
 		3B762F142BD899580023741B /* LV2_프로세스.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_프로세스.swift"; sourceTree = "<group>"; };
 		3B7F22BD2BA720A8002964E5 /* leetCode_55_Jump Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "leetCode_55_Jump Game.swift"; sourceTree = "<group>"; };
 		3B7F22BF2BA73CD9002964E5 /* leetCode_198_Robber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leetCode_198_Robber.swift; sourceTree = "<group>"; };
+		3B8097512CBF3F04000A053D /* 11053.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11053.swift; sourceTree = "<group>"; };
 		3B833C4C2C26847E004490C8 /* ParallelCoursesII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallelCoursesII.swift; sourceTree = "<group>"; };
 		3B86552E2C191E56009D0008 /* EvaluateDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluateDivision.swift; sourceTree = "<group>"; };
 		3B887F502C2A583F002AE1F0 /* CountSubArrSumOfX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountSubArrSumOfX.swift; sourceTree = "<group>"; };
@@ -294,9 +296,11 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3B041E722CB255BC00A86E75 /* 분할정복 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "분할정복"; sourceTree = "<group>"; };
+		3B1399952CC0908A00E1292F /* Tree */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Tree; sourceTree = "<group>"; };
 		3B2C81B42CB8DEA200E79FA1 /* Permutation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Permutation; sourceTree = "<group>"; };
 		3B2C81E22CBBAC5700E79FA1 /* UnionFind */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = UnionFind; sourceTree = "<group>"; };
 		3B61DC972CA91FEF00924CD2 /* Sort */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Sort; sourceTree = "<group>"; };
+		3B8097572CBF6AE8000A053D /* Test */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Test; sourceTree = "<group>"; };
 		3BACD8BC2C9BD75F00844E9B /* BinarySearch */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BinarySearch; sourceTree = "<group>"; };
 		3BACD8BF2C9C016400844E9B /* BinarySearch */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BinarySearch; sourceTree = "<group>"; };
 		3BFEEAEA2CB2539C003311F9 /* TwoPointer */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TwoPointer; sourceTree = "<group>"; };
@@ -550,6 +554,7 @@
 			children = (
 				3B2C81B42CB8DEA200E79FA1 /* Permutation */,
 				3B040CDE2C96771F00867A32 /* 색종이만들기.swift */,
+				3B8097512CBF3F04000A053D /* 11053.swift */,
 			);
 			path = BackTracking;
 			sourceTree = "<group>";
@@ -617,6 +622,8 @@
 		3BE3EBF62AA6A2C500AE17CF = {
 			isa = PBXGroup;
 			children = (
+				3BE3EC022AA6A2C500AE17CF /* main.swift */,
+				3B8097572CBF6AE8000A053D /* Test */,
 				3B904CE92C082E48000BB8F9 /* LeetCode */,
 				3B3A246C2BB1B95D0078F782 /* Programmers */,
 				3BE3EC012AA6A2C500AE17CF /* BakJoon */,
@@ -638,7 +645,6 @@
 				3B2C81E22CBBAC5700E79FA1 /* UnionFind */,
 				3BC1C15A2B93734A004A3D76 /* Media.xcassets */,
 				3BACD8BC2C9BD75F00844E9B /* BinarySearch */,
-				3BE3EC022AA6A2C500AE17CF /* main.swift */,
 				3B61DC972CA91FEF00924CD2 /* Sort */,
 				3B9C839C2C8A9C9400FC8CA7 /* BFS */,
 				3B5893322C85484100BB738D /* MinimumSpanningTree */,
@@ -650,6 +656,7 @@
 				3BACD5982B727D5F00881563 /* Prioirty Queue */,
 				3BC1C1562B935DF1004A3D76 /* ShortestPath */,
 				3B1372BA2B9A0C9A00AA929E /* DP1 */,
+				3B1399952CC0908A00E1292F /* Tree */,
 			);
 			path = BakJoon;
 			sourceTree = "<group>";
@@ -671,9 +678,11 @@
 			);
 			fileSystemSynchronizedGroups = (
 				3B041E722CB255BC00A86E75 /* 분할정복 */,
+				3B1399952CC0908A00E1292F /* Tree */,
 				3B2C81B42CB8DEA200E79FA1 /* Permutation */,
 				3B2C81E22CBBAC5700E79FA1 /* UnionFind */,
 				3B61DC972CA91FEF00924CD2 /* Sort */,
+				3B8097572CBF6AE8000A053D /* Test */,
 				3BACD8BC2C9BD75F00844E9B /* BinarySearch */,
 				3BACD8BF2C9C016400844E9B /* BinarySearch */,
 				3BFEEAEA2CB2539C003311F9 /* TwoPointer */,
@@ -745,6 +754,7 @@
 				3BE6E0FF2BB4674A001DDD4A /* LV2_N개 최소공배수.swift in Sources */,
 				3B9C839B2C8A9C8E00FC8CA7 /* baekjoon_1012_유기농배추.swift in Sources */,
 				3B335F962C2ACF8F001EFD4B /* LV2_2개이하로다른비트.swift in Sources */,
+				3B8097522CBF3F04000A053D /* 11053.swift in Sources */,
 				3BC4B9E62C3BB06500C53586 /* LV2_카카오개발자겨울인턴.swift in Sources */,
 				3BC4B9E12C3B7F3C00C53586 /* 62_Unique_Paths.swift in Sources */,
 				3B5F60B22BBC3BE900C5DFAE /* LV2_할인 행사.swift in Sources */,
