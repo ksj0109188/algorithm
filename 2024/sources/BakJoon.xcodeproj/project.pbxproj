@@ -299,8 +299,9 @@
 		3B1399952CC0908A00E1292F /* Tree */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Tree; sourceTree = "<group>"; };
 		3B2C81B42CB8DEA200E79FA1 /* Permutation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Permutation; sourceTree = "<group>"; };
 		3B2C81E22CBBAC5700E79FA1 /* UnionFind */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = UnionFind; sourceTree = "<group>"; };
+		3B5387A32CC1FF3B00772ECC /* Algorithm */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Algorithm; sourceTree = "<group>"; };
 		3B61DC972CA91FEF00924CD2 /* Sort */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Sort; sourceTree = "<group>"; };
-		3B8097572CBF6AE8000A053D /* Test */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Test; sourceTree = "<group>"; };
+		3B8097572CBF6AE8000A053D /* RealTest */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = RealTest; sourceTree = "<group>"; };
 		3BACD8BC2C9BD75F00844E9B /* BinarySearch */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BinarySearch; sourceTree = "<group>"; };
 		3BACD8BF2C9C016400844E9B /* BinarySearch */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BinarySearch; sourceTree = "<group>"; };
 		3BFEEAEA2CB2539C003311F9 /* TwoPointer */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TwoPointer; sourceTree = "<group>"; };
@@ -623,10 +624,11 @@
 			isa = PBXGroup;
 			children = (
 				3BE3EC022AA6A2C500AE17CF /* main.swift */,
-				3B8097572CBF6AE8000A053D /* Test */,
+				3B8097572CBF6AE8000A053D /* RealTest */,
 				3B904CE92C082E48000BB8F9 /* LeetCode */,
 				3B3A246C2BB1B95D0078F782 /* Programmers */,
 				3BE3EC012AA6A2C500AE17CF /* BakJoon */,
+				3B5387A32CC1FF3B00772ECC /* Algorithm */,
 				3BE3EC002AA6A2C500AE17CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -681,8 +683,9 @@
 				3B1399952CC0908A00E1292F /* Tree */,
 				3B2C81B42CB8DEA200E79FA1 /* Permutation */,
 				3B2C81E22CBBAC5700E79FA1 /* UnionFind */,
+				3B5387A32CC1FF3B00772ECC /* Algorithm */,
 				3B61DC972CA91FEF00924CD2 /* Sort */,
-				3B8097572CBF6AE8000A053D /* Test */,
+				3B8097572CBF6AE8000A053D /* RealTest */,
 				3BACD8BC2C9BD75F00844E9B /* BinarySearch */,
 				3BACD8BF2C9C016400844E9B /* BinarySearch */,
 				3BFEEAEA2CB2539C003311F9 /* TwoPointer */,

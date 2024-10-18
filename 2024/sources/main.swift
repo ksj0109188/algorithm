@@ -615,4 +615,10 @@ let arr2 = [
 //print(C1002().solution2(&s3))
 
 // 10/17
-트리의부모찾기_11725().solution()
+//트리의부모찾기_11725().solution()
+
+// 10 / 18
+//N과M_15663().solution()
+print(KMP().makeLPS(substring: "AAACAAAA"))
+print(KMP().makeLPS(substring: "abcbca"))
+
