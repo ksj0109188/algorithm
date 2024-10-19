@@ -619,6 +619,9 @@ let arr2 = [
 
 // 10 / 18
 //N과M_15663().solution()
-print(KMP().makeLPS(substring: "AAACAAAA"))
-print(KMP().makeLPS(substring: "abcbca"))
+//print(KMP().makeLPS(substring: "AAACAAAA"))
+//print(KMP().makeLPS(substring: "abcbca"))
+
+// 10 /19
+N과M12_15666().solution()
 
