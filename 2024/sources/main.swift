@@ -623,5 +623,7 @@ let arr2 = [
 //print(KMP().makeLPS(substring: "abcbca"))
 
 // 10 /19
-N과M12_15666().solution()
+//N과M12_15666().solution()
 
+// 10/24
+RGB1149().solution()
