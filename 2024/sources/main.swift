@@ -627,29 +627,40 @@ let arr2 = [
 
 // 10/24
 //RGB1149().solution()
-곱셈1629().solution()
+//곱셈1629().solution()
 
-class 곱셈1629 {
-    func modularExponentiation(_ A: Int, _ B: Int, _ C: Int) -> Int {
-        if B == 0 {
-            return 1
-        }
-        
-        let half = modularExponentiation(A, B / 2, C)
-        
-        if B % 2 == 0 {
-            return  ( half * half ) % C
-        } else {
-            return (half * half * A) % C
-        }
-    }
 
+// 10/25
+IntTriangle_1932().solution()
+
+class IntTriangle_1932 {
     func solution() {
-        let input = readLine()!.split(separator: " ").map{ Int($0)! }
-        let A = input[0]
-        let B = input[1]
-        let C = input[2]
+        let n = Int(readLine()!)!
+        var arr: [[Int]] = []
+        var dp: [[Int]] = .init(repeating: .init(repeating: 0, count: n), count: n)
+        let nextSteps = [(1,0), (1,1)]
         
-        print(modularExponentiation(A, B, C))
+        for _ in 0..<n {
+            let input = readLine()!.split(separator: " ").map{ Int($0)! }
+            
+            arr.append(input)
+        }
+        
+        dp[0][0] = arr[0][0]
+        
+        for i in 0..<arr.count {
+            for j in 0..<arr[i].count {
+                for nextStep in nextSteps {
+                    let nx = i + nextStep.0
+                    let ny = j + nextStep.1
+                    
+                    if (nx >= 0 && nx < arr.count) {
+                        dp[nx][ny] = max(dp[nx][ny], arr[nx][ny] + dp[i][j] )
+                    }
+                }
+            }
+        }
+        print(dp)
+        print(dp.last?.max() ?? 0)
     }
 }
