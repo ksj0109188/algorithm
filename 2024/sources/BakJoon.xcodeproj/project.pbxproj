@@ -14,6 +14,7 @@
 		3B0500A72CA836690021FB15 /* 숨바꼭질.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0500A62CA836690021FB15 /* 숨바꼭질.swift */; };
 		3B08EBFF2B879DF300516EDF /* 502_IPO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08EBFE2B879DF300516EDF /* 502_IPO.swift */; };
 		3B0A605F2C986C0A00E35AAC /* ConnectedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A605E2C986C0A00E35AAC /* ConnectedComponent.swift */; };
+		3B0B6C4E2CCB49920038BC62 /* 1932.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B6C4D2CCB49920038BC62 /* 1932.swift */; };
 		3B1000172C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1000162C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift */; };
 		3B10B6452B7F9FB90040B941 /* 373_Find_K_Pairs_With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10B6442B7F9FB90040B941 /* 373_Find_K_Pairs_With.swift */; };
 		3B1372B92B9A0C9400AA929E /* FiboNacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1372B82B9A0C9400AA929E /* FiboNacci.swift */; };
@@ -164,6 +165,7 @@
 		3B0500A62CA836690021FB15 /* 숨바꼭질.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "숨바꼭질.swift"; sourceTree = "<group>"; };
 		3B08EBFE2B879DF300516EDF /* 502_IPO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 502_IPO.swift; sourceTree = "<group>"; };
 		3B0A605E2C986C0A00E35AAC /* ConnectedComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedComponent.swift; sourceTree = "<group>"; };
+		3B0B6C4D2CCB49920038BC62 /* 1932.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1932.swift; sourceTree = "<group>"; };
 		3B1000162C54ACCB00B5E3A4 /* LV2_마법의엘리베이터.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_마법의엘리베이터.swift"; sourceTree = "<group>"; };
 		3B10B6442B7F9FB90040B941 /* 373_Find_K_Pairs_With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 373_Find_K_Pairs_With.swift; sourceTree = "<group>"; };
 		3B1372B82B9A0C9400AA929E /* FiboNacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiboNacci.swift; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 				3B1372B82B9A0C9400AA929E /* FiboNacci.swift */,
 				3B9F986D2B9DAB9500FE92E2 /* 322_CoinChange.swift */,
 				3B9F986F2B9DE53600FE92E2 /* Grid_paths.swift */,
+				3B0B6C4D2CCB49920038BC62 /* 1932.swift */,
 				3B7F22BF2BA73CD9002964E5 /* leetCode_198_Robber.swift */,
 				3B9F98712B9DE8E200FE92E2 /* ClimbingStairs_70.swift */,
 				3B7353622C9D05BA00202CB5 /* CompressPoint.swift */,
@@ -812,6 +815,7 @@
 				3BAAB0552C4F5A610075C284 /* LV2_쿼드압축 후 개수 세기.swift in Sources */,
 				3B762F0D2BD741790023741B /* LV2_땅따먹기.swift in Sources */,
 				3BB25B902B6BE297000C8A88 /* 13_Roman To Integer.swift in Sources */,
+				3B0B6C4E2CCB49920038BC62 /* 1932.swift in Sources */,
 				3B92973D2C50AF9700C96CCD /* Medium_TargetSum.swift in Sources */,
 				3B08EBFF2B879DF300516EDF /* 502_IPO.swift in Sources */,
 				3B1B51DB2C743A9800828053 /* LV2_K진수에서소수개수구하기.swift in Sources */,
