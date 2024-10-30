@@ -301,6 +301,7 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3B041E722CB255BC00A86E75 /* 분할정복 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "분할정복"; sourceTree = "<group>"; };
 		3B1399952CC0908A00E1292F /* Tree */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Tree; sourceTree = "<group>"; };
+		3B297A132CD1E1D50097CEDA /* BitMask */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BitMask; sourceTree = "<group>"; };
 		3B2C81B42CB8DEA200E79FA1 /* Permutation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Permutation; sourceTree = "<group>"; };
 		3B2C81E22CBBAC5700E79FA1 /* UnionFind */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = UnionFind; sourceTree = "<group>"; };
 		3B5387A32CC1FF3B00772ECC /* Algorithm */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Algorithm; sourceTree = "<group>"; };
@@ -338,6 +339,7 @@
 				3BD810EA2B9F44C400DD4B79 /* Naver_성냥.swift */,
 				3BEBDD5A2BA08EDC0049A0D7 /* 119_Pascal'sTriangle2.swift */,
 				3BB2F0742BA2D2C000BDBA6B /* 5LongestPalindromic.swift */,
+				3B297A132CD1E1D50097CEDA /* BitMask */,
 			);
 			path = DP1;
 			sourceTree = "<group>";
@@ -687,6 +689,7 @@
 			fileSystemSynchronizedGroups = (
 				3B041E722CB255BC00A86E75 /* 분할정복 */,
 				3B1399952CC0908A00E1292F /* Tree */,
+				3B297A132CD1E1D50097CEDA /* BitMask */,
 				3B2C81B42CB8DEA200E79FA1 /* Permutation */,
 				3B2C81E22CBBAC5700E79FA1 /* UnionFind */,
 				3B5387A32CC1FF3B00772ECC /* Algorithm */,
