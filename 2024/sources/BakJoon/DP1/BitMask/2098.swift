@@ -78,6 +78,7 @@ class TSP_2098_2 {
         // DFS + DP (메모이제이션)
         func dfs(_ current: Int, _ visited: Int) -> Int {
             // 모든 도시를 방문한 경우
+            print("(1 << n) - 1 ==", (1 << n) - 1)
             if visited == (1 << n) - 1 {
                 // 시작점(0)으로 돌아갈 수 있는 경우
                 return arr[current][0] != 0 ? arr[current][0] : Int.max

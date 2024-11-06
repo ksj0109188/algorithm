@@ -633,4 +633,16 @@ let arr2 = [
 // 10/25
 //IntTriangle_1932().solution()
 //TSP_2098().solution()
-TSP_2098_2().solution()
+//TSP_2098_2().solution()
+
+
+// 11/4
+//mergeSortedArray().merge(<#T##nums1: &[Int]##[Int]#>, <#T##m: Int##Int#>, <#T##nums2: [Int]##[Int]#>, <#T##n: Int##Int#>)
+// 11/5
+//solution(4, 5, ["CCBDE", "AAADE", "AAABF", "CCBBF"])
+//solution(6, 6, ["TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMF", "TMMTTJ"])
+//solution(6, 6, ["TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMM", "TMMTMM"])
+
+// 11/6
+LV4_호텔방배정().solution(10, [1,3,4,1,3,1])
+

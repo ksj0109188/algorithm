@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E1F59A1A-B380-4907-9B42-D8B25227235B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Programmers/LV2_&#x1111;&#x1173;&#x1105;&#x1166;&#x11ab;&#x110c;&#x1173;4&#x1107;&#x1173;&#x11af;&#x1105;&#x1169;&#x11a8;.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "dropBlocks()"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "12D2DAB9-5E12-4F17-A08D-18CFB25CBA2C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
