@@ -644,5 +644,8 @@ let arr2 = [
 //solution(6, 6, ["TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMM", "TMMTMM"])
 
 // 11/6
-LV4_호텔방배정().solution(10, [1,3,4,1,3,1])
+//LV4_호텔방배정().solution(10, [1,3,4,1,3,1])
 
+
+// 11/7
+트리순회_1991().solution()
