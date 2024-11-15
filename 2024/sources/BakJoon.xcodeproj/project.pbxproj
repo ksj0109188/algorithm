@@ -288,6 +288,7 @@
 		3B8097572CBF6AE8000A053D /* RealTest */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = RealTest; sourceTree = "<group>"; };
 		3BACD8BC2C9BD75F00844E9B /* BinarySearch */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BinarySearch; sourceTree = "<group>"; };
 		3BACD8BF2C9C016400844E9B /* BinarySearch */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BinarySearch; sourceTree = "<group>"; };
+		3BCCFD652CE7AD8C0049AF51 /* DP2 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DP2; sourceTree = "<group>"; };
 		3BCDC44E2CE09E32007760CC /* PrefixSum */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PrefixSum; sourceTree = "<group>"; };
 		3BFEEAEA2CB2539C003311F9 /* TwoPointer */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TwoPointer; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -308,6 +309,7 @@
 			children = (
 				3B220B132CE047BF00CBD2EC /* DP1 */,
 				3B297A132CD1E1D50097CEDA /* BitMask */,
+				3BCCFD652CE7AD8C0049AF51 /* DP2 */,
 			);
 			path = DP;
 			sourceTree = "<group>";
@@ -669,6 +671,7 @@
 				3B8097572CBF6AE8000A053D /* RealTest */,
 				3BACD8BC2C9BD75F00844E9B /* BinarySearch */,
 				3BACD8BF2C9C016400844E9B /* BinarySearch */,
+				3BCCFD652CE7AD8C0049AF51 /* DP2 */,
 				3BCDC44E2CE09E32007760CC /* PrefixSum */,
 				3BFEEAEA2CB2539C003311F9 /* TwoPointer */,
 			);
