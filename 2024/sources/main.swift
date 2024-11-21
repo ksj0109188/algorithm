@@ -656,46 +656,134 @@ let arr2 = [
 //solution11660()
 //LCS9251().solution()
 
-class 숨바꼭질13549 {
+// 11/20
+//숨바꼭질13549().solve()
+
+// 11/21
+// 연구소_14502().solve()
+
+class 로봇청소기_14503 {
+    private var result = 0
+    ///Note:  북, 동, 남, 서 방향
+    private let nextDicts = [(-1, 0), (0, 1), (1, 0), (0, -1)]
+    
     func solve() {
-        let input = readLine()!.split(separator: " ").map{Int($0)!}
-        let n = input[0]
-        let k = input[1]
         
-        print(숨바꼭질13549(n: n, k: k))
     }
     
-    private func 숨바꼭질13549(n: Int, k: Int) -> Int {
-        let limitCount = 100_000
-        var visited = [Int](repeating: -1, count: limitCount + 1)
-        var queue: [Int] = [n]
-        visited[n] = 0
+    func solution(n: Int, m: Int, r: Int, c: Int, d: Int, arr: inout [[Int]]) {
+        var queue: [(Int, Int, Int)] = [(r, c, d)]
         
         while !queue.isEmpty {
-            let current = queue.removeFirst()
+            let position = queue.removeFirst()
+            let curRow = position.0
+            let curCol = position.1
+            let curDict = position.2
             
-            if current == k {
-                return visited[current]
+            if arr[curRow][curCol] == 0 { //청소되지 않은 경우 청소처리
+                arr[curRow][curCol] = 2
+                result += 1
             }
-            
-            if current * 2 <= limitCount && visited[current * 2] == -1 {
-                visited[current * 2] = visited[current]
-                queue.insert(current * 2, at: 0)
-            }
-            
-            if current - 1 >= 0 && visited[current - 1] == -1 {
-                visited[current - 1] = visited[current] + 1
-                queue.append(current - 1)
-            }
-            
-            if current + 1 <= limitCount && visited[current + 1] == -1 {
-                visited[current + 1] = visited[current] + 1
-                queue.append(current + 1)
+
+            if let nextStep = nextStep(r: curRow, c: curCol, d: curDict, arr: arr) {
+                queue.append(nextStep)
+            } else { // 청소할 수 없을경우 그 방향대로 후진한다
+                let nextStep = moveReverse(r: curRow, c: curCol, d: curDict)
+
+                if checkPossiblePostion(r: nextStep.0, c: nextStep.1, n: n, m: m) {
+                    if arr[nextStep.0][nextStep.1] != 1 {
+                        queue.append((nextStep.0,nextStep.1, curDict))
+                    }
+                }
             }
         }
         
-        return Int.max
+        print(result)
     }
+    
+    private func nextStep(r: Int, c: Int, d: Int, arr: [[Int]]) -> (Int, Int, Int)? {
+        var curDict = d
+        
+        for _ in 0..<nextDicts.count {
+            let rotatedDict = rotation(d: curDict)
+            let nextDict = nextDicts[rotatedDict]
+            let nr = r + nextDict.0
+            let nc = c + nextDict.1
+            
+            if checkPossiblePostion(r: nr, c: nc, n: arr.count, m: arr.first!.count) {
+                if arr[nr][nc] == 0 {
+                    return (nr, nc, rotatedDict)
+                }
+            }
+            
+            curDict = rotatedDict
+        }
+        
+        return nil
+    }
+    
+    private func rotation(d: Int) -> Int {
+        var nextDict = d
+        
+        if d - 1 < 0 {
+            nextDict = 3
+        } else {
+            nextDict -= 1
+        }
+        
+        return nextDict
+    }
+    
+   
+    
+    private func moveReverse(r: Int, c: Int, d: Int) -> (Int, Int) {
+        var nr = r
+        var nc = c
+        
+        if d == 0 { // 북 -> 남
+            nr += 1
+        } else if d == 1 { // 동 -> 서
+            nc -= 1
+        } else if d == 2 { // 남 -> 북
+            nr -= 1
+        } else if d == 3 { // 서 -> 동
+            nc += 1
+        }
+        
+        return (nr, nc)
+    }
+    
+    private func checkPossiblePostion(r: Int, c: Int, n: Int, m: Int) -> Bool {
+        return (r >= 0 && r < n) && (c >= 0 && c < m) ? true : false
+    }
+    
 }
+var arr1 =  [[1, 1, 1],
+             [1, 0, 1],
+             [1, 1, 1]]
 
-숨바꼭질13549().solve()
+var arrr2 = [
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 1, 1, 1, 1, 0, 1],
+    [1, 0, 0, 1, 1, 0, 0, 0, 0, 1],
+    [1, 0, 1, 1, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 1, 0, 1],
+    
+    [1, 0, 0, 0,    0,   0, 1, 1, 0, 1],
+    [1, 0, 0, 0, 0, 0, 1, 1, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+]
+
+var arr3 = [
+    [1,1,1,1],
+    [1,0,0,1],
+    [1,0,0,1],
+    [1,1,1,1]
+]
+
+로봇청소기_14503().solution(n: 3, m: 3, r: 1, c: 1, d: 0, arr: &arr1)
+로봇청소기_14503().solution(n: 11, m: 10, r: 7, c: 4, d: 0, arr: &arrr2)
+로봇청소기_14503().solution(n: 4, m: 4, r: 2, c: 2, d: 0, arr: &arr3)
