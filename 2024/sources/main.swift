@@ -661,129 +661,51 @@ let arr2 = [
 
 // 11/21
 // 연구소_14502().solve()
+//로봇청소기_14503().solve()
 
-class 로봇청소기_14503 {
-    private var result = 0
-    ///Note:  북, 동, 남, 서 방향
-    private let nextDicts = [(-1, 0), (0, 1), (1, 0), (0, -1)]
-    
-    func solve() {
-        
-    }
-    
-    func solution(n: Int, m: Int, r: Int, c: Int, d: Int, arr: inout [[Int]]) {
-        var queue: [(Int, Int, Int)] = [(r, c, d)]
-        
-        while !queue.isEmpty {
-            let position = queue.removeFirst()
-            let curRow = position.0
-            let curCol = position.1
-            let curDict = position.2
-            
-            if arr[curRow][curCol] == 0 { //청소되지 않은 경우 청소처리
-                arr[curRow][curCol] = 2
-                result += 1
-            }
+// 11/21
 
-            if let nextStep = nextStep(r: curRow, c: curCol, d: curDict, arr: arr) {
-                queue.append(nextStep)
-            } else { // 청소할 수 없을경우 그 방향대로 후진한다
-                let nextStep = moveReverse(r: curRow, c: curCol, d: curDict)
-
-                if checkPossiblePostion(r: nextStep.0, c: nextStep.1, n: n, m: m) {
-                    if arr[nextStep.0][nextStep.1] != 1 {
-                        queue.append((nextStep.0,nextStep.1, curDict))
-                    }
-                }
+class 평범한배낭_12865 {
+    func solution() {
+        let input = readLine()!.split(separator: " ").map{ Int($0)! }
+        let n = input[0]
+        let k = input[1]
+        var items : [(w:Int, v:Int)] = []
+        
+        for _ in 0..<n {
+            let input = readLine()!.split(separator: " ").map{ Int($0)! }
+            let w = input[0]
+            let v = input[1]
+            
+            items.append((w: w, v: v))
+        }
+        
+        start1DP(n: n, k: k, items: items)
+    }
+    
+    func start1DP(n: Int, k: Int, items: [(w:Int, v:Int)]) {
+        // dp[i] -> 현재 무게일때 최대 가치
+        var dp: [Int] = .init(repeating: 0, count: k + 1)
+        var items = items.sorted(by: {$0.w < $1.w})
+        
+        for i in 0..<n {
+            let w = items[i].w // 3
+            let v = items[i].v // 6
+            print("w, v : ", w, v)
+            for j in w...k { // 3...7
+                print(dp)
+                dp[j] = max(dp[k - j] + v, dp[j])
             }
         }
         
-        print(result)
+        print(dp[k])
     }
     
-    private func nextStep(r: Int, c: Int, d: Int, arr: [[Int]]) -> (Int, Int, Int)? {
-        var curDict = d
+    func start2DP(n: Int, k: Int, items: [(w:Int, v:Int)]) {
+        // dp[i][j] == i무개일 때 j번째 물건을 선택 했을경우 최대 가치
+        var dp: [[Int]] = .init(repeating: .init(repeating: 0, count: n + 1), count: k + 1)
         
-        for _ in 0..<nextDicts.count {
-            let rotatedDict = rotation(d: curDict)
-            let nextDict = nextDicts[rotatedDict]
-            let nr = r + nextDict.0
-            let nc = c + nextDict.1
-            
-            if checkPossiblePostion(r: nr, c: nc, n: arr.count, m: arr.first!.count) {
-                if arr[nr][nc] == 0 {
-                    return (nr, nc, rotatedDict)
-                }
-            }
-            
-            curDict = rotatedDict
-        }
-        
-        return nil
     }
-    
-    private func rotation(d: Int) -> Int {
-        var nextDict = d
-        
-        if d - 1 < 0 {
-            nextDict = 3
-        } else {
-            nextDict -= 1
-        }
-        
-        return nextDict
-    }
-    
-   
-    
-    private func moveReverse(r: Int, c: Int, d: Int) -> (Int, Int) {
-        var nr = r
-        var nc = c
-        
-        if d == 0 { // 북 -> 남
-            nr += 1
-        } else if d == 1 { // 동 -> 서
-            nc -= 1
-        } else if d == 2 { // 남 -> 북
-            nr -= 1
-        } else if d == 3 { // 서 -> 동
-            nc += 1
-        }
-        
-        return (nr, nc)
-    }
-    
-    private func checkPossiblePostion(r: Int, c: Int, n: Int, m: Int) -> Bool {
-        return (r >= 0 && r < n) && (c >= 0 && c < m) ? true : false
-    }
-    
 }
-var arr1 =  [[1, 1, 1],
-             [1, 0, 1],
-             [1, 1, 1]]
 
-var arrr2 = [
-    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 1, 1, 1, 1, 0, 1],
-    [1, 0, 0, 1, 1, 0, 0, 0, 0, 1],
-    [1, 0, 1, 1, 0, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 1, 0, 1],
-    
-    [1, 0, 0, 0,    0,   0, 1, 1, 0, 1],
-    [1, 0, 0, 0, 0, 0, 1, 1, 0, 1],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-]
-
-var arr3 = [
-    [1,1,1,1],
-    [1,0,0,1],
-    [1,0,0,1],
-    [1,1,1,1]
-]
-
-로봇청소기_14503().solution(n: 3, m: 3, r: 1, c: 1, d: 0, arr: &arr1)
-로봇청소기_14503().solution(n: 11, m: 10, r: 7, c: 4, d: 0, arr: &arrr2)
-로봇청소기_14503().solution(n: 4, m: 4, r: 2, c: 2, d: 0, arr: &arr3)
+평범한배낭_12865().solution()
