@@ -24,38 +24,30 @@ class Graph {
 
     func dijkstra(source s: Int) -> [Int] {
         var dist = Array(repeating: Int.max, count: V)
-        var visited = Array(repeating: false, count: V)
-
         dist[s] = 0
-
-        for _ in 0..<V {
-            let u = minDistance(dist, visited)
-            visited[u] = true
-
-            for edge in adjList[u] {
-                let v = edge.0
-                let weight = edge.1
-
-                if !visited[v] && dist[u] != Int.max && dist[u] + weight < dist[v] {
-                    dist[v] = dist[u] + weight
+        
+        // 우선순위 큐 대신 최소힙 사용
+        var pq = [(Int, Int)]() // (거리, 정점)
+        pq.append((0, s))
+        
+        while !pq.isEmpty {
+            pq.sort { $0.0 < $1.0 } // 최소힙 정렬
+            let (currentDist, u) = pq.removeFirst()
+            
+            // 이미 더 짧은 경로가 존재하면 스킵
+            if currentDist > dist[u] { continue }
+            
+            for (v, weight) in adjList[u] {
+                let newDist = currentDist + weight
+                
+                if newDist < dist[v] {
+                    dist[v] = newDist
+                    pq.append((newDist, v))
                 }
             }
         }
-
+        
         return dist
-    }
-
-    private func minDistance(_ dist: [Int], _ visited: [Bool]) -> Int {
-        var min = Int.max, minIndex = 0
-
-        for v in 0..<V {
-            if !visited[v] && dist[v] <= min {
-                min = dist[v]
-                minIndex = v
-            }
-        }
-
-        return minIndex
     }
 }
 

@@ -89,5 +89,4 @@ struct GlobalPriorityQueue<S: Equatable> {
             heapifyDown(from: highestPriorityIndex)
         }
     }
-    
 }
