@@ -103,7 +103,6 @@
 		3BBFE88B2C3CF96C00193B70 /* Medium_Best Time to Buy and Sell Stock with Cooldown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFE88A2C3CF96C00193B70 /* Medium_Best Time to Buy and Sell Stock with Cooldown.swift */; };
 		3BBFE88D2C3CFFC300193B70 /* LV2_뉴스클러스터링.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFE88C2C3CFFC300193B70 /* LV2_뉴스클러스터링.swift */; };
 		3BC1C1552B935DCE004A3D76 /* 977_Squares of a sorted array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC1C1542B935DCE004A3D76 /* 977_Squares of a sorted array.swift */; };
-		3BC1C1582B9370CE004A3D76 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC1C1572B9370CE004A3D76 /* Dijkstra.swift */; };
 		3BC4B0932B5936BF002E6E19 /* trying_783_ Minmum Distance Between BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4B0922B5936BF002E6E19 /* trying_783_ Minmum Distance Between BST.swift */; };
 		3BC4B9E12C3B7F3C00C53586 /* 62_Unique_Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4B9E02C3B7F3C00C53586 /* 62_Unique_Paths.swift */; };
 		3BC4B9E42C3B92E600C53586 /* Medium_Longest Common Subsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4B9E32C3B92E600C53586 /* Medium_Longest Common Subsequence.swift */; };
@@ -123,7 +122,6 @@
 		3BD188C32B614E24003AECAF /* 117_Populating Next Right Pointers in Each Node 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD188C22B614E24003AECAF /* 117_Populating Next Right Pointers in Each Node 2.swift */; };
 		3BD2CD832BAB0EB80072AC13 /* Programmers_LV2_KaKAo2023_Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2CD822BAB0EB80072AC13 /* Programmers_LV2_KaKAo2023_Icon.swift */; };
 		3BD2CD862BAB32080072AC13 /* baekjoon_10451.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2CD852BAB32080072AC13 /* baekjoon_10451.swift */; };
-		3BD5332C2BCCB18800F1CE3C /* BellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5332B2BCCB18800F1CE3C /* BellmanFord.swift */; };
 		3BD5332E2BCCBDDA00F1CE3C /* LV2_의상.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5332D2BCCBDDA00F1CE3C /* LV2_의상.swift */; };
 		3BD533702BCDFE2300F1CE3C /* LV2_소수찾기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD5336F2BCDFE2300F1CE3C /* LV2_소수찾기.swift */; };
 		3BDCD6762BB841BF00BF8C7D /* LV2_귤고르기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDCD6752BB841BF00BF8C7D /* LV2_귤고르기.swift */; };
@@ -246,7 +244,6 @@
 		3BBFE88A2C3CF96C00193B70 /* Medium_Best Time to Buy and Sell Stock with Cooldown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medium_Best Time to Buy and Sell Stock with Cooldown.swift"; sourceTree = "<group>"; };
 		3BBFE88C2C3CFFC300193B70 /* LV2_뉴스클러스터링.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_뉴스클러스터링.swift"; sourceTree = "<group>"; };
 		3BC1C1542B935DCE004A3D76 /* 977_Squares of a sorted array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "977_Squares of a sorted array.swift"; sourceTree = "<group>"; };
-		3BC1C1572B9370CE004A3D76 /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 		3BC1C15A2B93734A004A3D76 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		3BC4B0922B5936BF002E6E19 /* trying_783_ Minmum Distance Between BST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "trying_783_ Minmum Distance Between BST.swift"; sourceTree = "<group>"; };
 		3BC4B9E02C3B7F3C00C53586 /* 62_Unique_Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 62_Unique_Paths.swift; sourceTree = "<group>"; };
@@ -267,7 +264,6 @@
 		3BD188C22B614E24003AECAF /* 117_Populating Next Right Pointers in Each Node 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "117_Populating Next Right Pointers in Each Node 2.swift"; sourceTree = "<group>"; };
 		3BD2CD822BAB0EB80072AC13 /* Programmers_LV2_KaKAo2023_Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programmers_LV2_KaKAo2023_Icon.swift; sourceTree = "<group>"; };
 		3BD2CD852BAB32080072AC13 /* baekjoon_10451.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baekjoon_10451.swift; sourceTree = "<group>"; };
-		3BD5332B2BCCB18800F1CE3C /* BellmanFord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellmanFord.swift; sourceTree = "<group>"; };
 		3BD5332D2BCCBDDA00F1CE3C /* LV2_의상.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_의상.swift"; sourceTree = "<group>"; };
 		3BD5336F2BCDFE2300F1CE3C /* LV2_소수찾기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_소수찾기.swift"; sourceTree = "<group>"; };
 		3BDCD6752BB841BF00BF8C7D /* LV2_귤고르기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LV2_귤고르기.swift"; sourceTree = "<group>"; };
@@ -554,18 +550,8 @@
 			children = (
 				3BC1C1542B935DCE004A3D76 /* 977_Squares of a sorted array.swift */,
 				3B7249922B94B0E7009E4951 /* 743_NetworkDelayTime.swift */,
-				3BC1C1592B9370D6004A3D76 /* Concepts */,
 			);
 			path = ShortestPath;
-			sourceTree = "<group>";
-		};
-		3BC1C1592B9370D6004A3D76 /* Concepts */ = {
-			isa = PBXGroup;
-			children = (
-				3BC1C1572B9370CE004A3D76 /* Dijkstra.swift */,
-				3BD5332B2BCCB18800F1CE3C /* BellmanFord.swift */,
-			);
-			path = Concepts;
 			sourceTree = "<group>";
 		};
 		3BC4B9E22C3B7F5D00C53586 /* Multidemension Dynamic Programming */ = {
@@ -778,7 +764,6 @@
 				3B6A75372BA3DB8900CD1D81 /* baekjun1063.swift in Sources */,
 				3BFC12072C8EABC300539814 /* Baekjoon_1927_Minheap.swift in Sources */,
 				AEF36E6E2CEECF030044D4D3 /* 14502.swift in Sources */,
-				3BD5332C2BCCB18800F1CE3C /* BellmanFord.swift in Sources */,
 				3B5ED6042C568F1300187397 /* LV2_과제진행하기.swift in Sources */,
 				3BA43B022BF07967007965B9 /* Medium_Combination.swift in Sources */,
 				3B2E59FF2BD1F529000443FD /* LV2_피로도.swift in Sources */,
@@ -812,7 +797,6 @@
 				3B2C438C2BDCC2F100A14ACB /* LV2_택배상자.swift in Sources */,
 				3B61DC942CA9032600924CD2 /* 쉬운 최단거리.swift in Sources */,
 				3B10B6452B7F9FB90040B941 /* 373_Find_K_Pairs_With.swift in Sources */,
-				3BC1C1582B9370CE004A3D76 /* Dijkstra.swift in Sources */,
 				3BA168EB2C2933250029E910 /* LV2_롤케이크 자르기.swift in Sources */,
 				3BB940F92B56C11100D193A6 /* 733_FloodFill.swift in Sources */,
 				3B762F152BD899580023741B /* LV2_프로세스.swift in Sources */,
