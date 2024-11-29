@@ -667,5 +667,44 @@ let arr2 = [
 //평범한배낭_12865().solution()
 
 // 11/26
-최단경로_1753().solution()
+//최단경로_1753().solution()
 
+//11/29
+트리의지름_1967().solution()
+
+class 트리의지름_1967 {
+    func solution() {
+        let n = Int(readLine()!)!
+        var graph: [Int: [(child: Int, weight:Int)]] = [:]
+        var answer: Int = 0
+        
+        for _ in 0..<n - 1{
+            let input = readLine()!.split(separator: " ").map{ Int($0)! }
+            let parent = input[0]
+            let child = input[1]
+            let weight = input[2]
+            
+            graph[parent, default: []].append((child: child, weight: weight))
+        }
+        
+        dfs(parent: 1, pathWeight: 0)
+        
+        print(answer)
+        
+        func dfs(parent: Int, pathWeight: Int) -> Int {
+            guard let nextNodes = graph[parent] else { return pathWeight }
+            
+            var childWeights: [Int] = []
+            
+            for next in nextNodes {
+                
+                childWeights += [dfs(parent: next.child, pathWeight: next.weight)]
+            }
+            
+            answer = max(childWeights.reduce(0) { $0 + $1 }, answer) // 자식들 노드의 경로들을 합한거와
+//            answer = max(childWeights.max() ?? 0 , answer) // 자식들 노드 중 가장 큰 것을 비교한다.
+            
+            return childWeights.max() ?? 0 + pathWeight
+        }
+    }
+}
