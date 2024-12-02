@@ -41,3 +41,47 @@ class 트리의지름_1967 {
         }
     }
 }
+
+class 트리의지름2_1967 {
+    func solution() {
+        let n = Int(readLine()!)!
+        var graph: [Int: [(child: Int, weight:Int)]] = [:]
+        var maxDiameter = 0
+        
+        for _ in 0..<n - 1{
+            let input = readLine()!.split(separator: " ").map{ Int($0)! }
+            let parent = input[0]
+            let child = input[1]
+            let weight = input[2]
+            
+            graph[parent, default: []].append((child: child, weight: weight))
+        }
+        
+        func dfs(parent: Int) -> Int {
+            guard let nextNodes = graph[parent] else { return 0 }
+            
+            var maxPath1 = 0
+            var maxPath2 = 0
+            
+            for next in nextNodes {
+                let childPath = dfs(parent: next.child) + next.weight
+                
+                if childPath > maxPath1 {
+                    maxPath2 = maxPath1
+                    maxPath1 = childPath
+                } else if childPath > maxPath2 {
+                    maxPath2 = childPath
+                }
+            }
+            
+            // 현재 노드를 거치는 지름 계산
+            maxDiameter = max(maxDiameter, maxPath1 + maxPath2)
+            
+            // 가장 긴 경로 반환
+            return maxPath1
+        }
+        
+        _ = dfs(parent: 1)
+        print(maxDiameter)
+    }
+}
