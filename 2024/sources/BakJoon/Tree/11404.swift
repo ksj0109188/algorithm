@@ -8,10 +8,11 @@
 import Foundation
 
 class Ployd_11404 {
+    let limitValue = 100_000_001
     func solution() {
         let n = Int(readLine()!)!
         let m = Int(readLine()!)!
-        var dp: [[Int]] = .init(repeating: .init(repeating: Int.max, count: n), count: n)
+        var dp: [[Int]] = .init(repeating: .init(repeating: limitValue, count: n), count: n)
         
         for i in 0..<n {
             dp[i][i] = 0
@@ -38,10 +39,19 @@ class Ployd_11404 {
         for k in 0..<n {
             for i in 0..<n{
                 for j in 0..<n {
-                    if i == j || newArr[i][k] == Int.max || newArr[k][j] == Int.max {
+                    if i == j || newArr[i][k] == limitValue || newArr[k][j] == limitValue {
                         continue
                     }
                     newArr[i][j] = min(newArr[i][j], newArr[i][k] + newArr[k][j])
+                }
+            }
+        }
+        
+        //MARK: 도달할 수 없는 경우 0으로 체크
+        for i in 0..<n {
+            for j in 0..<n {
+                if newArr[i][j] == limitValue {
+                    newArr[i][j] = 0
                 }
             }
         }
