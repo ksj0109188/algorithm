@@ -22,22 +22,23 @@ class 트리의지름_1967 {
             graph[parent, default: []].append((child: child, weight: weight))
         }
         
-        dfs(parent: 1, currentWeight: 0)
+        dfs(parent: 1)
 
         print(answer)
         
-        func dfs(parent: Int, currentWeight: Int) -> Int {
-            guard let nextNodes = graph[parent] else { return currentWeight }
+        func dfs(parent: Int) -> Int {
+            guard let nextNodes = graph[parent] else { return 0 }
             
             var weights: [Int] = []
             
             for next in nextNodes {
-                weights += [dfs(parent: next.child, currentWeight: next.weight)]
+                // 모든 자식들을 더하는 게 아닌 가장 긴 것과 그 다음 큰것을 비교
+                weights += [dfs(parent: next.child) + next.weight]
             }
             
             answer = max(weights.reduce(0) { $0 + $1 }, answer) // 자식들 노드의 누적된 경로를 비교
             
-            return (weights.max() ?? 0) + currentWeight // 누적된 자식들중 가장 큰값과 현재 경로의 가중치를 더해 return
+            return weights.max() ?? 0 // 누적된 자식들중 가장 큰값과 현재 경로의 가중치를 더해 return
         }
     }
 }

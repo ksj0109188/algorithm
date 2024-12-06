@@ -670,7 +670,10 @@ let arr2 = [
 //최단경로_1753().solution()
 
 //11/29
-트리의지름_1967().solution()
-트리의지름2_1967().solution()
+//트리의지름_1967().solution()
+//트리의지름2_1967().solution()
 //12/1
 //NQueen_9663().solution()
+
+// 12/6
+Ployd_11404().solution()
