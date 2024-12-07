@@ -677,161 +677,85 @@ let arr2 = [
 
 // 12/6
 //Ployd_11404().solution()
+//dijkstra_1238().solution()
 
-class dijkstra_1238 {
-    class PriorityQueue<T> where T: Comparable {
-        var queue: [Node] = []
-        let operation: (T, T) -> Bool
-        
-        init(operation: @escaping (T, T) -> Bool) {
-            self.operation = operation
-        }
-        
-        struct Node {
-            let vertax: T
-            let weight: T
-        }
-        
-        func isEmpty() -> Bool {
-            queue.isEmpty
-        }
-        
-        func enQueue(vertax: T, weight: T) {
-            let node = Node(vertax: vertax, weight: weight)
-            queue.append(node)
-            shiftUp(from: queue.count - 1)
-        }
-        
-        func dequeue() -> (T, T)? {
-            guard !queue.isEmpty else { return nil }
-            
-            let popedItem: (T, T)
-            
-            if queue.count == 1 {
-                let popedNode = queue.removeFirst()
-                popedItem = (popedNode.vertax, popedNode.weight)
-            } else {
-                queue.swapAt(0, queue.count - 1)
-                let popedNode = queue.removeLast()
-                shitDown(from: 0)
-                popedItem = (popedNode.vertax, popedNode.weight)
-            }
-            
-            return popedItem
-        }
-        
-        private func shiftUp(from index: Int) {
-            var child = index
-            var parent = parentIndex(index: child)
-            
-            while child > 0 && operation(queue[child].weight, queue[parent].weight) {
-                queue.swapAt(child, parent)
-                child = parent
-                parent = parentIndex(index: child)
-            }
-        }
-        
-        private func shitDown(from index: Int) {
-            var parent = index
-            
-            while true {
-                let leftChild = leftChildIndex(index: parent)
-                let rightChild = rightChildIndex(index: parent)
-                var candidate = parent
-            
-                if leftChild < queue.count && operation(queue[leftChild].weight, queue[parent].weight) {
-                    candidate = leftChild
-                }
-                
-                if rightChild < queue.count && operation(queue[rightChild].weight, queue[parent].weight) {
-                    candidate = rightChild
-                }
-                
-                
-                if candidate == parent {
-                    return
-                }
-                
-                queue.swapAt(parent, candidate)
-                parent = candidate
-            }
-        }
-        
-        private func parentIndex(index: Int) -> Int{
-            return (index - 1) / 2
-        }
-        private func leftChildIndex(index: Int) -> Int {
-            return index * 2 + 1
-        }
-        private func rightChildIndex(index: Int) -> Int {
-            return index * 2 + 2
-        }
-    }
-    
+// 12/7
+
+class Bellman_Ford_1865 {
     func solution() {
-        let input = readLine()!.split(separator: " ").map{Int($0)!}
-        let n = input[0], m = input[1], x = input[2]
-        var graph: [Int: [(Int, Int)]] = [:]
-        var reversedGraph: [Int: [(Int, Int)]] = [:]
-        var answer = 0
+        let tc = Int(readLine()!)!
         
-        for i in 0..<m {
+        for _ in 0..<tc {
+            var graph: [(from: Int, to: Int, weight: Int)] = []
             let input = readLine()!.split(separator: " ").map{ Int($0)! }
-            let from = input[0]
-            let to = input[1]
-            let weight = input[2]
+            let n = input[0]
+            let m = input[1]
+            let w = input[2]
             
-            graph[from, default: []].append((to, weight))
-            reversedGraph[to, default: []].append((from, weight))
+            for _ in 0..<m {
+                let input = readLine()!.split(separator: " ").map{ Int($0)! }
+                let s = input[0]
+                let e = input[1]
+                let t = input[2]
+                
+                graph.append((from: s, to: e, weight: t))
+                graph.append((from: e, to: s, weight: t)) // 양방향 도로 추가
+            }
+            
+            for _ in 0..<w {
+                let input = readLine()!.split(separator: " ").map{ Int($0)! }
+                let s = input[0]
+                let e = input[1]
+                let t = input[2]
+                
+                graph.append((from: s, to: e, weight: -t))
+            }
+            
+            print(hasNegativeCycle(n: n, graph: graph) ? "YES" : "NO")
         }
-        
-        // X -> 각 마을 까지 최단거리
-        let dist = dijkstra(n:n, start: x, graph: graph)
-        
-        // 각 마을에서 -> X까지의 최단 거리
-        let reversedDist = dijkstra(n:n, start: x, graph: reversedGraph)
-        
-        for i in 1...n {
-            answer = max(answer, dist[i]+reversedDist[i])
-        }
-        
-        print(answer)
     }
     
-    private func dijkstra(n: Int, start: Int, graph:[Int: [(Int, Int)]]) -> [Int] {
+    func hasNegativeCycle(n: Int, graph: [(from: Int, to: Int, weight: Int)]) -> Bool {
+        // MARK: 모든 시작점으로 벨만 포드 알고리즘을 적용할 필요가 있을까?
+        // MARK: 어느 시작점이던, 음수 사이클이 존재한다면 업데이트 되니 이 경우 . 한 지점에서 출발을 하여서 시간여행을 하기 시작하여 다시 출발을 하였던 위치로 돌아왔을 때, 출발을 하였을 때보다 시간이 되돌아가 있는 경우가 있는지 없는지를 판별할 수 없을까? 
+        for start in 1...n {
+            if bellmanFord(n: n, graph: graph, source: start) {
+                return true
+            }
+        }
+        return false
+    }
+    
+    func bellmanFord(n: Int, graph: [(from: Int, to: Int, weight: Int)], source: Int) -> Bool {
         var dist: [Int] = .init(repeating: Int.max, count: n + 1)
-        var pq = PriorityQueue<Int>{ $0 < $1 }
+        dist[source] = 0
         
-        dist[start] = 0
-        pq.enQueue(vertax: start, weight: 0)
-        
-        while !pq.isEmpty() {
-            if let current = pq.dequeue() {
-                let curVertax = current.0
-                let curWeight = current.1
+        // N-1번 반복
+        for _ in 0..<n-1 {
+            for edge in graph {
+                let from = edge.from
+                let to = edge.to
+                let weight = edge.weight
                 
-                if dist[curVertax] < curWeight {
-                    continue
-                }
-                
-                guard let nextNodes = graph[curVertax] else {
-                    continue
-                }
-                
-                for nextNode in nextNodes {
-                    let nextVertax = nextNode.0
-                    let nextWeight = nextNode.1
-                    
-                    if dist[nextVertax] > curWeight + nextWeight {
-                        dist[nextVertax] = curWeight + nextWeight
-                        pq.enQueue(vertax: nextVertax, weight: curWeight + nextWeight)
-                    }
+                if dist[from] != Int.max && dist[to] > dist[from] + weight {
+                    dist[to] = dist[from] + weight
                 }
             }
         }
         
-        return dist
+        // 음수 사이클 확인
+        for edge in graph {
+            let from = edge.from
+            let to = edge.to
+            let weight = edge.weight
+            
+            if dist[from] != Int.max && dist[to] > dist[from] + weight {
+                return true
+            }
+        }
+        
+        return false
     }
 }
 
-dijkstra_1238().solution()
+Bellman_Ford_1865().solution()
