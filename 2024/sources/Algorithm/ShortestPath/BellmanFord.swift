@@ -7,6 +7,70 @@
 
 import Foundation
 
+class Bellman_Ford_1865 {
+    func solution() {
+        let tc = Int(readLine()!)!
+        
+        for _ in 0..<tc {
+            var graph: [(from: Int, to: Int, weight: Int)] = []
+            let input = readLine()!.split(separator: " ").map{ Int($0)! }
+            let n = input[0]
+            let m = input[1]
+            let w = input[2]
+            
+            for _ in 0..<m {
+                let input = readLine()!.split(separator: " ").map{ Int($0)! }
+                let s = input[0]
+                let e = input[1]
+                let t = input[2]
+                
+                graph.append((from: s, to: e, weight: t))
+                graph.append((from: e, to: s, weight: t))
+            }
+            
+            for _ in 0..<w {
+                let input = readLine()!.split(separator: " ").map{ Int($0)! }
+                let s = input[0]
+                let e = input[1]
+                let t = input[2]
+                
+                graph.append((from: s, to: e, weight: -t))
+            }
+            
+            print(hasNegativeCycle(n: n, graph: graph) ? "YES" : "NO")
+        }
+    }
+    
+    func hasNegativeCycle(n: Int, graph: [(from: Int, to: Int, weight: Int)]) -> Bool {
+        // 모든 노드에서 시작이 가능하므로 0으로 초기화
+        var dist = [Int](repeating: 0, count: n + 1)
+        
+        for _ in 0..<n-1 {
+            for edge in graph {
+                let from = edge.from
+                let to = edge.to
+                let weight = edge.weight
+                
+                if dist[to] > dist[from] + weight {
+                    dist[to] = dist[from] + weight
+                }
+            }
+        }
+        
+        for edge in graph {
+            let from = edge.from
+            let to = edge.to
+            let weight = edge.weight
+            
+            if dist[to] > dist[from] + weight {
+                return true  // 음수 사이클 존재
+            }
+        }
+        
+        return false
+    }
+}
+
 class BellmanFord {
     func bellmanFord(graph: [(u: Int, v: Int, weight: Int)], vertices: Int, source: Int) -> [Int] {
         var distance = [Int](repeating: Int.max, count: vertices)
@@ -39,18 +103,6 @@ class BellmanFord {
 
         return distance
     }
-    
-    
-    // Example usage
-//    let graph = [(u: 0, v: 1, weight: -1), (u: 1, v: 2, weight: -2), (u: 2, v: 0, weight: -3)]
-//    let vertices = 3
-//    let source = 0
-//
-//    let distances = bellmanFord(graph: graph, vertices: vertices, source: source)
-//
-//    if !distances.isEmpty {
-//        for (index, distance) in distances.enumerated() {
-//            print("Distance from node \(source) to node \(index) is \(distance)")
-//        }
-//    }
 }
+
+
