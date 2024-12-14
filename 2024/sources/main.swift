@@ -680,4 +680,6 @@ let arr2 = [
 //dijkstra_1238().solution()
 
 // 12/7
-Bellman_Ford_1865().solution()
+//Bellman_Ford_1865().solution()
+
+벽부수고이동하기_2206().solution()

@@ -132,6 +132,7 @@
 		AE6F8D1B2CFC70E80066DE74 /* NQueen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F8D1A2CFC70E80066DE74 /* NQueen.swift */; };
 		AE8570682CEFA8D800740712 /* 14503.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8570672CEFA8D800740712 /* 14503.swift */; };
 		AEB8BD382CED889C00E64184 /* 13549.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB8BD372CED889C00E64184 /* 13549.swift */; };
+		AEDDB1072D06970B006F8B87 /* 2206.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDDB1062D06970B006F8B87 /* 2206.swift */; };
 		AEF36E6E2CEECF030044D4D3 /* 14502.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF36E6D2CEECF030044D4D3 /* 14502.swift */; };
 /* End PBXBuildFile section */
 
@@ -275,6 +276,7 @@
 		AE6F8D1A2CFC70E80066DE74 /* NQueen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQueen.swift; sourceTree = "<group>"; };
 		AE8570672CEFA8D800740712 /* 14503.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14503.swift; sourceTree = "<group>"; };
 		AEB8BD372CED889C00E64184 /* 13549.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13549.swift; sourceTree = "<group>"; };
+		AEDDB1062D06970B006F8B87 /* 2206.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2206.swift; sourceTree = "<group>"; };
 		AEF36E6D2CEECF030044D4D3 /* 14502.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14502.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -467,6 +469,7 @@
 				3B2E80342CAEA2D4005C6C73 /* tomato1.swift */,
 				3B61DC932CA9032600924CD2 /* 쉬운 최단거리.swift */,
 				AEB8BD372CED889C00E64184 /* 13549.swift */,
+				AEDDB1062D06970B006F8B87 /* 2206.swift */,
 			);
 			path = BFS;
 			sourceTree = "<group>";
@@ -790,6 +793,7 @@
 				3BBFE88B2C3CF96C00193B70 /* Medium_Best Time to Buy and Sell Stock with Cooldown.swift in Sources */,
 				3B2D979D2C226C4300E20DBA /* LV3_가장먼노드.swift in Sources */,
 				3B2C438C2BDCC2F100A14ACB /* LV2_택배상자.swift in Sources */,
+				AEDDB1072D06970B006F8B87 /* 2206.swift in Sources */,
 				3B61DC942CA9032600924CD2 /* 쉬운 최단거리.swift in Sources */,
 				3B10B6452B7F9FB90040B941 /* 373_Find_K_Pairs_With.swift in Sources */,
 				3BA168EB2C2933250029E910 /* LV2_롤케이크 자르기.swift in Sources */,

@@ -18,6 +18,36 @@
             endingLineNumber = "86"
             landmarkName = "solution()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E8E6F668-8EEA-4484-886F-83D9AE8194A0 - e8d433461edc737"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BakJoon.&#xd2b8;&#xb9ac;&#xc758;&#xc9c0;&#xb984;2_1967.solution() -&gt; ()"
+                  moduleName = "BakJoon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gimseongjun/Documents/algorithm/2024/sources/BakJoon/Tree/1967.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86">
+               </Location>
+               <Location
+                  uuid = "E8E6F668-8EEA-4484-886F-83D9AE8194A0 - e8d433461edc737"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BakJoon.&#xd2b8;&#xb9ac;&#xc758;&#xc9c0;&#xb984;2_1967.solution() -&gt; ()"
+                  moduleName = "BakJoon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gimseongjun/Documents/algorithm/2024/sources/BakJoon/Tree/1967.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
