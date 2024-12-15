@@ -295,6 +295,7 @@
 		3BFEEAEA2CB2539C003311F9 /* TwoPointer */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TwoPointer; sourceTree = "<group>"; };
 		AE6F8D162CFC5B190066DE74 /* DataStructure */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DataStructure; sourceTree = "<group>"; };
 		AEDDB1082D0DA857006F8B87 /* 3dimensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = 3dimensions; sourceTree = "<group>"; };
+		AEDDB10F2D0EBF19006F8B87 /* Stack */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Stack; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -631,6 +632,7 @@
 				3B1372BA2B9A0C9A00AA929E /* DP */,
 				3B1399952CC0908A00E1292F /* Tree */,
 				AEDDB1082D0DA857006F8B87 /* 3dimensions */,
+				AEDDB10F2D0EBF19006F8B87 /* Stack */,
 			);
 			path = BakJoon;
 			sourceTree = "<group>";
@@ -667,6 +669,7 @@
 				3BFEEAEA2CB2539C003311F9 /* TwoPointer */,
 				AE6F8D162CFC5B190066DE74 /* DataStructure */,
 				AEDDB1082D0DA857006F8B87 /* 3dimensions */,
+				AEDDB10F2D0EBF19006F8B87 /* Stack */,
 			);
 			name = BakJoon;
 			productName = BakJoon;
