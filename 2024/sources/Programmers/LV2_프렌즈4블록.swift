@@ -8,7 +8,6 @@
 import Foundation
 
 struct LV2_프렌즈4블록 {
-
     func solution(_ m: Int, _ n: Int, _ board: [String]) -> Int {
         var gameBoard = board.map { Array($0) }
         var totalRemoved = 0

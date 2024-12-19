@@ -3,4 +3,38 @@
    uuid = "78ED3C5D-D540-41BD-B9B8-564FB43E9C87"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E73915A1-7EFD-4C10-99FF-97BF523E296B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Programmers/LV4_&#x1112;&#x1169;&#x1110;&#x1166;&#x11af;&#x1107;&#x1161;&#x11bc;&#x1107;&#x1162;&#x110c;&#x1165;&#x11bc;.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "solution(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF3531AB-E478-44AA-922B-70606956D98F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Programmers/LV4_&#x1112;&#x1169;&#x1110;&#x1166;&#x11af;&#x1107;&#x1161;&#x11bc;&#x1107;&#x1162;&#x110c;&#x1165;&#x11bc;.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "findEmptyRoom(_:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
