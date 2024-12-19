@@ -45,3 +45,36 @@ class 평범한배낭_12865 {
         print(dp[k])
     }
 }
+
+class 평범한배낭_12865_2 {
+    func solution() {
+        let input = readLine()!.split(separator: " ").map{ Int($0)! }
+        let n = input[0]
+        let k = input[1]
+        var items: [(weight: Int, value: Int)] = []
+        var dp: [[Int]] = .init(repeating: .init(repeating: 0, count: k + 1), count: n + 1)
+        
+        for _ in 0..<n {
+            let input = readLine()!.split(separator: " ").map{ Int($0)! }
+            let weight = input[0]
+            let value = input[1]
+            
+            items.append((weight: weight, value: value))
+        }
+        
+        
+        for i in 1...n {
+            let item = items[i - 1]
+            
+            for j in 1...k {
+                if item.weight <= j {
+                    dp[i][j] = max(dp[i - 1 ][j], dp[i - 1][j - item.weight] + item.value)
+                } else {
+                    dp[i][j] = dp[i-1][j]
+                }
+            }
+        }
+        
+        print(dp[n][k])
+    }
+}
