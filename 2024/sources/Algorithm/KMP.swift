@@ -8,8 +8,7 @@
 import Foundation
 
 class KMP {
-    func makeLPS(substring: String) -> [Int]? {
-        guard substring.count > 0 else { return nil }
+    func makeLPS(substring: String) -> [Int] {
         let substring = Array(substring)
         var lps: [Int] = .init(repeating: 0, count: substring.count)
         
@@ -30,5 +29,33 @@ class KMP {
         }
         
         return lps
+    }
+    
+    func strStr(_ haystack: String, _ needle: String) -> Int {
+        let lps = makeLPS(substring: needle)
+        var haystackArr = Array(haystack)
+        var needleArr = Array(needle)
+        
+        var i = 0 // haystack pointer
+        var j = 0 // needle pointer
+        
+        while i < haystackArr.count {
+            if haystackArr[i] == needleArr[j] {
+                i += 1
+                j += 1
+            } else {
+                if j == 0 {
+                    i += 1
+                } else {
+                    j = lps[j - 1]
+                }
+            }
+            
+            if j == needleArr.count - 1 {
+                return i - needleArr.count
+            }
+        }
+        
+        return -1
     }
 }
