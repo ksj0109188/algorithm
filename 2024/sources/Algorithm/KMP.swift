@@ -33,8 +33,8 @@ class KMP {
     
     func strStr(_ haystack: String, _ needle: String) -> Int {
         let lps = makeLPS(substring: needle)
-        var haystackArr = Array(haystack)
-        var needleArr = Array(needle)
+        let haystackArr = Array(haystack)
+        let needleArr = Array(needle)
         
         var i = 0 // haystack pointer
         var j = 0 // needle pointer
@@ -51,7 +51,7 @@ class KMP {
                 }
             }
             
-            if j == needleArr.count - 1 {
+            if j == needleArr.count {
                 return i - needleArr.count
             }
         }

@@ -695,3 +695,9 @@ let arr2 = [
 // 12/19
 //Z_1074().solution()
 //LV4_호텔방배정().solution(10, [1,3,4,1,3,1])
+
+// 12/21
+let haystack = "sadbutsad"
+let needle = "sad"
+
+print(KMP_28.Solution().strStr(haystack, needle))

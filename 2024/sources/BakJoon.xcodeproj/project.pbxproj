@@ -294,6 +294,7 @@
 		3BCDC44E2CE09E32007760CC /* PrefixSum */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PrefixSum; sourceTree = "<group>"; };
 		3BFEEAEA2CB2539C003311F9 /* TwoPointer */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TwoPointer; sourceTree = "<group>"; };
 		AE6F8D162CFC5B190066DE74 /* DataStructure */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DataStructure; sourceTree = "<group>"; };
+		AEB4BB3E2D16B39800FF21F4 /* String */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = String; sourceTree = "<group>"; };
 		AEDDB1082D0DA857006F8B87 /* 3dimensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = 3dimensions; sourceTree = "<group>"; };
 		AEDDB10F2D0EBF19006F8B87 /* Stack */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Stack; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -429,6 +430,7 @@
 		3B904CE92C082E48000BB8F9 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				AEB4BB3E2D16B39800FF21F4 /* String */,
 				3B887F522C2A5843002AE1F0 /* TwoPointer */,
 				3B1A10B42C167AC100A3C0D3 /* Graph */,
 				3BB25B8E2B6BD44E000C8A88 /* HashTable */,
@@ -668,6 +670,7 @@
 				3BCDC44E2CE09E32007760CC /* PrefixSum */,
 				3BFEEAEA2CB2539C003311F9 /* TwoPointer */,
 				AE6F8D162CFC5B190066DE74 /* DataStructure */,
+				AEB4BB3E2D16B39800FF21F4 /* String */,
 				AEDDB1082D0DA857006F8B87 /* 3dimensions */,
 				AEDDB10F2D0EBF19006F8B87 /* Stack */,
 			);
