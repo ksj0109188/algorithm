@@ -697,7 +697,10 @@ let arr2 = [
 //LV4_호텔방배정().solution(10, [1,3,4,1,3,1])
 
 // 12/21
-let haystack = "sadbutsad"
-let needle = "sad"
+//let haystack = "sadbutsad"
+//let needle = "sad"
+//print(KMP_28.Solution().strStr(haystack, needle))
 
-print(KMP_28.Solution().strStr(haystack, needle))
+var nums = [1,1,2]
+print(Easy_26.Solution.removeDuplicates(&nums))
+print(nums)
