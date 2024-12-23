@@ -701,6 +701,9 @@ let arr2 = [
 //let needle = "sad"
 //print(KMP_28.Solution().strStr(haystack, needle))
 
-var nums = [1,1,2]
-print(Easy_26.Solution.removeDuplicates(&nums))
-print(nums)
+//var nums = [1,1,2]
+//print(Easy_26.Solution.removeDuplicates(&nums))
+//print(nums)
+
+var nums = [0,0,1,1,1,1,2,3,3]
+Medium_80_RemoveDuplicateArray2.Solution2().removeDuplicates(&nums)
