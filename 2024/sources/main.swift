@@ -705,5 +705,37 @@ let arr2 = [
 //print(Easy_26.Solution.removeDuplicates(&nums))
 //print(nums)
 
-var nums = [0,0,1,1,1,1,2,3,3]
-Medium_80_RemoveDuplicateArray2.Solution2().removeDuplicates(&nums)
+//var nums = [0,0,1,1,1,1,2,3,3]
+//Medium_80_RemoveDuplicateArray2.Solution2().removeDuplicates(&nums)
+
+//12/24
+용액_2467().solution()
+
+class 용액_2467 {
+    func solution() {
+        let n = Int(readLine()!)!
+        let arr = readLine()!.split(separator: " ").map{ Int($0)! }
+        
+        var i = 0
+        var j = n - 1
+        var minValue = Int.max
+        var answer: (Int, Int) = (Int.max, Int.max)
+        
+        while i < j {
+            let sum = arr[i] + arr[j]
+            
+            if abs(sum) < abs(minValue) {
+                minValue = sum
+                answer = (arr[i], arr[j])
+            }
+            
+            if sum > 0 {
+                j -= 1  // 합이 양수 -> 더 작은 값으로 이동
+            } else {
+                i += 1  // 합이 음수 -> 더 큰 값으로 이동
+            }
+        }
+        
+        print("\(answer.0) \(answer.1)")
+    }
+}
