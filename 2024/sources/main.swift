@@ -712,7 +712,11 @@ let arr2 = [
 //용액_2467().solution()
 
 // 12/26
-var nums = [1,2,3,4,5,6,7]
-let k = 3
+//var nums = [1,2,3,4,5,6,7]
+//let k = 3
 
-ReversalAlgorithm.Solution().rotate(&nums, k)
+// 12/30
+//ReversalAlgorithm.Solution().rotate(&nums, k)
+//print(BestProfitStock1_122().maxProfit([7,1,5,3,6,4]))
+//print(BestProfitStock1_122().maxProfit([1,1,1,2,5]))
+
