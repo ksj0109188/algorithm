@@ -719,4 +719,41 @@ let arr2 = [
 //ReversalAlgorithm.Solution().rotate(&nums, k)
 //print(BestProfitStock1_122().maxProfit([7,1,5,3,6,4]))
 //print(BestProfitStock1_122().maxProfit([1,1,1,2,5]))
+부분합_1806().solution()
+
+class 부분합_1806{
+    func solution() {
+        let input = readLine()!.split(separator: " ").map{ Int($0)! }
+        let n = input[0]
+        let s = input[1]
+        let arr = readLine()!.split(separator: " ").map{ Int($0)! }
+        var count = 1
+        var result = Int.max
+        var sum = 0
+        var i = 0
+        
+        while i < arr.count {
+            if result == 1 {
+                break
+            }
+            
+            sum += arr[i]
+            
+            if sum >= s {
+                result = min(result, count)
+                sum = 0
+                count = 1
+            } else {
+                count += 1
+                i += 1
+            }
+        }
+        
+        if result == Int.max {
+            result = 0
+        }
+        
+        print(result)
+    }
+}
 
