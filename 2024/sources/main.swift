@@ -733,3 +733,15 @@ let arr2 = [
 // 2025/1/1
 //print(Medium_11().maxArea([1,8,6,2,5,4,8,3,7]))
 //print(Medium_11().maxArea([1,1]))
+
+// 1/3
+//print(Easy_67_AddBinary().addBinary("11", "1"))
+//print(Easy_67_AddBinary().addBinary("1010", "1011"))
+//print(Solution_190().reverseBits(0b00000000000000000000000000000000001))
+//print(Solution_190().reverseBits(0b00000010100101000001111010011100))
+//print(Solution_190().reverseBits(11111111111111111111111111111101))
+
+print(Solution_191().hammingWeight(1 + 2 + 4 + 8))
+print(Solution_191().hammingWeight(128))
+print(Solution_191().hammingWeight(2147483645))
+
