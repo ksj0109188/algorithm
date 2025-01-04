@@ -740,8 +740,10 @@ let arr2 = [
 //print(Solution_190().reverseBits(0b00000000000000000000000000000000001))
 //print(Solution_190().reverseBits(0b00000010100101000001111010011100))
 //print(Solution_190().reverseBits(11111111111111111111111111111101))
+//print(Solution_191().hammingWeight(1 + 2 + 4 + 8))
+//print(Solution_191().hammingWeight(128))
+//print(Solution_191().hammingWeight(2147483645))
 
-print(Solution_191().hammingWeight(1 + 2 + 4 + 8))
-print(Solution_191().hammingWeight(128))
-print(Solution_191().hammingWeight(2147483645))
+// 1/4
+
 
