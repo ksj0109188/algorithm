@@ -9,7 +9,7 @@ import Foundation
 // https://www.acmicpc.net/problem/1197
 
 class 최소스패닝트리 {
-    struct UnionFind {
+    class UnionFind {
         private var parent: [Int]
         private var rank: [Int] // 트리의 높이 -> 메모리 사용률 2배이므로 Weighted union find 사용
         
@@ -18,14 +18,14 @@ class 최소스패닝트리 {
             rank = Array(repeating: 0, count: n)
         }
         
-        mutating func find(_ x: Int) -> Int {
+        func find(_ x: Int) -> Int {
             if parent[x] != x { // 루트노드가 아니라면
                 parent[x] = find(parent[x])  // Path compression
             }
             return parent[x]
         }
         
-        mutating func union(_ x: Int, _ y: Int) {
+        func union(_ x: Int, _ y: Int) {
             let rootX = find(x)
             let rootY = find(y)
             

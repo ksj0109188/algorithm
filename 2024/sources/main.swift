@@ -744,6 +744,9 @@ let arr2 = [
 //print(Solution_191().hammingWeight(128))
 //print(Solution_191().hammingWeight(2147483645))
 
-// 1/4
+// 1/5
+//print(Solution_201().rangeBitwiseAnd(5, 7))
+//print(Solution_201().rangeBitwiseAnd(0, 0))
+//print(Solution_201().rangeBitwiseAnd(1, 2147483647))
 
-
+print(Solution_201().rangeBitwiseAnd2(1, 3))
