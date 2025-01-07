@@ -749,4 +749,36 @@ let arr2 = [
 //print(Solution_201().rangeBitwiseAnd(0, 0))
 //print(Solution_201().rangeBitwiseAnd(1, 2147483647))
 
-print(Solution_201().rangeBitwiseAnd2(1, 3))
+//print(Solution_201().rangeBitwiseAnd2(1, 3))
+
+// 1/7
+
+class LCS2_9252 {
+    func solution() {
+        let firstString = Array(readLine()!)
+        let secondString = Array(readLine()!)
+        
+        var dp: [[Int]] = .init(repeating: .init(repeating: 0, count: firstString.count), count: secondString.count)
+        
+        func dfs(i: Int, j: Int, matchString: String, count: Int) -> (Int, String) {
+            guard i < firstString.count && j < secondString.count else { return (count, matchString) }
+            var result = (0, "")
+            
+            if firstString[i] == secondString[j] {
+                let compare1 = dfs(i: i + 1, j: j + 1, matchString: "\(matchString + String(firstString[i]))", count: count + 1)
+                result = compare1.0 >= result.0 ? compare1 : result
+            } else {
+                let pass1 = dfs(i: i, j: j + 1, matchString: matchString, count: count)
+                let pass2 = dfs(i: i + 1, j: j, matchString: matchString, count: count)
+                
+                if pass1.0 >= pass2.0 {
+                    result = pass1.0 >= result.0 ? pass1 : result
+                } else {
+                    result = pass2.0 >= result.0 ? pass2 : result
+                }
+            }
+            
+            return result
+        }
+    }
+}

@@ -11,7 +11,7 @@ import Foundation
 class 최소스패닝트리 {
     class UnionFind {
         private var parent: [Int]
-        private var rank: [Int] // 트리의 높이 -> 메모리 사용률 2배이므로 Weighted union find 사용
+        private var rank: [Int] // 트리의 높이 -> 메모리 사용률 2배이므로 Weighted union find 사용방법도 있음
         
         init(_ n: Int) {
             parent = Array(0..<n)
