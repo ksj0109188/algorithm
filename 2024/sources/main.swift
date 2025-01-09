@@ -752,5 +752,37 @@ let arr2 = [
 //print(Solution_201().rangeBitwiseAnd2(1, 3))
 
 // 1/8
-LCS2_9252().solution()
+//LCS2_9252().solution()
 
+// 1/9
+
+class 팰린드롬 {
+    func solution() {
+        let n = Int(readLine()!)!
+        var nums = readLine()!.split(separator: " ").map{ Int($0)! }
+        let m = Int(readLine()!)!
+        var dp: [[Int]] = .init(repeating: .init(repeating: -1, count: n), count: n)
+        
+        for i in 0..<n {
+            for j in i..<n {
+                if i == j {
+                    dp[i][j] = 1
+                    continue
+                }
+                var leftPointer = i
+                var rightPointer = j
+                
+                while leftPointer < rightPointer {
+                    if nums[leftPointer] != nums[rightPointer] {
+                        dp[i][j] = 0
+                        break
+                    }
+                }
+                
+                dp[i][j] = 1
+            }
+        }
+    }
+}
+// 1 2 3 1
+// 1 2 2 1
