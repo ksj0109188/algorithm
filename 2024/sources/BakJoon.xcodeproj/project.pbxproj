@@ -138,6 +138,7 @@
 		AEA71EF92D26401C0040AD72 /* Medium_15_3Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA71EF82D26401C0040AD72 /* Medium_15_3Sum.swift */; };
 		AEB4BB472D183D0F00FF21F4 /* Medium_80_RemoveDuplicateArray2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB4BB462D183D0F00FF21F4 /* Medium_80_RemoveDuplicateArray2.swift */; };
 		AEB8BD382CED889C00E64184 /* 13549.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB8BD372CED889C00E64184 /* 13549.swift */; };
+		AEBABCD92D328EFE00F578E7 /* 스도쿠.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBABCD82D328EFE00F578E7 /* 스도쿠.swift */; };
 		AEF36E6E2CEECF030044D4D3 /* 14502.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF36E6D2CEECF030044D4D3 /* 14502.swift */; };
 /* End PBXBuildFile section */
 
@@ -287,6 +288,7 @@
 		AEA71EF82D26401C0040AD72 /* Medium_15_3Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medium_15_3Sum.swift; sourceTree = "<group>"; };
 		AEB4BB462D183D0F00FF21F4 /* Medium_80_RemoveDuplicateArray2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medium_80_RemoveDuplicateArray2.swift; sourceTree = "<group>"; };
 		AEB8BD372CED889C00E64184 /* 13549.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13549.swift; sourceTree = "<group>"; };
+		AEBABCD82D328EFE00F578E7 /* 스도쿠.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "스도쿠.swift"; sourceTree = "<group>"; };
 		AEF36E6D2CEECF030044D4D3 /* 14502.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14502.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -562,6 +564,7 @@
 				3B8097512CBF3F04000A053D /* 11053.swift */,
 				3B8412CB2CC5DD7100C1AC68 /* RGB1149.swift */,
 				AE6F8D1A2CFC70E80066DE74 /* NQueen.swift */,
+				AEBABCD82D328EFE00F578E7 /* 스도쿠.swift */,
 			);
 			path = BackTracking;
 			sourceTree = "<group>";
@@ -843,6 +846,7 @@
 				3B6A753D2BA5C96100CD1D81 /* baekjoon_1333.swift in Sources */,
 				3BD188C12B613D2C003AECAF /* 119_Binary Tree Right Side view.swift in Sources */,
 				3B2E80252CAD0728005C6C73 /* LV2_프렌즈4블록.swift in Sources */,
+				AEBABCD92D328EFE00F578E7 /* 스도쿠.swift in Sources */,
 				3BACD59C2B751B5300881563 /* 215_Largest Element_in_an_Array.swift in Sources */,
 				3BD2CD832BAB0EB80072AC13 /* Programmers_LV2_KaKAo2023_Icon.swift in Sources */,
 				3B46C32E2C87F344000CE62F /* Baekjoon_11659_구간합구하기4.swift in Sources */,
