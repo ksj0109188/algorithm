@@ -760,35 +760,9 @@ let arr2 = [
 // 1/11
 //스도쿠_2239().solution()
 
-print(Medium_45().jump([2,3,1,1,4]))
-print(Medium_45().jump([2,3,0,1,4]))
-print(Medium_45().jump([9,8,2,2,0,2,2,0,4,1,5,7,9,6,6,0,6,5,0,5]))
+// 1/13
+//print(Medium_45().jump([2,3,1,1,4]))
+//print(Medium_45().jump([2,3,0,1,4]))
+//print(Medium_45().jump([9,8,2,2,0,2,2,0,4,1,5,7,9,6,6,0,6,5,0,5]))
 
-class Medium_45 {
-        func jump(_ nums: [Int]) -> Int {
-            var dp: [Int] = .init(repeating: Int.max, count: nums.count)
-
-            func dfs(_ index: Int, _ step: Int) -> Int {
-                guard index < nums.count - 1 else { return step }
-                
-                if dp[index] != Int.max {
-                    return dp[index]
-                }
-
-                let len = nums[index]
-                var minStep = Int.max
-
-                for i in stride(from: len, through: 1, by:  -1) {
-                    minStep = min(dfs(index + i, step + 1), minStep)
-                }
-
-                dp[index] = minStep
-                
-                return dp[index]
-            }
-
-            dfs(0, 0)
-
-            return dp[0]
-        }
-}
+//
