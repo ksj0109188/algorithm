@@ -765,4 +765,17 @@ let arr2 = [
 //print(Medium_45().jump([2,3,0,1,4]))
 //print(Medium_45().jump([9,8,2,2,0,2,2,0,4,1,5,7,9,6,6,0,6,5,0,5]))
 
-//
+// 11/14
+//print(Medium_274().hIndex([1,3,1]))
+//print(Medium_274().hIndex([3,0,6,1,5]))
+//print(Medium_274().hIndex([100]))
+
+//let obj = RandomizedSet()
+//let ret_1: Bool = obj.insert(1)
+//let ret_2: Bool = obj.insert(1)
+//let ret_3: Bool = obj.remove(1)
+//let ret_4: Int = obj.getRandom()
+
+//print(Medium_238().productExceptSelf([1,2,3,4]))
+//print(Medium_238().productExceptSelf([-1,1,0,-3,3]))
+
