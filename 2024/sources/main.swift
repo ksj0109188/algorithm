@@ -780,4 +780,7 @@ let arr2 = [
 //print(Medium_238().productExceptSelf([-1,1,0,-3,3]))
 
 // 11/17
-ACMCrafft_1005().solution()
+//ACMCrafft_1005().solution()
+
+// 11/19
+사이클게임_20040().solution()

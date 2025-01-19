@@ -51,16 +51,16 @@ class ACMCrafft_1005 {
             indices[pos] = i // 현재 위치의 원본 배열 인덱스 저장
             if pos > 0 {
                 prevIndices[i] = indices[pos - 1] // 이전 원소의 인덱스 연결
-//                print("Updated prevIndices[\(i)] = \(indices[pos - 1])")
+                print("Updated prevIndices[\(i)] = \(indices[pos - 1])")
             }
             
-//            print("Current LIS: \(lis)", "Currentindices: \(indices)")
+            print("Current LIS: \(lis)", "Currentindices: \(indices)")
         }
-//
-//        print("out of for loop")
-//        print("lis: \(lis)")
-//        print("indices: \(indices)")
-//        print("prevIndices: \(prevIndices)")
+
+        print("out of for loop")
+        print("lis: \(lis)")
+        print("indices: \(indices)")
+        print("prevIndices: \(prevIndices)")
 //
         // LIS 복원
         let lisLength = lis.count
@@ -69,9 +69,9 @@ class ACMCrafft_1005 {
         
 //        print("Reconstructing LIS:")
         while currentIndex != -1 {
-//            print("currentIndex", currentIndex)
+            print("currentIndex", currentIndex)
             result.append(sequence[currentIndex])
-//            print("Added \(sequence[currentIndex]) to result")
+            print("Added \(sequence[currentIndex]) to result")
             currentIndex = prevIndices[currentIndex]
         }
         
