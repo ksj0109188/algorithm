@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ACMCrafft_1005 {
+class LIS5 {
 
 //    10 40 50 30 의 경우 정상적으로 출력 안됨 -> 이미 해가 구해졌는데 계속 연산이 실행됨
 //    private func findLIS(sequence: [Int]) -> [Int] {

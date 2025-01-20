@@ -780,7 +780,73 @@ let arr2 = [
 //print(Medium_238().productExceptSelf([-1,1,0,-3,3]))
 
 // 11/17
-//ACMCrafft_1005().solution()
+//LIS5().solution()
 
 // 11/19
-사이클게임_20040().solution()
+//사이클게임_20040().solution()
+//ACMCraft().solution()
+//
+//class ACMCraft {
+//    func solution() {
+//        let t = Int(readLine()!)!
+//        let input = readLine()!.split(separator: " ").map{ Int($0)! }
+//        
+//        for _ in 0..<t {
+//            let (n, k) = (input[0], input[1])
+//            let costs = readLine()!.split(separator: " ").map{ Int($0)! }
+//            var graphs: [Int: [Int]] = [:]
+//            var inDegrees: [Int] = .init(repeating: 0, count: n + 1)
+//            var queue: [Int] = []
+//            var result = 0
+//            
+//            for _ in 0..<k {
+//                let input = readLine()!.split(separator: " ").map{ Int($0)! }
+//                let (from, to) = (input[0], input[1])
+//                
+//                graphs[from, default: []].append(to)
+//                inDegrees[to] += 1
+//            }
+//            
+//            let w = Int(readLine()!)!
+//            
+//            for (index, value) in inDegrees.enumerated() {
+//                if index != 0 && value == 0 {
+//                    queue.append(index)
+//                }
+//            }
+//            
+//            while !queue.isEmpty {
+//                // 처음, indegree가 0, w가 완료시 -> 3케이스 각각 결과시간을 축적해야함.
+//                let from = queue.removeFirst()
+//                var cost = 0
+//                
+//                for to in graphs[from]! {
+//                    inDegrees[to] -= 1
+//                    
+//                    if inDegrees[to] <= 0 {
+//                        cost = max(cost, costs[to])
+//                    }
+//                }
+//                
+//                result += cost
+//                
+//                
+//            }
+//            
+//            print(result)
+//        }
+//    }
+//}
+
+// 1/20
+//print(Medium_gasStation().canCompleteCircuit([1,2,3,4,5], [3,4,5,1,2]))
+//print(Medium_gasStation().canCompleteCircuit([2,3,4], [3,4,5,1,2]))
+//print(Medium_gasStation().canCompleteCircuit([3,3,4], [3,4,4]))
+//print(Medium_gasStation().canCompleteCircuit([5,8,2,8], [6,5,6,6]))
+
+class Hard_135 {
+    func solution() {
+        
+        
+    }
+}
