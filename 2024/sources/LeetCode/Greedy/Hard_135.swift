@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: 난 초기 이 문제를 DP라 막연히 생각했었음. -> DP 알고리즘의 본질을 다시 생각해보면 아니란걸 알 수 있음.
 class Hard_135 {
     func candy(_ ratings: [Int]) -> Int {
         let n = ratings.count
