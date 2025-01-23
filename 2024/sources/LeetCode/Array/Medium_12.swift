@@ -28,7 +28,7 @@ func intToRoman(_ num: Int) -> String {
     
     var result = ""
     var number = num
-    result.split
+    
     // Iterate through the Roman numeral values
     for roman in romanSymbols {
         while number >= roman.value {

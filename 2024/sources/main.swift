@@ -845,4 +845,7 @@ let arr2 = [
 //print(Medium_gasStation().canCompleteCircuit([5,8,2,8], [6,5,6,6]))
 
 // 1/21
-Hard_42().Referecetrap([0,1,0,2,1,0,1,3,2,1,2,1])
+//Hard_42().Referecetrap([0,1,0,2,1,0,1,3,2,1,2,1])
+
+Easy_14().longestCommonPrefix(["flower","flow","flight"])
+// 1/23
