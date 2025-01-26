@@ -784,59 +784,57 @@ let arr2 = [
 
 // 11/19
 //사이클게임_20040().solution()
-//ACMCraft().solution()
-//
-//class ACMCraft {
-//    func solution() {
-//        let t = Int(readLine()!)!
-//        let input = readLine()!.split(separator: " ").map{ Int($0)! }
-//        
-//        for _ in 0..<t {
-//            let (n, k) = (input[0], input[1])
-//            let costs = readLine()!.split(separator: " ").map{ Int($0)! }
-//            var graphs: [Int: [Int]] = [:]
-//            var inDegrees: [Int] = .init(repeating: 0, count: n + 1)
-//            var queue: [Int] = []
-//            var result = 0
-//            
-//            for _ in 0..<k {
-//                let input = readLine()!.split(separator: " ").map{ Int($0)! }
-//                let (from, to) = (input[0], input[1])
-//                
-//                graphs[from, default: []].append(to)
-//                inDegrees[to] += 1
-//            }
-//            
-//            let w = Int(readLine()!)!
-//            
-//            for (index, value) in inDegrees.enumerated() {
-//                if index != 0 && value == 0 {
-//                    queue.append(index)
-//                }
-//            }
-//            
-//            while !queue.isEmpty {
-//                // 처음, indegree가 0, w가 완료시 -> 3케이스 각각 결과시간을 축적해야함.
-//                let from = queue.removeFirst()
-//                var cost = 0
-//                
-//                for to in graphs[from]! {
-//                    inDegrees[to] -= 1
-//                    
-//                    if inDegrees[to] <= 0 {
-//                        cost = max(cost, costs[to])
-//                    }
-//                }
-//                
-//                result += cost
-//                
-//                
-//            }
-//            
-//            print(result)
-//        }
-//    }
-//}
+ACMCraft().solution()
+
+class ACMCraft {
+    func solution() {
+        let t = Int(readLine()!)!
+        
+        for _ in 0..<t {
+            let input = readLine()!.split(separator: " ").map{ Int($0)! }
+            let (n, k) = (input[0], input[1])
+            var costs = readLine()!.split(separator: " ").map{ Int($0)! }
+            costs.insert(0, at: 0)
+            var graphs: [Int: [Int]] = [:]
+            var inDegrees: [Int] = .init(repeating: 0, count: n + 1)
+            var queue: [Int] = []
+            var timeRequired = costs
+
+            for _ in 0..<k {
+                let input = readLine()!.split(separator: " ").map{ Int($0)! }
+                let (from, to) = (input[0], input[1])
+                
+                graphs[from, default: []].append(to)
+                inDegrees[to] += 1
+            }
+            
+            let w = Int(readLine()!)!
+            
+            for (index, value) in inDegrees.enumerated() {
+                if value == 0 {
+                    queue.append(index)
+                    timeRequired[index] = costs[index]
+                }
+            }
+            
+            while !queue.isEmpty {
+                // 처음, indegree가 0, w가 완료시 -> 3케이스 각각 결과시간을 축적해야함.
+                let from = queue.removeFirst()
+                
+                for to in graphs[from] ?? [] {
+                    inDegrees[to] -= 1
+                    timeRequired[to] = max(timeRequired[to], timeRequired[from] + costs[to])
+                    
+                    if inDegrees[to] <= 0 {
+                        queue.append(to)
+                    }
+                }
+            }
+            
+            print(timeRequired[w])
+        }
+    }
+}
 
 // 1/20
 //print(Medium_gasStation().canCompleteCircuit([1,2,3,4,5], [3,4,5,1,2]))
@@ -847,5 +845,5 @@ let arr2 = [
 // 1/21
 //Hard_42().Referecetrap([0,1,0,2,1,0,1,3,2,1,2,1])
 
-Easy_14().longestCommonPrefix(["flower","flow","flight"])
+//Easy_14().longestCommonPrefix(["flower","flow","flight"])
 // 1/23
