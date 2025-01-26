@@ -313,6 +313,7 @@
 		AEA71F002D277F270040AD72 /* Bit Manipulation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Bit Manipulation"; sourceTree = "<group>"; };
 		AEB4BB3E2D16B39800FF21F4 /* String */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = String; sourceTree = "<group>"; };
 		AEB4BB412D16C3F400FF21F4 /* Array */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Array; sourceTree = "<group>"; };
+		AED0C33B2D463BE2003ABE0E /* 위상정렬 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "위상정렬"; sourceTree = "<group>"; };
 		AEDDB1082D0DA857006F8B87 /* 3dimensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = 3dimensions; sourceTree = "<group>"; };
 		AEDDB10F2D0EBF19006F8B87 /* Stack */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Stack; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -639,6 +640,7 @@
 		3BE3EC012AA6A2C500AE17CF /* BakJoon */ = {
 			isa = PBXGroup;
 			children = (
+				AED0C33B2D463BE2003ABE0E /* 위상정렬 */,
 				3BCDC44E2CE09E32007760CC /* PrefixSum */,
 				3B2C81E22CBBAC5700E79FA1 /* UnionFind */,
 				3BC1C15A2B93734A004A3D76 /* Media.xcassets */,
@@ -696,6 +698,7 @@
 				AEA71F002D277F270040AD72 /* Bit Manipulation */,
 				AEB4BB3E2D16B39800FF21F4 /* String */,
 				AEB4BB412D16C3F400FF21F4 /* Array */,
+				AED0C33B2D463BE2003ABE0E /* 위상정렬 */,
 				AEDDB1082D0DA857006F8B87 /* 3dimensions */,
 				AEDDB10F2D0EBF19006F8B87 /* Stack */,
 			);
