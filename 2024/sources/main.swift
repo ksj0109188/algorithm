@@ -798,46 +798,115 @@ let arr2 = [
 //Easy_14().longestCommonPrefix(["flower","flow","flight"])
 // 1/23
 
-줄세우기_2252().solution()
 
-class 줄세우기_2252 {
+// 1/28
+//줄세우기_2252().solution()
+
+// 1/29
+//세용액_2473().solution()
+//세용액_2473_2().solution()
+
+// 1/30
+//Easy_35().searchInsert([1,3,5,6], 5)
+//print(Easy_35().searchInsert([1,3,5,6], 2))
+//print(Easy_35().searchInsert([1,3,5,6], 7))
+
+//DDR().solution()
+DDR2().solution()
+
+// 1/31
+class DDR {
+    let nearDirection: [Int: [Int]] = [1: [2, 4], 2:[1, 3], 3:[2, 4], 4:[1, 3]]
+    
     func solution() {
-        let input = readLine()!.split(separator: " ").map{ Int($0)! }
-        let n = input[0]
-        let m = input[1]
-        var result: [Int] = []
-        var graph: [Int: [Int]] = [:]
-        var inDegrees: [Int] = .init(repeating: 0, count: n + 1)
+        let arr = readLine()!.split(separator: " ").map{ Int($0)! }
+        var leftFootPositions: [Int] = []
+        var rightFootPositions: [Int] = []
+        var result = 0
         
-        for _ in 0..<m {
-            let input = readLine()!.split(separator: " ").map{ Int($0)! }
-            let from = input[0]
-            let to = input[1]
+        for i in 0..<arr.count {
+            guard arr[i] != 0 else { break }
+            guard !leftFootPositions.isEmpty else {
+                leftFootPositions.append(arr[i])
+                result += 2
+                continue
+            }
+            guard !rightFootPositions.isEmpty else {
+                rightFootPositions.append(arr[i])
+                result += 2
+                continue
+            }
             
-            graph[from, default: []].append(to)
-            inDegrees[to] += 1
-        }
-        
-        var queue: [Int] = []
-        
-        for i in 1...n {
-            if inDegrees[i] == 0 {
-                queue.append(i)
+            let currentLeftFootPosition = leftFootPositions.last!
+            let currentRightFootPosition = rightFootPositions.last!
+            
+            if currentLeftFootPosition == arr[i] || currentRightFootPosition == arr[i] {
+                result += 1
+                continue
+            }
+            
+            if nearDirection[currentLeftFootPosition]!.contains(arr[i]) {
+                result += 3
+                leftFootPositions.append(arr[i])
+            } else if nearDirection[currentRightFootPosition]!.contains(arr[i]) {
+                result += 3
+                rightFootPositions.append(arr[i])
             }
         }
         
-        while !queue.isEmpty {
-            let current = queue.removeFirst()
+        print(result)
+    }
+}
+
+class DDR2 {
+    let cost = [
+        [0, 2, 2, 2, 2],  // 0에서 이동하는 비용
+        [2, 1, 3, 4, 3],  // 1에서 이동하는 비용
+        [2, 3, 1, 3, 4],  // 2에서 이동하는 비용
+        [2, 4, 3, 1, 3],  // 3에서 이동하는 비용
+        [2, 3, 4, 3, 1]   // 4에서 이동하는 비용
+    ]
+    
+    func solution() {
+        let arr = readLine()!.split(separator: " ").map { Int($0)! }
+        let n = arr.count - 1 // 마지막 0 제외
+        
+        var dp = Array(repeating: Array(repeating: Array(repeating: Int.max, count: 5), count: 5), count: n + 1)
+        
+        // 초기 상태: 두 발이 중앙(0,0)에 위치
+        dp[0][0][0] = 0
+        
+        for step in 0..<n {
+            let next = arr[step]
             
-            result.append(current)
-            
-            for next in graph[current] ?? [] {
-                inDegrees[next] -= 1
-                
-                if inDegrees[next] <= 0 { queue.append(next) }
+            for left in 0...4 {
+                for right in 0...4 {
+                    let prev = dp[step][left][right]
+                    if prev == Int.max { continue }
+                    
+                    // 왼발을 움직일 경우
+                    if right != next { // 두 발이 같은 위치에 있으면 안 됨
+                        let moveCost = cost[left][next]
+                        dp[step + 1][next][right] = min(dp[step + 1][next][right], prev + moveCost)
+                    }
+                    
+                    // 오른발을 움직일 경우
+                    if left != next {
+                        let moveCost = cost[right][next]
+                        dp[step + 1][left][next] = min(dp[step + 1][left][next], prev + moveCost)
+                    }
+                }
+            }
+        }
+        dp[n].map{print($0)}
+        // 마지막 단계에서 최소 힘을 찾음
+        var result = Int.max
+        for left in 0...4 {
+            for right in 0...4 {
+                result = min(result, dp[n][left][right])
             }
         }
         
-        print(result.map{ String($0) }.joined(separator: " "))
+        print(result)
     }
 }
