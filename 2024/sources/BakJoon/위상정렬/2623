@@ -1,0 +1,66 @@
+//
+//  음악프로그램.swift
+//  BakJoon
+//
+//  Created by 김성준 on 2/3/25.
+//
+
+import Foundation
+
+class 음악프로그램_2623 {
+    func solution() {
+        let input = readLine()!.split(separator: " ").map{ Int($0)! }
+        let n = input[0]
+        let m = input[1]
+        var degrees: [Int] = .init(repeating: 0, count: n + 1)
+        var arr: [[Int]] = []
+        //MARK: 만약 남일이가 순서를 정하는 것이 불가능할 경우에는 첫째 줄에 0을 출력한다.
+        var graph: [Int: [Int]] = [:]
+        var result: [Int] = []
+        
+        for _ in 0..<m {
+            var input = readLine()!.split(separator: " ").map{ Int($0)! }
+            input.removeFirst()
+            
+            arr.append(input)
+        }
+        
+        for i in 0..<arr.count {
+            for j in 1..<arr[i].count {
+                let from = arr[i][j - 1]
+                let to = arr[i][j]
+                
+                graph[from, default: []].append(to)
+                degrees[to] += 1
+            }
+        }
+        
+        var queue: [Int] = []
+        
+        for i in 1..<degrees.count {
+            if degrees[i] == 0 {
+                queue.append(i)
+            }
+        }
+        
+        while !queue.isEmpty {
+            let current = queue.removeFirst()
+            
+            result.append(current)
+            
+            for next in graph[current] ?? [] {
+                degrees[next] -= 1
+                
+                if degrees[next] == 0 {
+                    queue.append(next)
+                }
+            }
+        }
+        
+        if result.count != n {
+            print(0)
+        } else {
+            result.map{ print($0) }
+        }
+    }
+}

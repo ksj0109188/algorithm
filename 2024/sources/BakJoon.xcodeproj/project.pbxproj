@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 73;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -292,6 +292,16 @@
 		AEF36E6D2CEECF030044D4D3 /* 14502.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14502.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		AED0C48D2D50770E003ABE0E /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 3BE3EBFB2AA6A2C500AE17CF /* Sources */;
+			membershipExceptions = (
+				2623,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3B041E722CB255BC00A86E75 /* 분할정복 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "분할정복"; sourceTree = "<group>"; };
 		3B1399952CC0908A00E1292F /* Tree */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Tree; sourceTree = "<group>"; };
@@ -313,7 +323,7 @@
 		AEA71F002D277F270040AD72 /* Bit Manipulation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Bit Manipulation"; sourceTree = "<group>"; };
 		AEB4BB3E2D16B39800FF21F4 /* String */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = String; sourceTree = "<group>"; };
 		AEB4BB412D16C3F400FF21F4 /* Array */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Array; sourceTree = "<group>"; };
-		AED0C33B2D463BE2003ABE0E /* 위상정렬 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "위상정렬"; sourceTree = "<group>"; };
+		AED0C33B2D463BE2003ABE0E /* 위상정렬 */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AED0C48D2D50770E003ABE0E /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "위상정렬"; sourceTree = "<group>"; };
 		AED0C48A2D4F4152003ABE0E /* DP3 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DP3; sourceTree = "<group>"; };
 		AEDDB1082D0DA857006F8B87 /* 3dimensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = 3dimensions; sourceTree = "<group>"; };
 		AEDDB10F2D0EBF19006F8B87 /* Stack */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Stack; sourceTree = "<group>"; };
@@ -726,7 +736,6 @@
 				};
 			};
 			buildConfigurationList = 3BE3EBFA2AA6A2C500AE17CF /* Build configuration list for PBXProject "BakJoon" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -734,6 +743,7 @@
 				Base,
 			);
 			mainGroup = 3BE3EBF62AA6A2C500AE17CF;
+			preferredProjectObjectVersion = 56;
 			productRefGroup = 3BE3EC002AA6A2C500AE17CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

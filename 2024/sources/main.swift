@@ -812,6 +812,11 @@ let arr2 = [
 //print(Easy_35().searchInsert([1,3,5,6], 7))
 
 //DDR().solution()
-DDR2().solution()
+//DDR2().solution()
 
 // 1/31
+
+// 2/3
+음악프로그램_2623().solution()
+
+
