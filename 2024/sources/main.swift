@@ -820,5 +820,6 @@ let arr2 = [
 //음악프로그램_2623().solution()
 
 // 2/5
-앱_7579().solution()
-앱_7579().solution2()
+//앱_7579().solution()
+//앱_7579().solution2()
+앱_7579().solution3()
