@@ -820,6 +820,16 @@ let arr2 = [
 //음악프로그램_2623().solution()
 
 // 2/5
-//앱_7579().solution()
+//앱_7579().solution1()
 //앱_7579().solution2()
-앱_7579().solution3()
+//앱_7579().solution3()
+
+// 2/7
+//print(Medium_74().searchMatrix([[1,3,5,7],[10,11,16,20],[23,30,34,60]], 3))
+//print(Medium_74().searchMatrix([[1,3,5,7],[10,11,16,20],[23,30,34,60]], 13))
+//print(Medium_74().searchMatrix([[1]], 1))
+//print(Medium_74().searchMatrix([[1]], 2))
+
+// 2/10
+팀프로젝트_9466().exec()
+
