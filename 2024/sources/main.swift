@@ -840,3 +840,41 @@ let arr2 = [
 //Medium_162()
 //Medium_33().search([4,5,6,7,0,1,2], 0)
 //Medium_33().search([5,1,3], 5)
+
+class Hard_4 {
+    func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
+        // nums1이 항상 더 짧은 배열이 되도록 보장
+        let (A, B) = nums1.count <= nums2.count ? (nums1, nums2) : (nums2, nums1)
+        let (m, n) = (A.count, B.count)
+        
+        var left = 0
+        var right = m
+        let halfLen = (m + n + 1) / 2  // 전체 길이의 절반
+        
+        while left <= right {
+            let i = (left + right) / 2   // A 배열에서 선택하는 인덱스
+            let j = halfLen - i          // B 배열에서 선택하는 인덱스
+            
+            let Aleft = (i == 0) ? Int.min : A[i - 1]
+            let Aright = (i == m) ? Int.max : A[i]
+            let Bleft = (j == 0) ? Int.min : B[j - 1]
+            let Bright = (j == n) ? Int.max : B[j]
+            
+            if Aleft <= Bright && Bleft <= Aright {
+                // 중앙값 계산
+                if (m + n) % 2 == 0 {
+                    return Double(max(Aleft, Bleft) + min(Aright, Bright)) / 2.0
+                } else {
+                    return Double(max(Aleft, Bleft))
+                }
+            } else if Aleft > Bright {
+                right = i - 1
+            } else {
+                left = i + 1
+            }
+        }
+        
+        return 0.0  // 실행되지 않는 코드 (논리적으로 도달할 수 없는 경우)
+    }
+}
+
