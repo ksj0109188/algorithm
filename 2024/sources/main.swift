@@ -878,3 +878,130 @@ class Hard_4 {
     }
 }
 
+class 보석도둑_1202 {
+    class PriorityQueue {
+        struct Node {
+            let m: Int
+            let v: Int
+        }
+        let operation: (Int, Int) -> Bool
+        var queue: [Node]
+        
+        init(operation: @escaping (Int, Int) -> Bool, queue: [Node]) {
+            self.operation = operation
+            self.queue = queue
+        }
+        
+        private func leftChildIndex(parent: Int) -> Int {
+            return parent * 2 + 1
+        }
+        
+        private func rightChildIndex(parent: Int) -> Int {
+            return parent * 2 + 2
+        }
+        
+        private func parentIndex(index: Int) -> Int {
+            return (index - 1) / 2
+        }
+        
+        func enQueue(node: Node) {
+            queue.append(node)
+            
+            heapifyUp(child: queue.count - 1)
+        }
+        
+        func deQueue() -> Node? {
+            guard !queue.isEmpty else { return nil }
+            
+            var popedItem = queue.removeFirst()
+            
+            if queue.count > 0 {
+                queue.swapAt(0, queue.count - 1)
+                heapifyDown(index: 0)
+            }
+            
+            return popedItem
+        }
+        
+        private func heapifyUp(child index: Int) {
+            guard index < 1 else { return }
+            
+            var child = index
+            var parent = parentIndex(index: child)
+            
+            while index > 0 && operation(queue[child].v, queue[parent].v) {
+                queue.swapAt(index, parent)
+                child = parent
+                parent = parentIndex(index: child)
+            }
+        }
+        
+        private func heapifyDown(index : Int) {
+            var parent = index
+            
+            while true {
+                let leftChild = leftChildIndex(parent: parent)
+                let rightChild = rightChildIndex(parent: parent)
+                var candidate = parent
+                
+                if leftChild < queue.count && operation(queue[candidate].v,queue[leftChild].v) {
+                    candidate = leftChild
+                } else if rightChild < queue.count && operation(queue[candidate].v, queue[rightChild].v) {
+                    candidate = rightChild
+                }
+                
+                if candidate == parent {
+                    break
+                }
+                
+                queue.swapAt(candidate, parent)
+                parent = candidate
+            }
+        }
+    }
+    
+    func exec() {
+        let input = readLine()!.split(separator: " ").map{ Int($0)! }
+        let (n, k) = (input[0], input[1])
+        var items: [(m: Int, v: Int)] = []
+        var limits: [Int] = []
+        var result = 0
+        
+        for _ in 0..<n {
+            let input = readLine()!.split(separator: " ").map{ Int($0)! }
+            
+            items.append((m: input[0], v: input[1]))
+        }
+        
+        for _ in 0..<k {
+            let input = Int(readLine()!)!
+            limits.append(input)
+        }
+        
+        items.sort{ $0.m < $1.m }
+        limits.sort()
+        
+        let prioirtyQueue = PriorityQueue(operation: >, queue: [])
+        
+        for limit in limits {
+            while true {
+                guard let item = items.first else { break }
+//                print("limit", limit)
+//                print("item", item)
+                if limit < item.m { break }
+                
+                prioirtyQueue.enQueue(node: .init(m: item.m, v: item.v))
+//                print("prioirtyQueue.queue", prioirtyQueue.queue)
+                items.removeFirst()
+            }
+            
+            let node = prioirtyQueue.deQueue()
+//            print("dequeue:",node)
+            result += node?.v ?? 0
+        }
+        
+        print(result)
+    }
+}
+
+보석도둑_1202().exec()
