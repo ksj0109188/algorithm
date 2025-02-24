@@ -841,167 +841,42 @@ let arr2 = [
 //Medium_33().search([4,5,6,7,0,1,2], 0)
 //Medium_33().search([5,1,3], 5)
 
-class Hard_4 {
-    func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
-        // nums1이 항상 더 짧은 배열이 되도록 보장
-        let (A, B) = nums1.count <= nums2.count ? (nums1, nums2) : (nums2, nums1)
-        let (m, n) = (A.count, B.count)
-        
-        var left = 0
-        var right = m
-        let halfLen = (m + n + 1) / 2  // 전체 길이의 절반
-        
-        while left <= right {
-            let i = (left + right) / 2   // A 배열에서 선택하는 인덱스
-            let j = halfLen - i          // B 배열에서 선택하는 인덱스
-            
-            let Aleft = (i == 0) ? Int.min : A[i - 1]
-            let Aright = (i == m) ? Int.max : A[i]
-            let Bleft = (j == 0) ? Int.min : B[j - 1]
-            let Bright = (j == n) ? Int.max : B[j]
-            
-            if Aleft <= Bright && Bleft <= Aright {
-                // 중앙값 계산
-                if (m + n) % 2 == 0 {
-                    return Double(max(Aleft, Bleft) + min(Aright, Bright)) / 2.0
-                } else {
-                    return Double(max(Aleft, Bleft))
-                }
-            } else if Aleft > Bright {
-                right = i - 1
-            } else {
-                left = i + 1
-            }
-        }
-        
-        return 0.0  // 실행되지 않는 코드 (논리적으로 도달할 수 없는 경우)
-    }
-}
+//class Hard_4 {
+//    func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
+//        // nums1이 항상 더 짧은 배열이 되도록 보장
+//        let (A, B) = nums1.count <= nums2.count ? (nums1, nums2) : (nums2, nums1)
+//        let (m, n) = (A.count, B.count)
+//        
+//        var left = 0
+//        var right = m
+//        let halfLen = (m + n + 1) / 2  // 전체 길이의 절반
+//        
+//        while left <= right {
+//            let i = (left + right) / 2   // A 배열에서 선택하는 인덱스
+//            let j = halfLen - i          // B 배열에서 선택하는 인덱스
+//            
+//            let Aleft = (i == 0) ? Int.min : A[i - 1]
+//            let Aright = (i == m) ? Int.max : A[i]
+//            let Bleft = (j == 0) ? Int.min : B[j - 1]
+//            let Bright = (j == n) ? Int.max : B[j]
+//            
+//            if Aleft <= Bright && Bleft <= Aright {
+//                // 중앙값 계산
+//                if (m + n) % 2 == 0 {
+//                    return Double(max(Aleft, Bleft) + min(Aright, Bright)) / 2.0
+//                } else {
+//                    return Double(max(Aleft, Bleft))
+//                }
+//            } else if Aleft > Bright {
+//                right = i - 1
+//            } else {
+//                left = i + 1
+//            }
+//        }
+//        
+//        return 0.0  // 실행되지 않는 코드 (논리적으로 도달할 수 없는 경우)
+//    }
+//}
 
-class 보석도둑_1202 {
-    class PriorityQueue {
-        struct Node {
-            let m: Int
-            let v: Int
-        }
-        let operation: (Int, Int) -> Bool
-        var queue: [Node]
-        
-        init(operation: @escaping (Int, Int) -> Bool, queue: [Node]) {
-            self.operation = operation
-            self.queue = queue
-        }
-        
-        private func leftChildIndex(parent: Int) -> Int {
-            return parent * 2 + 1
-        }
-        
-        private func rightChildIndex(parent: Int) -> Int {
-            return parent * 2 + 2
-        }
-        
-        private func parentIndex(index: Int) -> Int {
-            return (index - 1) / 2
-        }
-        
-        func enQueue(node: Node) {
-            queue.append(node)
-            
-            heapifyUp(child: queue.count - 1)
-        }
-        
-        func deQueue() -> Node? {
-            guard !queue.isEmpty else { return nil }
-            
-            var popedItem = queue.removeFirst()
-            
-            if queue.count > 0 {
-                queue.swapAt(0, queue.count - 1)
-                heapifyDown(index: 0)
-            }
-            
-            return popedItem
-        }
-        
-        private func heapifyUp(child index: Int) {
-            guard index < 1 else { return }
-            
-            var child = index
-            var parent = parentIndex(index: child)
-            
-            while index > 0 && operation(queue[child].v, queue[parent].v) {
-                queue.swapAt(index, parent)
-                child = parent
-                parent = parentIndex(index: child)
-            }
-        }
-        
-        private func heapifyDown(index : Int) {
-            var parent = index
-            
-            while true {
-                let leftChild = leftChildIndex(parent: parent)
-                let rightChild = rightChildIndex(parent: parent)
-                var candidate = parent
-                
-                if leftChild < queue.count && operation(queue[candidate].v,queue[leftChild].v) {
-                    candidate = leftChild
-                } else if rightChild < queue.count && operation(queue[candidate].v, queue[rightChild].v) {
-                    candidate = rightChild
-                }
-                
-                if candidate == parent {
-                    break
-                }
-                
-                queue.swapAt(candidate, parent)
-                parent = candidate
-            }
-        }
-    }
-    
-    func exec() {
-        let input = readLine()!.split(separator: " ").map{ Int($0)! }
-        let (n, k) = (input[0], input[1])
-        var items: [(m: Int, v: Int)] = []
-        var limits: [Int] = []
-        var result = 0
-        
-        for _ in 0..<n {
-            let input = readLine()!.split(separator: " ").map{ Int($0)! }
-            
-            items.append((m: input[0], v: input[1]))
-        }
-        
-        for _ in 0..<k {
-            let input = Int(readLine()!)!
-            limits.append(input)
-        }
-        
-        items.sort{ $0.m < $1.m }
-        limits.sort()
-        
-        let prioirtyQueue = PriorityQueue(operation: >, queue: [])
-        
-        for limit in limits {
-            while true {
-                guard let item = items.first else { break }
-//                print("limit", limit)
-//                print("item", item)
-                if limit < item.m { break }
-                
-                prioirtyQueue.enQueue(node: .init(m: item.m, v: item.v))
-//                print("prioirtyQueue.queue", prioirtyQueue.queue)
-                items.removeFirst()
-            }
-            
-            let node = prioirtyQueue.deQueue()
-//            print("dequeue:",node)
-            result += node?.v ?? 0
-        }
-        
-        print(result)
-    }
-}
-
-보석도둑_1202().exec()
+//합이0_7453().exec()
+//보석도둑_1202().exec()
