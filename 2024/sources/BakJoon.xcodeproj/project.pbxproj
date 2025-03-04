@@ -319,6 +319,7 @@
 		3BCCFD652CE7AD8C0049AF51 /* DP2 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DP2; sourceTree = "<group>"; };
 		3BCDC44E2CE09E32007760CC /* PrefixSum */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PrefixSum; sourceTree = "<group>"; };
 		3BFEEAEA2CB2539C003311F9 /* TwoPointer */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TwoPointer; sourceTree = "<group>"; };
+		AE09EA802D76A4A2001602F0 /* Divide_Conquer */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Divide_Conquer; sourceTree = "<group>"; };
 		AE530F092D6C1005002AF4EE /* Heap */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Heap; sourceTree = "<group>"; };
 		AE6293952D35FF86002CA61B /* Greedy */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Greedy; sourceTree = "<group>"; };
 		AE6F8D162CFC5B190066DE74 /* DataStructure */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DataStructure; sourceTree = "<group>"; };
@@ -482,6 +483,7 @@
 				AEB4BB412D16C3F400FF21F4 /* Array */,
 				AEA71CC22D22523C0040AD72 /* DFS */,
 				AEA71F002D277F270040AD72 /* Bit Manipulation */,
+				AE09EA802D76A4A2001602F0 /* Divide_Conquer */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -709,6 +711,7 @@
 				3BCCFD652CE7AD8C0049AF51 /* DP2 */,
 				3BCDC44E2CE09E32007760CC /* PrefixSum */,
 				3BFEEAEA2CB2539C003311F9 /* TwoPointer */,
+				AE09EA802D76A4A2001602F0 /* Divide_Conquer */,
 				AE530F092D6C1005002AF4EE /* Heap */,
 				AE6293952D35FF86002CA61B /* Greedy */,
 				AE6F8D162CFC5B190066DE74 /* DataStructure */,
