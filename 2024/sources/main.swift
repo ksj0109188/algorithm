@@ -891,7 +891,42 @@ let arr2 = [
 // 3/6
 
 // 3/8
-//가장긴증가하는부분수열2_12015().exec()
+가장긴증가하는부분수열2_12015().exec()
 
 //7
 //10 20 30 21 22 23 24
+
+// 3/9
+func maxSumKElements(nums1: [Int], nums2: [Int], k: Int) -> [Int] {
+    let n = nums1.count
+    var answer = [Int](repeating: 0, count: n)
+    let indexedNums = zip(nums1, nums2).enumerated().sorted { $0.1.0 < $1.1.0 }
+    
+    var heap = [Int]() // Min-heap for top k nums2 values
+    var numToSum = [Int: Int]() // Store results for each nums1[i]
+    
+    for (_, (num, num2)) in indexedNums {
+        heap.append(num2)
+        heap.sort(by: >) // Keep largest elements at the start
+        if heap.count > k {
+            heap.removeLast() // Remove smallest if size exceeds k
+        }
+        
+        // Store the sum of top k values for this num1
+        numToSum[num] = heap.reduce(0, +)
+    }
+    
+    for i in 0..<n {
+        let smallerNums = numToSum.keys.filter { $0 < nums1[i] }.compactMap { numToSum[$0] }
+        answer[i] = smallerNums.max() ?? 0
+    }
+    
+    return answer
+}
+
+// Example usage:
+let nums1 = [4, 2, 1, 5, 3]
+let nums2 = [10, 20, 30, 40, 50]
+let k = 2
+print(maxSumKElements(nums1: nums1, nums2: nums2, k: k))  // Output: [80, 30, 0, 80, 50]
+
