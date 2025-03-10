@@ -327,6 +327,7 @@
 		AEA71F002D277F270040AD72 /* Bit Manipulation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Bit Manipulation"; sourceTree = "<group>"; };
 		AEB4BB3E2D16B39800FF21F4 /* String */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = String; sourceTree = "<group>"; };
 		AEB4BB412D16C3F400FF21F4 /* Array */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Array; sourceTree = "<group>"; };
+		AEC191D02D7E9674003F8B7B /* Heap */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Heap; sourceTree = "<group>"; };
 		AED0C33B2D463BE2003ABE0E /* 위상정렬 */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (AED0C48D2D50770E003ABE0E /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "위상정렬"; sourceTree = "<group>"; };
 		AED0C48A2D4F4152003ABE0E /* DP3 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DP3; sourceTree = "<group>"; };
 		AEDDB1082D0DA857006F8B87 /* 3dimensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = 3dimensions; sourceTree = "<group>"; };
@@ -469,6 +470,7 @@
 		3B904CE92C082E48000BB8F9 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				AEC191D02D7E9674003F8B7B /* Heap */,
 				AE6293952D35FF86002CA61B /* Greedy */,
 				AEB4BB3E2D16B39800FF21F4 /* String */,
 				3B887F522C2A5843002AE1F0 /* TwoPointer */,
@@ -719,6 +721,7 @@
 				AEA71F002D277F270040AD72 /* Bit Manipulation */,
 				AEB4BB3E2D16B39800FF21F4 /* String */,
 				AEB4BB412D16C3F400FF21F4 /* Array */,
+				AEC191D02D7E9674003F8B7B /* Heap */,
 				AED0C33B2D463BE2003ABE0E /* 위상정렬 */,
 				AED0C48A2D4F4152003ABE0E /* DP3 */,
 				AEDDB1082D0DA857006F8B87 /* 3dimensions */,
