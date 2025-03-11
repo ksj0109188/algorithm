@@ -905,3 +905,12 @@ let arr2 = [
 //let k = 2
 //print(Medium_3478().findMaxSum(nums1: nums1, nums2: nums2, k: k))
 
+
+행렬곱_11049().exec()
+//4
+//5 3
+//3 2
+//2 6
+//6 4
+// 3/11
+
