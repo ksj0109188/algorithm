@@ -107,7 +107,7 @@ final class 트리의지름_1167 {
         // 첫 번째 DFS로 가장 먼 노드 찾기
         var isVisited = [Bool](repeating: false, count: v + 1)
         isVisited[1] = true
-        let (farthestNode, _) = dfs(tree: tree, start: 1, isVisited: &isVisited)
+        let (farthestNode, _) = dfs(tree: tree, start: 2, isVisited: &isVisited)
         
         // 두 번째 DFS로 트리의 지름 계산
         isVisited = [Bool](repeating: false, count: v + 1)
@@ -145,3 +145,10 @@ final class 트리의지름_1167 {
 
 ///note: 해당 문제는 트리로 접근 하는 게 아닌 그래프로 접근해야 풀 수 있는 문제.
 ///포인트는 연결된 두 노드에서 A -> B, B -> A 일 때 가중치가 다를 수 있으므로 원래 풀었던 트리의 지름 2와는 다른 접근이 필요함. -> 가장 가중치가 긴 노드를 찾고 그걸 기준으로 각 노드와 비교해서 제일 큰 크기를 구해야함
+
+//5
+//1 3 2 -1
+//2 3 7 4 4 -1
+//3 1 2 2 7 4 3 -1
+//4 2 4 3 3 5 6 -1
+//5 4 6 -1

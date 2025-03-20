@@ -8,7 +8,7 @@
 import Foundation
 
 class Easy_67_AddBinary {
-    // 64bit 이상의 자릿수는 에러 발생
+    // 64bit 이상의 자릿수는 에러 발생 -> 입력 a,b는 최대 10^4 입력이 주어지므로 자릿수가 Swift에서 표현되는 정수형 크기 64Bit보다 월등히 크므로 OverFlow가 발생함
 //    func addBinary(_ a: String, _ b: String) -> String {
 //        let input1 = Int(a, radix: 2)!
 //        let input2 = Int(b, radix: 2)!
