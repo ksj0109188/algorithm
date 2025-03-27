@@ -131,6 +131,7 @@
 		3BFC12072C8EABC300539814 /* Baekjoon_1927_Minheap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC12062C8EABC300539814 /* Baekjoon_1927_Minheap.swift */; };
 		AE530F042D6C0D91002AF4EE /* 1202.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE530F032D6C0D91002AF4EE /* 1202.swift */; };
 		AE6F8D1B2CFC70E80066DE74 /* NQueen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F8D1A2CFC70E80066DE74 /* NQueen.swift */; };
+		AE7990B02D9512DF00B93952 /* Hard_188.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7990AF2D9512DF00B93952 /* Hard_188.swift */; };
 		AE8570682CEFA8D800740712 /* 14503.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8570672CEFA8D800740712 /* 14503.swift */; };
 		AEA71DC22D23A41B0040AD72 /* Easy_125.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA71DC12D23A41B0040AD72 /* Easy_125.swift */; };
 		AEA71E3F2D2509F30040AD72 /* Easy_392.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA71E3A2D2509F30040AD72 /* Easy_392.swift */; };
@@ -282,6 +283,7 @@
 		3BFC12062C8EABC300539814 /* Baekjoon_1927_Minheap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baekjoon_1927_Minheap.swift; sourceTree = "<group>"; };
 		AE530F032D6C0D91002AF4EE /* 1202.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1202.swift; sourceTree = "<group>"; };
 		AE6F8D1A2CFC70E80066DE74 /* NQueen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQueen.swift; sourceTree = "<group>"; };
+		AE7990AF2D9512DF00B93952 /* Hard_188.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hard_188.swift; sourceTree = "<group>"; };
 		AE8570672CEFA8D800740712 /* 14503.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14503.swift; sourceTree = "<group>"; };
 		AEA71DC12D23A41B0040AD72 /* Easy_125.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_125.swift; sourceTree = "<group>"; };
 		AEA71E3A2D2509F30040AD72 /* Easy_392.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_392.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 		AE530F092D6C1005002AF4EE /* Heap */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Heap; sourceTree = "<group>"; };
 		AE6293952D35FF86002CA61B /* Greedy */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Greedy; sourceTree = "<group>"; };
 		AE6F8D162CFC5B190066DE74 /* DataStructure */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DataStructure; sourceTree = "<group>"; };
+		AE7990AE2D94F61400B93952 /* Queue */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Queue; sourceTree = "<group>"; };
 		AEA71CC22D22523C0040AD72 /* DFS */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DFS; sourceTree = "<group>"; };
 		AEA71F002D277F270040AD72 /* Bit Manipulation */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Bit Manipulation"; sourceTree = "<group>"; };
 		AEB4BB3E2D16B39800FF21F4 /* String */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = String; sourceTree = "<group>"; };
@@ -496,6 +499,7 @@
 			isa = PBXGroup;
 			children = (
 				3BBA879F2BEA83090070F9F0 /* Medium_Letter Combinations.swift */,
+				AE7990AF2D9512DF00B93952 /* Hard_188.swift */,
 				3BA43AFD2BEE662D007965B9 /* Medium_SubSets.swift */,
 				3BA43AFF2BEFBE83007965B9 /* Medium_Permutations.swift */,
 				3BA43B032BF0E2FE007965B9 /* Medium_CombinationSum.swift */,
@@ -681,6 +685,7 @@
 				3B1399952CC0908A00E1292F /* Tree */,
 				AEDDB1082D0DA857006F8B87 /* 3dimensions */,
 				AEDDB10F2D0EBF19006F8B87 /* Stack */,
+				AE7990AE2D94F61400B93952 /* Queue */,
 			);
 			path = BakJoon;
 			sourceTree = "<group>";
@@ -719,6 +724,7 @@
 				AE530F092D6C1005002AF4EE /* Heap */,
 				AE6293952D35FF86002CA61B /* Greedy */,
 				AE6F8D162CFC5B190066DE74 /* DataStructure */,
+				AE7990AE2D94F61400B93952 /* Queue */,
 				AEA71CC22D22523C0040AD72 /* DFS */,
 				AEA71F002D277F270040AD72 /* Bit Manipulation */,
 				AEB4BB3E2D16B39800FF21F4 /* String */,
@@ -847,6 +853,7 @@
 				3B1A10B32C167ABD00A3C0D3 /* NumberOfIslands.swift in Sources */,
 				3B0A605F2C986C0A00E35AAC /* ConnectedComponent.swift in Sources */,
 				3BAAC6B52C63046900CD88C7 /* LV4_자동완성.swift in Sources */,
+				AE7990B02D9512DF00B93952 /* Hard_188.swift in Sources */,
 				3B8A785B2C2123C300FBAF5F /* CourseSchedule2.swift in Sources */,
 				3B3A246E2BB1B9770078F782 /* Lv2_Carpet.swift in Sources */,
 				3B86552F2C191E56009D0008 /* EvaluateDivision.swift in Sources */,
