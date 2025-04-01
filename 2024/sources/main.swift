@@ -924,5 +924,152 @@ let arr2 = [
 //행렬곱셈순서_11049().exec()
 
 // 3/28
-뱀_3190().exec()
+//뱀_3190().exec()
 
+// 4/1
+// 아기 상어는 자신의 크기보다 작은 물고기만 먹을 수 있다. 따라서, 크기가 같은 물고기는 먹을 수 없지만, 그 물고기가 있는 칸은 지나갈 수 있다.
+
+// 아기 상어가 어디로 이동할지 결정하는 방법은 아래와 같다.
+//더 이상 먹을 수 있는 물고기가 공간에 없다면 아기 상어는 엄마 상어에게 도움을 요청한다.
+//먹을 수 있는 물고기가 1마리라면, 그 물고기를 먹으러 간다.
+//먹을 수 있는 물고기가 1마리보다 많다면, 거리가 가장 가까운 물고기를 먹으러 간다.
+//거리는 아기 상어가 있는 칸에서 물고기가 있는 칸으로 이동할 때, 지나야하는 칸의 개수의 최솟값이다.
+//거리가 가까운 물고기가 많다면, 가장 위에 있는 물고기, 그러한 물고기가 여러마리라면, 가장 왼쪽에 있는 물고기를 먹는다.
+//아기 상어는 자신의 크기와 같은 수의 물고기를 먹을 때 마다 크기가 1 증가한다. 예를 들어, 크기가 2인 아기 상어는 물고기를 2마리 먹으면 크기가 3이 된다.
+
+//class 아기상어_16236 {
+//    struct FishiPosition: Hashable {
+//        var x: Int
+//        var y: Int
+//    }
+//    
+//    func exec() {
+//        var sharkSize = 2
+//        let n = Int(readLine()!)!
+//        var arr: [[Int]] = []
+//        var fishiPostions: [FishiPosition: Int] = [:]
+//        var sharkPosition: (x: Int, y: Int) = (-1, -1)
+//        var time = 0
+//        
+//        for _ in 0..<n {
+//            arr.append(readLine()!.split(separator: " ").map{ Int($0)! })
+//        }
+//        
+//        for i in 0..<arr.count {
+//            for j in 0..<arr[i].count {
+//                if arr[i][j] == 9 {
+//                    sharkPosition = (i, j)
+//                } else if arr[i][j] > 0 {
+//                    let fishiPosition = FishiPosition(x: i, y: j)
+//                    fishiPostions[fishiPosition, default: -1] = arr[i][j]
+//                }
+//            }
+//        }
+//        
+//        if fishiPostions.filter({ $0.value < sharkSize }).count == 0 {
+//            print(0)
+//            return
+//        }
+//        
+//        var queue = []
+//    }
+//    
+//    private func findNextFishi(fishiPostions: inout [FishiPosition: Int], sharkSize: Int) -> FishiPosition {
+//        var minDistance = Int.max
+//        
+//        for fishiPostion in fishiPostions {
+//            if fishiPostion.value < sharkSize {
+//                
+//            }
+//        }
+//    }
+//}
+//
+
+class BabyShark {
+    struct Position: Hashable {
+        var x: Int
+        var y: Int
+    }
+    
+    let dx = [-1, 0, 1, 0]
+    let dy = [0, -1, 0, 1]
+
+    func exec() {
+        let n = Int(readLine()!)!
+        var map = [[Int]]()
+        var sharkSize = 2
+        var eatenFish = 0
+        var time = 0
+        var sharkPosition: Position?
+
+        // 맵 입력 받기
+        for i in 0..<n {
+            let row = readLine()!.split(separator: " ").map { Int($0)! }
+            map.append(row)
+            if let j = row.firstIndex(of: 9) {
+                sharkPosition = Position(x: i, y: j)
+                map[i][j] = 0
+            }
+        }
+
+        // BFS 탐색 함수
+        func bfs(start: Position) -> (Position, Int)? {
+            var queue = [(Position, Int)]() // (위치, 이동 거리)
+            var visited = Set<Position>()
+            var candidates = [(Position, Int)]()
+
+            queue.append((start, 0))
+            visited.insert(start)
+
+            while !queue.isEmpty {
+                let (current, distance) = queue.removeFirst()
+
+                for i in 0..<4 {
+                    let nx = current.x + dx[i]
+                    let ny = current.y + dy[i]
+
+                    if nx >= 0, ny >= 0, nx < n, ny < n, !visited.contains(Position(x: nx, y: ny)) {
+                        if map[nx][ny] <= sharkSize {
+                            visited.insert(Position(x: nx, y: ny))
+                            queue.append((Position(x: nx, y: ny), distance + 1))
+                            
+                            if map[nx][ny] > 0, map[nx][ny] < sharkSize {
+                                candidates.append((Position(x: nx, y: ny), distance + 1))
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 먹을 수 있는 물고기 중 가장 가까운 물고기 찾기
+            if let closestFish = candidates.min(by: {
+                ($0.1, $0.0.x, $0.0.y) < ($1.1, $1.0.x, $1.0.y)
+            }) {
+                return closestFish
+            } else {
+                return nil
+            }
+        }
+
+        while let (nextFish, distance) = bfs(start: sharkPosition!) {
+            // 이동
+            sharkPosition = nextFish
+            time += distance
+            eatenFish += 1
+            map[nextFish.x][nextFish.y] = 0
+
+            // 상어 크기 증가 조건 확인
+            if eatenFish == sharkSize {
+                sharkSize += 1
+                eatenFish = 0
+            }
+        }
+
+        print(time)
+    }
+}
+
+// 실행
+let babyShark = BabyShark()
+babyShark.exec()
