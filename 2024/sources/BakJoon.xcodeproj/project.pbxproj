@@ -131,6 +131,7 @@
 		3BFC12072C8EABC300539814 /* Baekjoon_1927_Minheap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFC12062C8EABC300539814 /* Baekjoon_1927_Minheap.swift */; };
 		AE530F042D6C0D91002AF4EE /* 1202.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE530F032D6C0D91002AF4EE /* 1202.swift */; };
 		AE6F8D1B2CFC70E80066DE74 /* NQueen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6F8D1A2CFC70E80066DE74 /* NQueen.swift */; };
+		AE7003762DB88500001112A4 /* 2504.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7003752DB88500001112A4 /* 2504.swift */; };
 		AE7990B02D9512DF00B93952 /* Hard_188.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7990AF2D9512DF00B93952 /* Hard_188.swift */; };
 		AE8570682CEFA8D800740712 /* 14503.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8570672CEFA8D800740712 /* 14503.swift */; };
 		AEA71DC22D23A41B0040AD72 /* Easy_125.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA71DC12D23A41B0040AD72 /* Easy_125.swift */; };
@@ -286,6 +287,7 @@
 		3BFC12062C8EABC300539814 /* Baekjoon_1927_Minheap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baekjoon_1927_Minheap.swift; sourceTree = "<group>"; };
 		AE530F032D6C0D91002AF4EE /* 1202.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1202.swift; sourceTree = "<group>"; };
 		AE6F8D1A2CFC70E80066DE74 /* NQueen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQueen.swift; sourceTree = "<group>"; };
+		AE7003752DB88500001112A4 /* 2504.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2504.swift; sourceTree = "<group>"; };
 		AE7990AF2D9512DF00B93952 /* Hard_188.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hard_188.swift; sourceTree = "<group>"; };
 		AE8570672CEFA8D800740712 /* 14503.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14503.swift; sourceTree = "<group>"; };
 		AEA71DC12D23A41B0040AD72 /* Easy_125.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_125.swift; sourceTree = "<group>"; };
@@ -566,6 +568,7 @@
 				3B6A753A2BA5C8CC00CD1D81 /* baekjoon_1550_16진수.swift */,
 				AED0F89E2DA37A3600E15CC1 /* BakShark.swift */,
 				AE8570672CEFA8D800740712 /* 14503.swift */,
+				AE7003752DB88500001112A4 /* 2504.swift */,
 				AEA88A342DAF50340050AEE0 /* 14891.swift */,
 				AEF36E6D2CEECF030044D4D3 /* 14502.swift */,
 				3B6A753C2BA5C96100CD1D81 /* baekjoon_1333.swift */,
@@ -912,6 +915,7 @@
 				3B8412CC2CC5DD7100C1AC68 /* RGB1149.swift in Sources */,
 				3B1FC5702BBB04D200F3B71F /* LV2_괄호 회전하기.swift in Sources */,
 				3B37926A2C46395700375767 /* LV2_가장큰수.swift in Sources */,
+				AE7003762DB88500001112A4 /* 2504.swift in Sources */,
 				AEA71DC22D23A41B0040AD72 /* Easy_125.swift in Sources */,
 				3B3A246A2BAF2EA10078F782 /* Programmers_짝지어 제어하기_LV2.swift in Sources */,
 				3BC4B0932B5936BF002E6E19 /* trying_783_ Minmum Distance Between BST.swift in Sources */,
