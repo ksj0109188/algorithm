@@ -329,6 +329,7 @@
 		3BCCFD652CE7AD8C0049AF51 /* DP2 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DP2; sourceTree = "<group>"; };
 		3BCDC44E2CE09E32007760CC /* PrefixSum */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PrefixSum; sourceTree = "<group>"; };
 		3BFEEAEA2CB2539C003311F9 /* TwoPointer */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TwoPointer; sourceTree = "<group>"; };
+		AE0525EF2DB9D3C4009D6C12 /* DP1 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DP1; sourceTree = "<group>"; };
 		AE09EA802D76A4A2001602F0 /* Divide_Conquer */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Divide_Conquer; sourceTree = "<group>"; };
 		AE530F092D6C1005002AF4EE /* Heap */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Heap; sourceTree = "<group>"; };
 		AE6293952D35FF86002CA61B /* Greedy */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Greedy; sourceTree = "<group>"; };
@@ -491,10 +492,10 @@
 				3B4928902B6949B80076F8C3 /* Graph */,
 				3BCAC4B52B6291130042FED1 /* Matrix */,
 				3BB940FD2B56CF7300D193A6 /* Tree */,
-				3BC4B9E22C3B7F5D00C53586 /* Multidemension Dynamic Programming */,
 				3BACD8BF2C9C016400844E9B /* BinarySearch */,
 				3B904CEA2C082E53000BB8F9 /* BackTracking */,
 				AEB4BB412D16C3F400FF21F4 /* Array */,
+				AE0525F12DB9D3D1009D6C12 /* DP */,
 				AEA71CC22D22523C0040AD72 /* DFS */,
 				AEA71F002D277F270040AD72 /* Bit Manipulation */,
 				AE09EA802D76A4A2001602F0 /* Divide_Conquer */,
@@ -702,6 +703,15 @@
 			path = BakJoon;
 			sourceTree = "<group>";
 		};
+		AE0525F12DB9D3D1009D6C12 /* DP */ = {
+			isa = PBXGroup;
+			children = (
+				3BC4B9E22C3B7F5D00C53586 /* Multidemension Dynamic Programming */,
+				AE0525EF2DB9D3C4009D6C12 /* DP1 */,
+			);
+			path = DP;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -732,6 +742,7 @@
 				3BCCFD652CE7AD8C0049AF51 /* DP2 */,
 				3BCDC44E2CE09E32007760CC /* PrefixSum */,
 				3BFEEAEA2CB2539C003311F9 /* TwoPointer */,
+				AE0525EF2DB9D3C4009D6C12 /* DP1 */,
 				AE09EA802D76A4A2001602F0 /* Divide_Conquer */,
 				AE530F092D6C1005002AF4EE /* Heap */,
 				AE6293952D35FF86002CA61B /* Greedy */,

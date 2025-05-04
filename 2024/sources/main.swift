@@ -6,7 +6,7 @@
 //
 import Foundation
 import Combine
-
+import Network
 // 733_FloodFill
 //print(floodFill([[1,1,1],[1,1,0],[1,0,1]], 1, 1, 2))
 
@@ -942,7 +942,7 @@ let arr2 = [
 //        var x: Int
 //        var y: Int
 //    }
-//    
+//
 //    func exec() {
 //        var sharkSize = 2
 //        let n = Int(readLine()!)!
@@ -950,11 +950,11 @@ let arr2 = [
 //        var fishiPostions: [FishiPosition: Int] = [:]
 //        var sharkPosition: (x: Int, y: Int) = (-1, -1)
 //        var time = 0
-//        
+//
 //        for _ in 0..<n {
 //            arr.append(readLine()!.split(separator: " ").map{ Int($0)! })
 //        }
-//        
+//
 //        for i in 0..<arr.count {
 //            for j in 0..<arr[i].count {
 //                if arr[i][j] == 9 {
@@ -965,21 +965,21 @@ let arr2 = [
 //                }
 //            }
 //        }
-//        
+//
 //        if fishiPostions.filter({ $0.value < sharkSize }).count == 0 {
 //            print(0)
 //            return
 //        }
-//        
+//
 //        var queue = []
 //    }
-//    
+//
 //    private func findNextFishi(fishiPostions: inout [FishiPosition: Int], sharkSize: Int) -> FishiPosition {
 //        var minDistance = Int.max
-//        
+//
 //        for fishiPostion in fishiPostions {
 //            if fishiPostion.value < sharkSize {
-//                
+//
 //            }
 //        }
 //    }
@@ -996,4 +996,81 @@ let arr2 = [
 //톱니바퀴_14891().exec()
 //
 
-print(괄호계산_2504().exec2())
+//print(괄호계산_2504().exec2())
+// 4/24
+
+// 5/1
+//class 배열돌리기_16926 {
+//    func exec() {
+//        let input = readLine()!.split(separator: " ").map { Int($0)! }
+//        let (n, m, r) = (input[0], input[1], input[2])
+//
+//        var matrix = (0..<n).map { _ in readLine()!.split(separator: " ").map { Int($0)! } }
+//
+//        let layers = min(n, m) / 2
+//
+//        for layer in 0..<layers {
+//            var elements: [Int] = []
+//
+//            let startRow = layer, endRow = n - 1 - layer
+//            let startCol = layer, endCol = m - 1 - layer
+//
+//            // 요소 추출 (반시계 방향)
+//            for col in startCol..<endCol { elements.append(matrix[startRow][col]) }
+//            for row in startRow..<endRow { elements.append(matrix[row][endCol]) }
+//            for col in stride(from: endCol, to: startCol, by: -1) { elements.append(matrix[endRow][col]) }
+//            for row in stride(from: endRow, to: startRow, by: -1) { elements.append(matrix[row][startCol]) }
+//
+//            let rotation = r % elements.count
+//            let rotated = Array(elements[rotation...] + elements[..<rotation])
+//
+//            var idx = 0
+//            // 다시 삽입 (반시계 방향)
+//            for col in startCol..<endCol { matrix[startRow][col] = rotated[idx]; idx += 1 }
+//            for row in startRow..<endRow { matrix[row][endCol] = rotated[idx]; idx += 1 }
+//            for col in stride(from: endCol, to: startCol, by: -1) { matrix[endRow][col] = rotated[idx]; idx += 1 }
+//            for row in stride(from: endRow, to: startRow, by: -1) { matrix[row][startCol] = rotated[idx]; idx += 1 }
+//        }
+//
+//        // 출력
+//        for row in matrix {
+//            print(row.map { String($0) }.joined(separator: " "))
+//        }
+//
+//    }
+//}
+//
+//배열돌리기_16926().exec()
+//
+
+class SolutionQ2 {
+    var index: Int = 0
+    
+    func specialGrid(_ N: Int) -> [[Int]] {
+        
+        let size = Int(pow(2.0, Double(N)) )
+        
+        var arr: [[Int]] = .init(repeating: .init(repeating: -1, count: size), count: size)
+        
+        divide(Int(size), 0, 0, &arr)
+        
+        return arr
+    }
+    
+    func divide(_ size: Int, _ startX: Int, _ startY: Int, _ arr: inout [[Int]]) {
+        guard size > 1 else {
+            arr[startX][startY] = index
+            index += 1
+            
+            return
+        }
+        
+        let halfSize = size / 2
+        divide(halfSize, startX , startY + halfSize, &arr)
+        divide(halfSize, startX + halfSize , startY + halfSize, &arr)
+        divide(halfSize, startX + halfSize, startY, &arr)
+        divide(halfSize, startX , startY, &arr)
+    }
+}
+
+print(SolutionQ2().specialGrid(2))
