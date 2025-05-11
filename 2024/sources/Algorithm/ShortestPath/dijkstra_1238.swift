@@ -21,6 +21,7 @@ class dijkstra_1238 {
             let weight: T
         }
         
+        
         func isEmpty() -> Bool {
             queue.isEmpty
         }
@@ -42,6 +43,7 @@ class dijkstra_1238 {
             } else {
                 queue.swapAt(0, queue.count - 1)
                 let popedNode = queue.removeLast()
+                
                 shitDown(from: 0)
                 popedItem = (popedNode.vertax, popedNode.weight)
             }

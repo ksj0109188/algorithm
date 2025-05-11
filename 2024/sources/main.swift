@@ -1043,34 +1043,39 @@ let arr2 = [
 //배열돌리기_16926().exec()
 //
 
-class SolutionQ2 {
-    var index: Int = 0
-    
-    func specialGrid(_ N: Int) -> [[Int]] {
-        
-        let size = Int(pow(2.0, Double(N)) )
-        
-        var arr: [[Int]] = .init(repeating: .init(repeating: -1, count: size), count: size)
-        
-        divide(Int(size), 0, 0, &arr)
-        
-        return arr
-    }
-    
-    func divide(_ size: Int, _ startX: Int, _ startY: Int, _ arr: inout [[Int]]) {
-        guard size > 1 else {
-            arr[startX][startY] = index
-            index += 1
-            
-            return
-        }
-        
-        let halfSize = size / 2
-        divide(halfSize, startX , startY + halfSize, &arr)
-        divide(halfSize, startX + halfSize , startY + halfSize, &arr)
-        divide(halfSize, startX + halfSize, startY, &arr)
-        divide(halfSize, startX , startY, &arr)
-    }
-}
+//class SolutionQ2 {
+//    var index: Int = 0
+//
+//    func specialGrid(_ N: Int) -> [[Int]] {
+//
+//        let size = Int(pow(2.0, Double(N)) )
+//
+//        var arr: [[Int]] = .init(repeating: .init(repeating: -1, count: size), count: size)
+//
+//        divide(Int(size), 0, 0, &arr)
+//
+//        return arr
+//    }
+//
+//    func divide(_ size: Int, _ startX: Int, _ startY: Int, _ arr: inout [[Int]]) {
+//        guard size > 1 else {
+//            arr[startX][startY] = index
+//            index += 1
+//
+//            return
+//        }
+//
+//        let halfSize = size / 2
+//        divide(halfSize, startX , startY + halfSize, &arr)
+//        divide(halfSize, startX + halfSize , startY + halfSize, &arr)
+//        divide(halfSize, startX + halfSize, startY, &arr)
+//        divide(halfSize, startX , startY, &arr)
+//    }
+//}
+//
+//print(SolutionQ2().specialGrid(2))
 
-print(SolutionQ2().specialGrid(2))
+// 5/9
+보드_12100().exec()
+
+// 5/11

@@ -61,6 +61,33 @@ class ParallelCoursesII {
             result += 1
         }
         
+        struct Queue<T> {
+            private var data: [T] = []
+            private var head = 0
+
+            var isEmpty: Bool {
+                return head >= data.count
+            }
+
+            mutating func enqueue(_ element: T) {
+                data.append(element)
+            }
+
+            mutating func dequeue() -> T? {
+                guard !isEmpty else { return nil }
+                let element = data[head]
+                head += 1
+
+                // 메모리 최적화 (불필요한 요소 제거)
+                if head > 100 && head * 2 > data.count {
+                    data.removeFirst(head)
+                    head = 0
+                }
+
+                return element
+            }
+        }
+        
         return result
     }
 }
